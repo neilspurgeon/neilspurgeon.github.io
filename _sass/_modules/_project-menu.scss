@@ -1,0 +1,17 @@
+.project-menu {
+  padding: 0;
+}
+
+.project-menu__item {
+  list-style-type: none;
+}
+
+.project-title {
+  position: fixed;
+  top: 50%;
+  transform: translateX(-2em);
+  font-size: 30px;
+  background: black;
+  color: #FFF;
+  padding: 0 .2em;
+}

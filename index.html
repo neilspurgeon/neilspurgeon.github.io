@@ -1,18 +1,27 @@
 ---
 layout: default
 ---
+<section class="site-intro">
+  <p class="site-intro__text">saf asdasd asd as as asdsd  asdasd  asd asdd  asd asd  asdd asdd  asd asdd a asd asd  asd asd</p>
+  <div class="site-intro__more">
+      DOWN
+  </div>
+</section>
+
 
 <div>
 
-  <h1>Posts</h1>
+  <div class="project-title">
+    Project Title
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {{ post.date | date: "%b %-d, %Y" }}
+  <ul class="project-menu">
+    {% for post in site.projects %}
+      <li class="project-menu__item">
 
-
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img src="{{ post.featured_image }}"
+        </a>
 
       </li>
     {% endfor %}

@@ -1,0 +1,23 @@
+.site-intro {
+  position: relative;
+  height: 100vh;
+}
+
+.site-intro__text {
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 22px;
+  max-width: 25em;
+
+}
+
+
+.site-intro__more {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+}
