@@ -16,4 +16,7 @@
   padding: 0 .2em;
   transition: .4s ease all;
   width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 1;
 }

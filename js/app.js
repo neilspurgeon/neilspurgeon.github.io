@@ -30,8 +30,11 @@ $(document).ready(function() {
               if (window.scrollY >= (elPos - triggerPos)) {
                 $('#project-title')[0].innerHTML = title;
                 $('#project-title').css('width', (charCount / 2 + 'em'));
+                $('#project-title').css('opacity', '1');
               } else if (window.scrollY <= (triggerPos )) {
-                $('#project-title')[0].innerHTML = "";
+                // $('#project-title')[0].innerHTML = "";
+                $('#project-title').css('width', '0');
+                $('#project-title').css('opacity', '0');
               }
             });
         }
