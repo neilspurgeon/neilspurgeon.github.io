@@ -23,10 +23,13 @@ $(document).ready(function() {
               el    = $(this);
               var elPos = el.offset().top;
               var title = el.attr('data-title');
+              var charCount = title.split('').length;
+
               // pos = that;
 
               if (window.scrollY >= (elPos - triggerPos)) {
                 $('#project-title')[0].innerHTML = title;
+                $('#project-title').css('width', (charCount / 2 + 'em'));
               } else if (window.scrollY <= (triggerPos )) {
                 $('#project-title')[0].innerHTML = "";
               }
