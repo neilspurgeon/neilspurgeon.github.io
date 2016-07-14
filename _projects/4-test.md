@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "4 Long Test Title"
 date:   2016-07-11 17:37:05
 featured_image: /assets/featured-images/placeholder.png
 ---
