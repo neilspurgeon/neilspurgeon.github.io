@@ -1,13 +1,9 @@
 $(document).ready(function() {
-  console.log('JS LOADED');
 
   MenuTitleAnimation = (function() {
-    console.log('MenuTitleAnimation triggered');
-
     var triggerPos = window.innerHeight / 2;
 
     function doThisStuffOnScroll() {
-        console.log('do this stuff');
 
         $('.project-trigger').each(function() {
           var el    = $(this);
