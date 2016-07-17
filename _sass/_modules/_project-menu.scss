@@ -8,7 +8,7 @@
 
 .project-title {
   position: fixed;
-  top: 50%;
+  top: calc(50% - 1.5em);
   transform: translateX(-2em);
   font-size: 45px;
   background: black;

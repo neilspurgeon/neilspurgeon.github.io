@@ -6,7 +6,7 @@
 .site-intro__text {
   position: relative;
   margin: 0 auto;
-  top: 50%;
+  top: calc(50% - 1.5em);
   transform: translateY(-50%);
   text-align: center;
   font-size: 22px;
