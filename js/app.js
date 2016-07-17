@@ -1,3 +1,9 @@
+$.fn.textWidth = function(text, font) {
+    if (!$.fn.textWidth.fakeEl) $.fn.textWidth.fakeEl = $('<span>').hide().appendTo(document.body);
+    $.fn.textWidth.fakeEl.text(text || this.val() || this.text()).css('font', font || this.css('font'));
+    return $.fn.textWidth.fakeEl.width();
+};
+
 $(document).ready(function() {
 
   var menuTitleAnimation = function () {
@@ -7,12 +13,14 @@ $(document).ready(function() {
       var el    = $(this);
       var elPos = el.offset().top;
       var title = el.attr('data-title');
-      var charCount = title.split('').length;
+      var prjctTitle = $('#project-title');
 
       if (window.scrollY >= (elPos - triggerPos)) {
         // Change Title
-        $('#project-title')[0].innerHTML = title;
-        $('#project-title').css({width: (charCount / 2) + 'em', opacity: '2'});
+        prjctTitle[0].innerHTML = title;
+        
+        var titleWidth = prjctTitle.textWidth() + 20;
+        prjctTitle.css({ width: titleWidth, opacity: '2'});
       } else if (window.scrollY <= triggerPos) {
         // Remove Title
         $('#project-title').css({width: '0', opacity: '0'});
@@ -25,8 +33,6 @@ $(document).ready(function() {
     var mediaQueryStr = '(min-width: 800px)';
 
     if (window.matchMedia(mediaQueryStr).matches) {
-      // Run once on load to set title, then on scroll
-      menuTitleAnimation();
       window.onscroll = menuTitleAnimation;
     } else {
       window.onscroll = null;
@@ -38,5 +44,7 @@ $(document).ready(function() {
   window.addEventListener('resize', function() {
     mediaFunctions();
   });
+
+  mediaFunctions();
 
 });
