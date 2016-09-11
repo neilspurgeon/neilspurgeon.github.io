@@ -1,0 +1,34 @@
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #000;
+  line-height: 2;
+}
+
+.footer-contact {
+  width: 50%;
+
+  & a {
+    display: block;
+    font-weight: 100;
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.footer-links {
+  width: 50%;
+  text-align: right;
+
+  & a {
+    font-weight: 100;
+    color: #FFF;
+    padding-left: 1em;
+    text-decoration: none;
+  }
+}
