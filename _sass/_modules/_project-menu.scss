@@ -4,6 +4,7 @@
 
 .project-menu__item {
   list-style-type: none;
+  padding-bottom: 2em;
 }
 
 .project-title {
@@ -19,4 +20,14 @@
   white-space: nowrap;
   overflow: hidden;
   opacity: 1;
+}
+
+.project-title__mobile {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint(laptop) {
+    display: none;
+  }
 }
