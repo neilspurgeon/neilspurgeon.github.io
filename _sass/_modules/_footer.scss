@@ -4,6 +4,9 @@
 }
 
 .site-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -2;
   width: 100%;
   padding: 60px 0;
   background-color: #000;

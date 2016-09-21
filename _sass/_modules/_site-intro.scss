@@ -1,6 +1,8 @@
 .site-intro {
   position: relative;
   height: 100vh;
+  z-index: -1;
+  background-color: #FFF;
 }
 
 .site-intro__text {

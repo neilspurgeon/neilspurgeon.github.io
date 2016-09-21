@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="site-intro" data-scroll-speed="-5">
+<section class="site-intro" data-scroll-speed="-3">
   <p class="site-intro__text">
     Hello:) I’m a designer and frontend<br/> developer based in San Luis Obispo, CA.
   </p>
@@ -11,20 +11,22 @@ layout: default
 </section>
 
 
-<div>
+<div class="content-bg">
+  <div class="container">
 
-  <div id="project-title" class="project-title"></div>
+    <div id="project-title" class="project-title"></div>
 
-  <ul class="project-menu">
-    {% for post in site.projects %}
-      <li class="project-menu__item project-trigger" data-title="{{ post.title }}">
+    <ul class="project-menu">
+      {% for post in site.projects %}
+        <li class="project-menu__item project-trigger" data-title="{{ post.title }}">
 
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.featured_image }}"/>
-        </a>
-        <span class="project-title__mobile">{{ post.title }}</span>
-      </li>
-    {% endfor %}
-  </ul>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <img src="{{ post.featured_image }}"/>
+          </a>
+          <span class="project-title__mobile">{{ post.title }}</span>
+        </li>
+      {% endfor %}
+    </ul>
 
+  </div>
 </div>
