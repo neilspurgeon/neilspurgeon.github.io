@@ -31,12 +31,14 @@
     transition: 0.1s;
     z-index: -999; 
   }
-  &.is-active:after {
-    border-bottom: .4em solid #FFFF00;
-  }
-  &:hover:after {
-    border-bottom: 1.2em solid #FFFF00;
-  }
+}
+
+.nav__list.is-active {
+  a:after { border-bottom: .4em solid #FFFF00; }
+}
+
+.nav__list:hover {
+  a:after { border-bottom: 1.2em solid #FFFF00; }
 }
 
 .site-title,
