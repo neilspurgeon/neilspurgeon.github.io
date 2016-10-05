@@ -26,5 +26,11 @@ img {
   background-color: #FFF;
 }
 
-body.project { margin-top: 30vh; }
+body.project { 
+  margin-top: 100px; 
+
+  @include breakpoint(tablet) {
+    margin-top: 30vh;
+  }
+}
 body.default { margin-top: 100px; }
