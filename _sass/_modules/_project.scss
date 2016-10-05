@@ -1,0 +1,25 @@
+// Variables
+$dark-text-color: #333;
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__left {
+  width: 75%;
+}
+
+.project__title {
+  margin: 0;
+}
+
+.description__tags {
+  list-style: none;
+
+  & > li {
+    color: lighten($dark-text-color, 50%);
+    // font-weight: 200;
+    font-family: monospace;
+  }
+}
