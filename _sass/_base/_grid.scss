@@ -48,3 +48,11 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 [class*="grid__col-"] {
   position: inherit;
 }
+
+.grid { 
+  margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    max-width: calc(100% - 160px);
+  } 
+}
