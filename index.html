@@ -1,19 +1,3 @@
 ---
 layout: home
 ---
-
-  <div class="container">
-
-    <ul class="project-menu">
-      {% for post in site.projects %}
-        <li class="project-menu__item project-trigger" data-title="{{ post.title }}">
-
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <img src="{{ post.featured_image }}"/>
-          </a>
-          <span class="project-title__mobile">{{ post.title }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-
-  </div>

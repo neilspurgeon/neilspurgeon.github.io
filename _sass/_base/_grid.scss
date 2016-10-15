@@ -1,5 +1,5 @@
 // --------------------------------------------------
-// reflex variables
+// reflex variables – Copy and Pasted from node_modules
 // --------------------------------------------------
 
 // Prefix
@@ -32,6 +32,19 @@ $reflex-cell-spacing-md:    $reflex-grid-spacing;
 $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 
+// Import from node_modules
+// -------------------------
 @import "../node_modules/reflex-grid/scss/reflex/mixins";
 @import "../node_modules/reflex-grid/scss/reflex/grid";
 @import "../node_modules/reflex-grid/scss/reflex/helpers";
+
+
+// Overide Grid Fallback Positioning (WARNING!!! this may break in older browsers)
+// -------------------------
+.#{$reflex-prefix}grid {
+  position: inherit;
+}
+
+[class*="grid__col-"] {
+  position: inherit;
+}
