@@ -4,19 +4,22 @@
   {% include head.html %}
 
   <body>
+    
     {% include header.html %}
 
-    <section class="site-intro" data-scroll-speed="-3">
-      <p class="site-intro__text">
-        Hello:) I’m a designer and frontend<br/> developer based in San Luis Obispo, CA.
-      </p>
-      <div class="site-intro__more">
-          DOWN
-      </div>
-    </section>
-
     <div class="content-bg">
+      
+        <section class="site-intro">
+        <p class="site-intro__text">
+          Hello:) I’m a designer and frontend<br/> developer based in San Luis Obispo, CA.
+        </p>
+        <div class="site-intro__more">
+            DOWN
+        </div>
+      </section>
+
       {{ content }}
+
     </div>
     
     {% include footer.html %}
