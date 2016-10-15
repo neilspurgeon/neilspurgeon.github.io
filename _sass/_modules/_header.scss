@@ -1,3 +1,8 @@
+header {
+  color: #FFF;
+  mix-blend-mode: difference;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -17,28 +22,26 @@
 
 .nav__link {
   text-decoration: none;
-  color: #333;
+  color: inherit;
   font-weight: 300;
   position: relative;
 
   &:after {
-    border-bottom: 0 solid #FFFF00;
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    transition: 0.1s;
     z-index: -999; 
   }
 }
 
 .nav__list.is-active {
-  a:after { border-bottom: .4em solid #FFFF00; }
+  a:after { border-bottom: 1px solid #FFF; }
 }
 
 .nav__list:hover {
-  a:after { border-bottom: 1.2em solid #FFFF00; }
+  a:after { border-bottom: 1px solid #FFF; }
 }
 
 .site-title,
@@ -48,6 +51,8 @@
   top: 50%;
   font-weight: 700;
   text-align: center;
+  mix-blend-mode: difference;
+  color: #FFF;
 }
 
 .site-title {
