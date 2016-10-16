@@ -24,12 +24,14 @@
   position: relative;
 
   &:after {
+    border-bottom: 0 solid #FFF;
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: -999; 
+    transition: 0.1s;
+    mix-blend-mode: difference;
   }
 }
 
@@ -38,5 +40,5 @@
 }
 
 .nav__list:hover {
-  a:after { border-bottom: 1px solid #FFF; }
+  a:after { border-bottom: 1.2em solid #FFF; }
 }
