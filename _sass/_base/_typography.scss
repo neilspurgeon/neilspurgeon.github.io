@@ -9,6 +9,10 @@ body {
   font-family: "clear sans", sans-serif;
   font-weight: 300;
   color: $dark-text-color; 
+
+  @include breakpoint(mobileonly) {
+    font-size: 1.4rem;
+  }
 }
 
 p {
