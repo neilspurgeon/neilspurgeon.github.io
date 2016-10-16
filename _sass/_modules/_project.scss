@@ -1,27 +1,6 @@
 // Variables
 $dark-text-color: #333;
 
-.description {
-  display: flex;
-  flex-direction: column-reverse;
-
-  @include breakpoint(tablet) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.description__left {
-
-  @include breakpoint(tablet) {
-    width: 75%;
-  }
-}
-
-.project__title {
-  margin: 0;
-}
-
 .description__tags {
   list-style: none;
   padding: 0;

@@ -3,29 +3,34 @@ layout: default
 ---
 <article class="project">
 
-  <header>
-    <h1 class="project__title"  >{{ page.title }}</h1>
+  <img src="http://placehold.it/1400x800" />
+  
+  <header class="grid">
+    <div class="grid__col-12">
+      
+      <h1 class="project__title"  >{{ page.title }}</h1>
+    </div>
+    
+    <div class="grid__col-md-6"> 
+      {{ page.description }}
+    </div>
 
-    <div class="description">
-      <div class="description__left"> 
-        <p>{{ page.description }}</p>
-      </div>
+    <div class="grid__col-md-3">
+      {% if page.tags %}
+      <ul class="description__tags">
+      {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
 
-      <div class="description__right">
-        {% if page.tags %}
-        <ul class="description__tags">
-        {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
+    <div class="grid__col-md-3">
+      Credits
     </div>
 
   </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  {{ content }}
 
 </article>
