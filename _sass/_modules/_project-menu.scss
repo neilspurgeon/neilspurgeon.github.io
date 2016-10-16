@@ -1,0 +1,21 @@
+.project-grid-row {
+  padding: 0 0 100px;
+}
+
+.project-tile {
+  text-decoration: none;
+}
+
+.project-tile:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.project-tile__title {
+  text-align: center;
+  color: #000;
+  margin-top: .5em;
+  font-weight: 300;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}

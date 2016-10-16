@@ -1,15 +1,10 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 ---
+<div>
+  <img src="http://placehold.it/1000x600" />
+</div>
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<p class="about">Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.</p>

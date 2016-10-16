@@ -1,0 +1,41 @@
+.site-header {
+  // position: fixed;
+  z-index: 999;
+  color: #FFF;
+  mix-blend-mode: difference;
+
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+}
+
+.site-title,
+.site-description {
+  display: block;
+  position: fixed;
+  top: 50%;
+  font-weight: 700;
+  text-align: center;
+  mix-blend-mode: difference;
+  color: #FFF;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+
+  @include breakpoint(mobileonly) {
+    position: absolute;
+    font-size: 1rem;
+  }
+}
+
+.site-title {
+  left: 1em;
+  transform-origin: left;
+  transform: rotate(270deg);
+}
+
+.site-description {
+  right: 1em;
+  transform-origin: right;
+  transform: rotate(90deg);
+}

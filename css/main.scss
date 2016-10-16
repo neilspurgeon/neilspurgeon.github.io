@@ -5,9 +5,23 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 
+  // Import Base
+  "_base/normalize",
   "_base/config",
+  "_base/mixins",
   "_base/grid",
-  "_base/typography"
+  "_base/fonts",
+  "_base/typography",
+  "_base/base.scss",
+
+  // Import Modules
+  "_modules/header",
+  "_modules/nav",
+  "_modules/site-intro",
+  "_modules/project-menu",
+  "_modules/footer",
+  "_modules/project",
+  "_modules/about"
 ;
 
 

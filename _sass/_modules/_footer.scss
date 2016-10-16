@@ -1,0 +1,46 @@
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -2;
+  width: 100%;
+  height: 225px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  font-size: 1.4rem;
+  color: #FFF;
+
+  .grid {
+    position: initial; //reset grid from fixed to normal flow
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 2em 0 0;
+  }
+
+  a {
+    font-weight: 100;
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.footer-message {
+  font-weight: 100;
+  margin-bottom: 0;
+
+  @include breakpoint(laptop) {
+    text-align: right;
+  }
+}

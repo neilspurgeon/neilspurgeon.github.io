@@ -1,58 +1,39 @@
-@font-face {
-  font-family: 'clear sans';
-  src: url('../assets/fonts/ClearSans-Bold-webfont.eot');
-  src: url('../assets/fonts/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/ClearSans-Bold-webfont.woff') format('woff'),
-       url('../assets/fonts/ClearSans-Bold-webfont.ttf') format('truetype'),
-       url('../assets/fonts/ClearSans-Bold-webfont.svg#clear_sansbold') format('svg');
-  font-weight: bold;
-  font-style: normal;
+// Variables
+$dark-text-color: #333;
+
+// 62.5% * 16px = 10px base font size
+html { font-size: 62.5%; }
+
+body { 
+  font-size: 1.6rem;
+  font-family: "clear sans", sans-serif;
+  font-weight: 300;
+  color: $dark-text-color; 
+
+  @include breakpoint(mobileonly) {
+    font-size: 1.4rem;
+  }
 }
 
-@font-face {
-  font-family: 'clear sans';
-  src: url('../assets/fonts/ClearSans-Medium-webfont.eot');
-  src: url('../assets/fonts/ClearSans-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/ClearSans-Medium-webfont.woff') format('woff'),
-       url('../assets/fonts/ClearSans-Medium-webfont.ttf') format('truetype'),
-       url('../assets/fonts/ClearSans-Medium-webfont.svg#clear_sans_mediumregular') format('svg');
-  font-weight: medium;
-  font-style: normal;
+p {
+  font-size: 1.6rem;
+  font-family: "clear sans", sans-serif;
+  font-weight: 200;
+  line-height: 2.5rem;
+  color: $dark-text-color;
+  margin: 0 0 1rem;
 }
 
-
-@font-face {
-  font-family: 'clear sans';
-  src: url('../assets/fonts/ClearSans-Regular-webfont.eot');
-  src: url('../assets/fonts/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/ClearSans-Regular-webfont.woff') format('woff'),
-       url('../assets/fonts/ClearSans-Regular-webfont.ttf') format('truetype'),
-       url('../assets/fonts/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+h1 {
+  font-size: 2.4rem;
+  font-family: "clear sans", sans-serif;
+  font-weight: 300;
+  color: $dark-text-color;
 }
 
-@font-face {
-  font-family: 'clear sans';
-  src: url('../assets/fonts/ClearSans-Light-webfont.eot');
-  src: url('../assets/fonts/ClearSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/ClearSans-Light-webfont.woff') format('woff'),
-       url('../assets/fonts/ClearSans-Light-webfont.ttf') format('truetype'),
-       url('../assets/fonts/ClearSans-Light-webfont.svg#clear_sans_lightregular') format('svg');
-  font-weight: light;
-  font-style: normal;
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
 }
-
-
-
-@font-face {
-  font-family: 'clear sans';
-  src: url('../assets/fonts/ClearSans-Thin-webfont.eot');
-  src: url('../assets/fonts/ClearSans-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/ClearSans-Thin-webfont.woff') format('woff'),
-       url('../assets/fonts/ClearSans-Thin-webfont.ttf') format('truetype'),
-       url('../assets/fonts/ClearSans-Thin-webfont.svg#clear_sans_thinregular') format('svg');
-  font-weight: light;
-  font-style: normal;
-}
-

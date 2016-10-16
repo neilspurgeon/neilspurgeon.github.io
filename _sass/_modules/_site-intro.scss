@@ -1,0 +1,32 @@
+.site-intro {
+  position: relative;
+  height: 100vh;
+}
+
+.site-intro__text {
+  position: relative;
+  margin: 0 auto;
+  top: calc(50% - 1.5em);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 22px;
+  max-width: 25em;
+
+  @include breakpoint(mobileonly) {
+    // margin: 0 1.5em;
+    font-size: 1.7rem;
+  }
+
+}
+
+
+.site-intro__more {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.hand-pointer {
+  width: 33px;
+}
