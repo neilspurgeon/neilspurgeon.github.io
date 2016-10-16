@@ -3,6 +3,10 @@ header {
   z-index: 999;
   color: #FFF;
   mix-blend-mode: difference;
+
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
 }
 
 .site-title,
