@@ -18,6 +18,9 @@ header {
   text-align: center;
   mix-blend-mode: difference;
   color: #FFF;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
 
   @include breakpoint(mobileonly) {
     position: absolute;
