@@ -38,6 +38,9 @@
 
 .footer-message {
   font-weight: 100;
-  text-align: right;
   margin-bottom: 0;
+
+  @include breakpoint(laptop) {
+    text-align: right;
+  }
 }
