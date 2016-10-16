@@ -1,49 +1,8 @@
 header {
-  position: fixed;
+  // position: fixed;
   z-index: 999;
   color: #FFF;
   mix-blend-mode: difference;
-}
-
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  text-align: center;
-}
-
-.nav__row {
-  padding-left: 0;
-}
-
-.nav__list {
-  display: inline-block;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 300;
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -999; 
-  }
-}
-
-.nav__list.is-active {
-  a:after { border-bottom: 1px solid #FFF; }
-}
-
-.nav__list:hover {
-  a:after { border-bottom: 1px solid #FFF; }
 }
 
 .site-title,
@@ -55,6 +14,11 @@ header {
   text-align: center;
   mix-blend-mode: difference;
   color: #FFF;
+
+  @include breakpoint(mobileonly) {
+    position: absolute;
+    font-size: 1rem;
+  }
 }
 
 .site-title {
