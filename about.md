@@ -3,8 +3,45 @@ layout: about
 title: About
 permalink: /about/
 ---
-<div>
-  <img src="http://placehold.it/1000x600" />
-</div>
+<div class="grid grid--justify-center on-dark">
 
-<p class="about">Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.</p>
+  <div class="grid__col-md-6">
+    <h1>Interested in the intersection <br />
+    of design and technology.</h1>
+    <p class="p-about">Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.</p>
+
+    <div class="grid grid--full-width">
+
+      <div class="grid__col-12">
+        <h2>EDUCATION</h2>
+        <p>California Polytechnic State University<br />
+        San Luis Obispo, CA — BFA Art & Design</p>
+        <p>General Assembly <br />
+        San Francisco, CA — Web Development Immersive</p>
+      </div>
+
+      <div class="grid__col-md-6">
+        <h2>SKILLS</h2>
+        <p>UX + UI Design, Front End Web Development, Expierenced with Ruby on Rails & Node.js</p>
+      </div>
+
+      <div class="grid__col-md-6">
+        <h2>INTERESTS</h2>
+        <p>Art, Surfing, the Outdoors, Snowboarding, Technology, Architecture, Design, the Future</p>
+      </div>
+
+      <div class="grid__col-md-6">
+        <h2>INSPIRATION</h2>
+        <p>Anton Stankowski, Massimo Vignelli, Dieter Rams, NASA, Mario Hugo, Herb Lubalin, George Nelson, Stefan Sagmiester, Jasper Johns</p>
+      </div>
+
+      <div class="grid__col-md-6">
+        <h2>LISTENING TO</h2>
+        <p>Nicolas Jaar — Sirens<br />
+        Radiohead — A Moon Shaped Pool<br />
+        Chance the Rapper — Coloring Book</p>
+      </div>
+
+    </div>
+  </div>
+</div>
