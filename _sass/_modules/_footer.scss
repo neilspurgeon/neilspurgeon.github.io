@@ -6,7 +6,7 @@
   height: 225px;
   display: flex;
   align-items: center;
-  background-color: #000;
+  background-color: #171817;
   font-size: 1.4rem;
   color: #FFF;
 
@@ -37,7 +37,6 @@
 }
 
 .footer-message {
-  font-weight: 100;
   margin-bottom: 0;
 
   @include breakpoint(laptop) {
