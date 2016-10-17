@@ -8,6 +8,14 @@ var setNav = function () {
   if (page !== 'default') {
     setActive(page);
   }
+  if (page === 'about') {
+    setDarkTheme();
+  }
+};
+
+var setDarkTheme = function() {
+  $('#content-bg').css({'background-color': '#171817'});
+  $('html').css({'background-color': '#171817'});
 };
 
 $(document).ready(function() {
