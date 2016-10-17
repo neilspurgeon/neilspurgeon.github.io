@@ -22,12 +22,17 @@ img {
 .content-bg {
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 225px; 
+  margin-bottom: 225px;
   background-color: #FFF;
+  min-height: 100vh;
+
+  @include breakpoint(tablet) {
+    min-height: inherit;
+  }
 }
 
-body.project { 
-  // margin-top: 100px; 
+body.project {
+  // margin-top: 100px;
 
   @include breakpoint(tablet) {
     // margin-top: 30vh;
@@ -35,3 +40,5 @@ body.project {
 }
 
 body.default { margin-top: 100px; }
+
+body.about { margin-top: 100px; }
