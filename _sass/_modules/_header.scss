@@ -1,7 +1,7 @@
 .site-header {
   // position: fixed;
   z-index: 999;
-  color: #FFF;
+  color: $white;
   mix-blend-mode: difference;
 
   @include breakpoint(mobileonly) {
@@ -17,7 +17,7 @@
   font-weight: 700;
   text-align: center;
   mix-blend-mode: difference;
-  color: #FFF;
+  color: $white;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .2em;

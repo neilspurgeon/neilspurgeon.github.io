@@ -1,12 +1,12 @@
 // Variables
-$dark-text-color: #333;
+$charcoal: #333;
 
 .description__tags {
   list-style: none;
   padding: 0;
 
   & > li {
-    color: lighten($dark-text-color, 50%);
+    color: lighten($charcoal, 50%);
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 2.5rem;

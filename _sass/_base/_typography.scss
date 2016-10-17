@@ -1,7 +1,7 @@
 // Variables
-$white: #FFF;
+$white: #white;
 $charcoal: #171817;
-$dark-text-color: #333;
+$charcoal: #333;
 
 // 62.5% * 16px = 10px base font size
 html { font-size: 62.5%; }
@@ -10,7 +10,7 @@ body {
   font-size: 1.6rem;
   font-family: "clear sans", sans-serif;
   font-weight: 300;
-  color: $dark-text-color;
+  color: $charcoal;
 
   @include breakpoint(mobileonly) {
     font-size: 1.4rem;
@@ -22,7 +22,7 @@ p {
   font-family: "clear sans", sans-serif;
   font-weight: 200;
   line-height: 2.5rem;
-  color: $dark-text-color;
+  color: $charcoal;
   margin: 0 0 1rem;
 }
 
@@ -31,7 +31,7 @@ h1, .h1 {
   line-height: 4rem;
   font-family: "clear sans", sans-serif;
   font-weight: 200;
-  color: $dark-text-color;
+  color: $charcoal;
 }
 
 h2, .h2 {
@@ -56,7 +56,7 @@ h3, .h3 {
   h5, .h5,
   h6, .h6,
   p, .p {
-    color: #FFF;
+    color: $white;
   }
 
   p {
