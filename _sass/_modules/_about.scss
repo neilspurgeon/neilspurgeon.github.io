@@ -5,3 +5,15 @@ body.about {
     background-color: $charcoal;
   }
 }
+
+.about-bg {
+  position: fixed;
+  display: none;
+  background-color: $charcoal;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.about-content {
+  position: initial;
+}
