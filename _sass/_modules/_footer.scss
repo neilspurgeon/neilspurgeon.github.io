@@ -39,7 +39,7 @@
 .footer-message {
   margin-bottom: 0;
 
-  @include breakpoint(laptop) {
+  @include breakpoint(lg) {
     text-align: right;
   }
 }

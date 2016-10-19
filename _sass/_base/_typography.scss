@@ -11,7 +11,7 @@ body {
   font-weight: 300;
   color: $charcoal;
 
-  @include breakpoint(mobileonly) {
+  @include breakpoint(xsonly) {
     font-size: 1.4rem;
   }
 }

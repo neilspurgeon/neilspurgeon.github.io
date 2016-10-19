@@ -52,11 +52,11 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 .grid {
   margin: 0 auto;
 
-  @include breakpoint(mobile) {
+  @include breakpoint(xs) {
     max-width: calc(100% - 50px);
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(md) {
     max-width: calc(100% - 160px);
   }
 }

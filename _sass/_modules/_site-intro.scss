@@ -12,7 +12,7 @@
   font-size: 22px;
   max-width: 25em;
 
-  @include breakpoint(mobileonly) {
+  @include breakpoint(xsonly) {
     // margin: 0 1.5em;
     font-size: 1.7rem;
   }
