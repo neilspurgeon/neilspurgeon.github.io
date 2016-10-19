@@ -6,15 +6,15 @@
   height: 225px;
   display: flex;
   align-items: center;
-  background-color: #000;
+  background-color: $charcoal;
   font-size: 1.4rem;
-  color: #FFF;
+  color: $white;
 
   .grid {
     position: initial; //reset grid from fixed to normal flow
   }
 
-  h4 {
+  .h2 {
     margin-top: 0;
   }
 
@@ -31,16 +31,28 @@
 
   a {
     font-weight: 100;
-    color: #FFF;
+    color: $white;
     text-decoration: none;
   }
 }
 
 .footer-message {
-  font-weight: 100;
   margin-bottom: 0;
 
-  @include breakpoint(laptop) {
+  @include breakpoint(lg) {
     text-align: right;
   }
+}
+
+body.about {
+  // About uses a dark theme. Footer colors get inversed.
+  .site-footer {
+    background-color: $white;
+    color: $charcoal;
+
+    a {
+    color: $charcoal;
+    }
+  }
+
 }

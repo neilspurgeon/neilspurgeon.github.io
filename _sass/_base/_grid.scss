@@ -17,15 +17,15 @@ $reflex-max-width: 100% !default; // max-width of grid
 
 // Breakpoints
 // -------------------------
-$reflex-xs: 480px !default;
-$reflex-sm: 768px !default;
-$reflex-md: 992px !default;
-$reflex-lg: 1200px !default;
-$reflex-xlg: 1600px !default;
+$reflex-xs: $bp-xs;
+$reflex-sm: $bp-sm;
+$reflex-md: $bp-md;
+$reflex-lg: $bp-lg;
+$reflex-xlg: $bp-xl;
 
 // Spacing
 // -------------------------
-$reflex-grid-spacing:       1em !default;
+$reflex-grid-spacing:       1rem;
 
 $reflex-cell-spacing-sm:    ($reflex-grid-spacing / 2);
 $reflex-cell-spacing-md:    $reflex-grid-spacing;
@@ -39,7 +39,7 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 @import "../node_modules/reflex-grid/scss/reflex/helpers";
 
 
-// Overide Grid Fallback Positioning (WARNING!!! this may break in older browsers)
+// Overides (WARNING!!! this may break in older browsers)
 // -------------------------
 .#{$reflex-prefix}grid {
   position: inherit;
@@ -49,14 +49,22 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   position: inherit;
 }
 
-.grid { 
+.grid {
   margin: 0 auto;
 
-  @include breakpoint(mobile) {
+  @include breakpoint(xs) {
     max-width: calc(100% - 50px);
-  } 
-  
-  @include breakpoint(tablet) {
+  }
+
+  @include breakpoint(md) {
     max-width: calc(100% - 160px);
-  } 
+  }
+}
+
+// Added Classes
+// -------------------------
+.grid--full-width {
+  max-width: 100%;
+  margin-right: -$reflex-grid-spacing;
+  margin-left: -$reflex-grid-spacing;
 }

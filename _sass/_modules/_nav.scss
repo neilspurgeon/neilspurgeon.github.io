@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 9999;
   text-align: center;
-  color: white;
+  color: $white;
   mix-blend-mode: difference;
 }
 
@@ -22,6 +22,8 @@
   color: inherit;
   font-weight: 300;
   position: relative;
+  padding: 0 1  px;
+  margin: 0 5px;
 
   &:after {
     border-bottom: 0 solid #FFF;

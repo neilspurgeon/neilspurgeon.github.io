@@ -1,3 +1,7 @@
-p.about {
-  max-width: 40em;
+body.about {
+  margin-top: 100px;
+  // About uses a dark theme
+  .content-bg {
+    background-color: $charcoal;
+  }
 }

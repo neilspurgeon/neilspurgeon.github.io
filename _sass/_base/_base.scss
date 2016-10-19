@@ -14,7 +14,7 @@ img {
   width: calc(100% - 100px);
   margin: 0 auto;
 
-  @include breakpoint(laptop) {
+  @include breakpoint(lg) {
     width: 54em;
   }
 }
@@ -22,15 +22,12 @@ img {
 .content-bg {
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 225px; 
-  background-color: #FFF;
-}
+  margin-bottom: 225px;
+  background-color: $white;
+  min-height: 100vh;
 
-body.project { 
-  // margin-top: 100px; 
-
-  @include breakpoint(tablet) {
-    // margin-top: 30vh;
+  @include breakpoint(md) {
+    min-height: inherit;
   }
 }
 

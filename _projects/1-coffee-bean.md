@@ -3,8 +3,8 @@ layout: project
 title: "Rcloud"
 featured_image: /assets/featured-images/rcloud.jpg
 tags: ["Application Development", "UI/UX Design"]
-description: "<p>Designed and developed a single page application, that blends SoundCloud and Rdio's API's into one seamless music 
-database and player. Used Angular, Susy, SASS, and HTML to create the user interface while keeping the core music player functions 
+description: "<p>Designed and developed a single page application, that blends SoundCloud and Rdio's API's into one seamless music
+database and player. Used Angular, Susy, SASS, and HTML to create the user interface while keeping the core music player functions
 in Object-Oriented JavaScript. The app is designed and built mobile first and is fully responsive.</p>
 <p>Built with Ruby on Rails, PostgreSQL, AngularJS, Rdio, and SoundCloud.</p>
 <p><strike>View live at rcloud.io</strike></p>
@@ -13,7 +13,7 @@ in Object-Oriented JavaScript. The app is designed and built mobile first and is
 
 <div class="grid">
   <div class="grid__col-12">
-    <img src="http://placehold.it/1400x800" />
+    <img src="http://placehold.it/1400x800/333" />
   </div>
 
   <div class="grid__col-md-6">
@@ -30,7 +30,7 @@ in Object-Oriented JavaScript. The app is designed and built mobile first and is
 
 </div>
 
-<img src="http://placehold.it/1400x800" />
+<img src="http://placehold.it/1400x800/111" />
 
 <div class="grid">
   <div class="grid__col-12">

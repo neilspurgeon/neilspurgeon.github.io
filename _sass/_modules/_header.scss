@@ -1,30 +1,28 @@
 .site-header {
-  // position: fixed;
-  z-index: 999;
-  color: #FFF;
-  mix-blend-mode: difference;
+  display: none;
 
-  @include breakpoint(mobileonly) {
-    display: none;
+  @include breakpoint(xs) {
+    display: inline;
+    z-index: 999;
+    color: $white;
+    mix-blend-mode: difference;
   }
 }
 
 .site-title,
 .site-description {
-  display: block;
-  position: fixed;
-  top: 50%;
-  font-weight: 700;
-  text-align: center;
-  mix-blend-mode: difference;
-  color: #FFF;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .2em;
+  font-size: 1rem;
 
-  @include breakpoint(mobileonly) {
-    position: absolute;
-    font-size: 1rem;
+  @include breakpoint(xs) {
+    position: fixed;
+    top: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+    mix-blend-mode: difference;
+    color: $white;
   }
 }
 
