@@ -21,3 +21,8 @@ $(document).ready(function() {
   console.log('app.js running...');
   setNav();
 });
+
+$(function() {
+    $('#content-bg').removeClass('fade-out');
+    $('footer').removeClass('fade-out');
+});
