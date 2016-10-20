@@ -11,3 +11,9 @@
     letter-spacing: .05em;
   }
 }
+
+.project-hero {
+  padding-bottom: 57.14285714%; // ratio = height / width
+  height:0;
+  overflow: hidden;
+}
