@@ -21,27 +21,3 @@ $(document).ready(function() {
   console.log('app.js running...');
   setNav();
 });
-
-$('#about').on('click', function(e) {
-  e.preventDefault();
-
-  // trigger about overlay
-  $('#about-overlay').fadeIn('10000', function() {
-    setActive('about');
-  })
-})
-
-$('#work').on('click', function(e) {
-  e.preventDefault();
-
-  // close about overlay and switch to index
-  $('#about-overlay').fadeOut('10000', function() {
-    setActive('work');
-
-    // redirect to home page unless already on the page
-    if (window.location.pathname !== '/') {
-      window.location = '/'
-    }
-
-  })
-})
