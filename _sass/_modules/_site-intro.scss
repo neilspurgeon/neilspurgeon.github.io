@@ -6,8 +6,8 @@
 .site-intro__text {
   position: relative;
   margin: 0 auto;
-  top: calc(50% - 1.5em);
-  transform: translateY(-50%);
+  top: calc(50% - 1em);
+  height: 0;
   text-align: center;
   font-size: 22px;
   max-width: 25em;
