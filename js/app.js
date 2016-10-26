@@ -17,12 +17,9 @@ var setDarkTheme = function() {
   $('html').css({'background-color': '#171817'});
 };
 
-$(document).ready(function() {
+$(function() {
   console.log('app.js running...');
   setNav();
-});
-
-$(function() {
-    $('#content-bg').removeClass('fade-out');
-    $('footer').removeClass('fade-out');
+  $('#content-bg').removeClass('fade-out');
+  $('footer').removeClass('fade-out');
 });
