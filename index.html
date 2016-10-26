@@ -1,9 +1,12 @@
 ---
 layout: home
+custom_js:
+  - vendor/pixi.min.js
+  - hero.js
 ---
 
 <div class="grid grid--align-center grid--justify-space-between project-grid-row">
-    
+
     <a class="grid__col-sm-7 project-tile" href="{{ '1-coffee-bean' | prepend: site.baseurl }}">
       <img src="http://placehold.it/750x500/ff0"/>
       <span class="project-tile__title project-tile__title__right">The Coffee Bean & Tea Leaf</span>
@@ -17,7 +20,7 @@ layout: home
 </div>
 
 <div class="grid grid--align-center grid--justify-space-between project-grid-row">
-    
+
     <a class="grid__col-sm-3 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
       <img src="http://placehold.it/300x375/0ff"/>
       <span class="project-tile__title project-tile__title__right">Lee Williams</span>
@@ -31,7 +34,7 @@ layout: home
 </div>
 
 <div class="grid grid--align-center grid--justify-space-between project-grid-row">
-    
+
     <a class="grid__col-sm-6 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
       <img src="http://placehold.it/500x500"/>
       <span class="project-tile__title project-tile__title__bottom">Red Bull</span>

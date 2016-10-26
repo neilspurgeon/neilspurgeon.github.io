@@ -26,5 +26,10 @@
 
 </footer>
 
+{% if page.custom_js %}
+  {% for script in page.custom_js %}
+     <script src="/js/{{ script | prepend: site.baseurl }}"></script>
+  {% endfor %}
+{% endif %}
+
 <script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/vendor/pixi.min.js" | prepend: site.baseurl }}"></script>
