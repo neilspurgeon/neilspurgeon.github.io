@@ -19,7 +19,8 @@ function interactiveHero() {
 
     // assign sprite to
     welcomeText = new PIXI.Sprite(resources.welcomeText.texture);
-
+    welcomeText.scale.x = .5;
+    welcomeText.scale.y = .5;
     // set texture position
     var welcomeTextWidth = welcomeText.width;
     var welcomeTextHeight = welcomeText.height;
@@ -29,6 +30,28 @@ function interactiveHero() {
 
     // add texture to DOM
     stage.addChild(welcomeText);
+
+    var displacementSprite = PIXI.Sprite.fromImage('/assets/home-hero/displace.png');
+    var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite)
+
+    stage.addChild(displacementSprite);
+    stage.filters = [displacementFilter];
+
+    displacementFilter.scale.x = 110;
+    displacementFilter.scale.y = 110;
+
+
+    // Move displacement fitler with mouse
+    stage
+        .on('mousemove', onPointerMove)
+        .on('touchmove', onPointerMove);
+
+    function onPointerMove(eventData) {
+      console.log('mouse move')
+
+      displacementSprite.x = eventData.data.global.x;
+      displacementSprite.y = eventData.data.global.y;
+    }
 
     // init animation
     animate();
