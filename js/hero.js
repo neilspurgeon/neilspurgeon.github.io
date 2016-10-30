@@ -1,9 +1,7 @@
 function interactiveHero() {
-  var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight,
-    {
-      transparent : true,
-      autoResize : true
-    });
+  var renderer = new PIXI.WebGLRenderer(window.innerWidth, window.innerHeight, {
+    transparent : true
+  })
 
   // insert stage (canvas element) into DOM
   $('#site-intro').append(renderer.view)
@@ -14,9 +12,6 @@ function interactiveHero() {
 
   var container = new PIXI.Container();
   stage.addChild(container);
-
-  // container.scale.x = 1;
-  // container.scale.y = 1;
 
   PIXI.loader
     .add([
@@ -30,9 +25,23 @@ function interactiveHero() {
       PIXI.loader.resources['/assets/home-hero/welcome.png'].texture
     );
 
-    welcomeText.y = (window.innerHeight / 2) - (welcomeText.height / 2);
-    welcomeText.x = (window.innerWidth / 2) - (welcomeText.width / 2);
+    // get window size
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
 
+    // find amount to scale image
+    var imgScale = windowWidth / welcomeText.width;
+
+    // resize image to width of screen
+    welcomeText.height = welcomeText.height * imgScale;
+    welcomeText.width = welcomeText.width * imgScale;
+
+    // set sprite's position to center of window
+    welcomeText.x = (windowWidth / 2) - (welcomeText.width / 2);
+    welcomeText.y = (windowHeight / 2) - (welcomeText.height / 2);
+
+    console.log(welcomeText.width)
+    // add sprite to DOM
     container.addChild(welcomeText);
 
     var displacementSprite = new PIXI.Sprite(
@@ -41,12 +50,16 @@ function interactiveHero() {
 
     var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
 
-    stage.addChild(displacementSprite);
-
     container.filters = [displacementFilter];
+
+    // set sprite's scale
     displacementFilter.scale.x = 110;
     displacementFilter.scale.y = 110;
 
+    // add sprite to DOM
+    stage.addChild(displacementSprite);
+
+    // trigger function when mouse moves or touched
     stage
         .on('mousemove', onPointerMove)
         .on('touchmove', onPointerMove);
@@ -54,6 +67,26 @@ function interactiveHero() {
     function onPointerMove(eventData) {
         displacementSprite.x = eventData.data.global.x - 100;
         displacementSprite.y = eventData.data.global.y - displacementSprite.height /2;
+    }
+
+    // Resize renderer and re-center background image on window resize
+    window.onresize = function (event){
+      windowWidth = window.innerWidth;
+      windowHeight = window.innerHeight;
+
+      // resize renderer to window
+      renderer.resize(windowWidth,windowHeight);
+
+      // find amount to scale image
+      imgScale = windowWidth / welcomeText.width;
+
+      // resize image to width of screen
+      welcomeText.height = welcomeText.height * imgScale;
+      welcomeText.width = welcomeText.width * imgScale;
+
+      // reposition the image to screen center
+      welcomeText.x = (windowWidth / 2) - (welcomeText.width / 2);
+      welcomeText.y = (windowHeight / 2) - (welcomeText.height / 2);
     }
   }
 
