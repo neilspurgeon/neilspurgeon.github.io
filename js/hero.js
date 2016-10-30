@@ -6,61 +6,63 @@ function interactiveHero() {
     });
 
   // insert stage (canvas element) into DOM
-  $('.site-intro').append(renderer.view)
+  $('#site-intro').append(renderer.view)
 
   // create root container to hold the scene
   var stage = new PIXI.Container();
   stage.interactive = true;
 
-  // declare global variable for the sprite so that animate() can access it
-  var welcomeText;
+  var container = new PIXI.Container();
+  stage.addChild(container);
 
-  PIXI.loader.add('welcomeText', '/assets/home-hero/welcome.png').load(function (loader, resources) {
+  // container.scale.x = 1;
+  // container.scale.y = 1;
 
-    // assign sprite to
-    welcomeText = new PIXI.Sprite(resources.welcomeText.texture);
-    welcomeText.scale.x = .5;
-    welcomeText.scale.y = .5;
-    // set texture position
-    var welcomeTextWidth = welcomeText.width;
-    var welcomeTextHeight = welcomeText.height;
+  PIXI.loader
+    .add([
+      '/assets/home-hero/welcome.png',
+      '/assets/home-hero/displace.png'
+      ])
+    .load(setup);
+
+  function setup() {
+    var welcomeText = new PIXI.Sprite(
+      PIXI.loader.resources['/assets/home-hero/welcome.png'].texture
+    );
 
     welcomeText.y = (window.innerHeight / 2) - (welcomeText.height / 2);
     welcomeText.x = (window.innerWidth / 2) - (welcomeText.width / 2);
 
-    // add texture to DOM
-    stage.addChild(welcomeText);
+    container.addChild(welcomeText);
 
-    var displacementSprite = PIXI.Sprite.fromImage('/assets/home-hero/displace.png');
-    var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite)
+    var displacementSprite = new PIXI.Sprite(
+      PIXI.loader.resources['/assets/home-hero/displace.png'].texture
+    );
+
+    var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
 
     stage.addChild(displacementSprite);
-    stage.filters = [displacementFilter];
 
+    container.filters = [displacementFilter];
     displacementFilter.scale.x = 110;
     displacementFilter.scale.y = 110;
 
-
-    // Move displacement fitler with mouse
     stage
         .on('mousemove', onPointerMove)
         .on('touchmove', onPointerMove);
 
     function onPointerMove(eventData) {
-      console.log('mouse move')
-
-      displacementSprite.x = eventData.data.global.x;
-      displacementSprite.y = eventData.data.global.y;
+        displacementSprite.x = eventData.data.global.x - 100;
+        displacementSprite.y = eventData.data.global.y - displacementSprite.height /2;
     }
+  }
 
-    // init animation
-    animate();
+  animate();
 
-    function animate() {
-      renderer.render(stage);
-      requestAnimationFrame(animate);
-    }
-  })
+  function animate() {
+    renderer.render(stage);
+    requestAnimationFrame(animate);
+  }
 }
 
 $(function(){
