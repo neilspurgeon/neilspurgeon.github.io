@@ -21,13 +21,12 @@ img {
 
 .content-bg {
   width: 100%;
-  min-height: 100vh;
   margin-bottom: 225px;
   background-color: $white;
   min-height: 100vh;
 
   @include breakpoint(md) {
-    min-height: inherit;
+    // min-height: 100vh;
   }
 }
 
