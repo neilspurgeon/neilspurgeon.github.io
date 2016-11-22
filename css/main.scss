@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import 
+@import
   // Import Base
   "_base/normalize",
   "_base/config",
@@ -15,6 +15,7 @@
   "_base/base.scss",
 
   // Import Modules
+  "_modules/links",
   "_modules/header",
   "_modules/nav",
   "_modules/site-intro",
