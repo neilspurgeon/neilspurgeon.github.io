@@ -19,12 +19,22 @@
 
 }
 
-
 .site-intro__more {
   position: absolute;
   bottom: 1em;
   width: 100%;
   text-align: center;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  10% { transform: translateY(-10px); }
+  20% { transform: translateY(0) }
+}
+
+.bounce {
+  animation: bounce 5s ease-out;
+  animation-iteration-count: infinite;
 }
 
 .hand-pointer {
