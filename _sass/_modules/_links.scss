@@ -1,4 +1,4 @@
-.underline-left-to-right {
+.hover-underline {
   position: relative;
   &:after {
     content: '';
@@ -11,5 +11,13 @@
   }
   &:hover:after {
     width: 100%;
+  }
+}
+
+.hover-enlarge {
+  transition: .1s ease all;
+
+  &:hover {
+    transform: scale(1.03);
   }
 }
