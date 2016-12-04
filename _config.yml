@@ -19,4 +19,4 @@ markdown: kramdown
 collections:
   projects:
     output: true
-    permalink: "/:title/"
+    permalink: "/:permalink"

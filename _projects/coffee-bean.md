@@ -1,6 +1,7 @@
 ---
 layout: project
-title: "Rcloud"
+permalink: coffee-bean
+title: "Coffee Bean"
 featured_image: /assets/featured-images/rcloud.jpg
 tags: ["Application Development", "UI/UX Design"]
 description: "<p>Designed and developed a single page application, that blends SoundCloud and Rdio's API's into one seamless music
