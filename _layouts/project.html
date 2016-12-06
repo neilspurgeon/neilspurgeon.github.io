@@ -6,29 +6,37 @@ layout: default
     <img src="{{ page.hero_image }}" />
   </div>
 
-  <header class="grid">
+  <header class="grid grid--justify-space-between project-header">
     <div class="grid__col-12">
-
       <h1 class="project__title"  >{{ page.title }}</h1>
     </div>
 
     <div class="grid__col-md-6">
+      <h2 class="h2">Description</h2>
       {{ page.description }}
     </div>
 
-    <div class="grid__col-md-3">
-      {% if page.tags %}
-      <ul class="description__tags">
-      {% for tag in page.tags %}
-        <li>{{ tag }}</li>
-      {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
+    {% if page.tags %}
+      <div class="grid__col-md-2">
+        <h2 class="h2">Role / Tags</h2>
+        <ul class="description__tags">
+        {% for tag in page.tags %}
+          <li class="list-item">{{ tag }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
-    <div class="grid__col-md-3">
-      Credits
-    </div>
+    {% if page.credits %}
+      <div class="grid__col-md-3">
+        <h2 class="h2">Credits</h2>
+          <ul class="description__credits">
+            {% for credit in page.credits %}
+              <li class="list-item">{{ credit }}</li>
+            {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
   </header>
 

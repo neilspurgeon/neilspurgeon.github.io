@@ -1,19 +1,24 @@
-.description__tags {
+.project__title {
+  margin: 0;
+}
+
+.description__tags,
+.description__credits {
   list-style: none;
   padding: 0;
-
-  & > li {
-    color: lighten($charcoal, 50%);
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-  }
+  margin: 0;
 }
 
 .project-hero {
   padding-bottom: 57.14285714%; // ratio = height / width
   height:0;
   overflow: hidden;
+}
+
+.project-header {
+  padding: 35px 0;
+
+  @include breakpoint(sm) {
+    padding: 75px 0;
+  }
 }
