@@ -1,18 +1,13 @@
+$margin-top: 100px;
+
 body.about {
-  margin-top: 100px;
+  margin-top: $margin-top;
 
   // About uses a dark theme
   .content-bg {
     background-color: $charcoal;
+    min-height: calc(100vh - #{$margin-top})
   }
-}
-
-.about-bg {
-  position: fixed;
-  display: none;
-  background-color: $charcoal;
-  overflow-y: scroll;
-  height: 100vh;
 }
 
 .about-content {
