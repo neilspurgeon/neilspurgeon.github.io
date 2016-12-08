@@ -4,6 +4,7 @@
   @include breakpoint(xs) {
     display: inline;
     z-index: 999;
+    position: fixed;
     color: $white;
     mix-blend-mode: difference;
   }
@@ -21,8 +22,6 @@
     text-transform: uppercase;
     letter-spacing: .2em;
     text-align: center;
-    mix-blend-mode: difference;
-    color: $white;
   }
 }
 
