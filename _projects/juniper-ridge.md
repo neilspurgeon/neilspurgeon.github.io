@@ -12,6 +12,10 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
 
 <div class="grid">
 
+  <div class="grid__col-12">
+    <img src="/assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg" />
+  </div>
+
   <div class="grid__col-md-6">
     <img src="/assets/projects/juniper-ridge/jr-mojave-1.jpg"/>
   </div>
