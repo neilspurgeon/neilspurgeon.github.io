@@ -68,3 +68,9 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   margin-right: -$reflex-grid-spacing;
   margin-left: -$reflex-grid-spacing;
 }
+
+
+// Overides and added classes
+.grid__col--bleed-bottom {
+  padding-bottom: 0;
+}

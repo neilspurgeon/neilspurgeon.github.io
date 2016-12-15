@@ -36,7 +36,7 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
     <img src="/assets/projects/juniper-ridge/jr-smudges-1.jpg" />
   </div>
 
-  <div class="grid__col-12">
+  <div class="grid__col-12 grid__col--bleed-bottom">
     <img src="/assets/projects/juniper-ridge/jr-christmas-fur-set-1.jpg" />
   </div>
 
