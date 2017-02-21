@@ -20,6 +20,18 @@ var setDarkTheme = function() {
 $(document).ready(function() {
   console.log('app.js running...');
   setNav();
+
+  var menuBtn = document.getElementById('menu-btn');
+  var menu = document.getElementById('primary-nav');
+
+  menuBtn.onclick = function() {
+    document.activeElement.blur();
+    if (menu.classList.contains('is-open')) {
+      menu.classList.remove('is-open');
+    } else {
+      menu.classList.add('is-open');
+    }
+  }
 });
 
 $(function() {

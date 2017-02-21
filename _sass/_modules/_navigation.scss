@@ -1,0 +1,137 @@
+$dark-color: #14141E;
+$white: #FFF;
+$container-width-lg: 90%;
+$outer-padding: 30px;
+$max-width: 1560px;
+
+.site-title {
+  position: fixed;
+  top: $outer-padding;
+  left: #{(100% - $container-width-lg) / 2};
+  z-index: 9999;
+  color: $dark-color;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 1rem;
+
+  // @include breakpoint($max-width) {
+  //   left: calc((100vw - 1560px) / 2);
+  // }
+}
+
+.site-byline {
+  transform: rotate(90deg);
+  transform-origin: right top;
+  position: fixed;
+  right: #{(100% - $container-width-lg) / 2};
+  bottom: $outer-padding;
+  z-index: 9999;
+  color: $dark-color;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 1rem;
+
+  // @include breakpoint($max-width) {
+  //   right: calc((100vw - 1560px) / 2);
+  // }
+}
+
+.menu-btn {
+  border: none;
+  position: fixed;
+  top: $outer-padding;
+  right: #{(100% - $container-width-lg) / 2};
+  z-index: 9999;
+  padding: 0;
+  background: none;
+  margin: 0 1rem 0 0;
+  padding: 0;
+  font-size: 0;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+
+  // @include breakpoint($max-width) {
+  //   right: calc((100vw - 1560px) / 2);
+  // }
+
+  &:focus {
+    outline: none;
+    // opacity: .9;
+  }
+}
+
+.primary-nav {
+  position: fixed;
+  right: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: $dark-color;
+  overflow: auto;
+  padding-top: 120px;
+  z-index: 9998;
+  transform: translateX(500px);
+  transition: .2s ease all;
+}
+
+.primary-nav.is-open {
+  transform: translateX(0);
+}
+
+.project-item {
+  text-decoration: none;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.primary-nav__section-title {
+  color: $white;
+  // border-bottom: 3px solid $white;
+
+  &:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-top: 10px;
+    background-color: $white;
+  }
+}
+
+.primary-nav__section-title--page {
+  display: block;
+  margin-top: 60px;
+
+  &:after {
+    background-image: url('../assets/images/link-arrow.svg');
+    width: 14px;
+    height: 7px;
+    margin-left: 10px;
+    background-color: transparent;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+  }
+}
+
+.project-item__title {
+  color: $white;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  margin: 1.5em 0 .5em;
+}
+
+.project-item__description {
+  color: $white;
+  font-size: 14px;
+  opacity: .7;
+
+}

@@ -1,10 +1,20 @@
-<nav class="nav">
-  <ul class="nav__row">
-    <li class="nav__list is-active" id="work">
-      <a class="nav__link" href="/">Work</a>
-    </li>
-    <li class="nav__list" id="about">
-      <a class="nav__link" href="/about">About</a>
-    </li>
+<nav id="primary-nav" class="primary-nav">
+  <ul>
+
+    <h2 class="primary-nav__section-title">Work</h2>
+
+    {% for project in site.projects %}
+
+      <li class="project-item">
+        <a href="{{ project.url }}">
+          <h3 class="project-item__title">{{ project.title }}</h3>
+          <p class="project-item__description">{{ project.description_preview }}</p>
+        </a>
+      </li>
+
+    {% endfor %}
+
+    <a class="h2 primary-nav__section-title primary-nav__section-title--page">About</a>
+
   </ul>
 </nav>

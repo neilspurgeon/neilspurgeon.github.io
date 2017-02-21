@@ -1,0 +1,16 @@
+.site-intro {
+  height: 100vh;
+  max-width: 33em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.site-intro__text {
+
+}
+
+.site-intro__arrow {
+  padding-top: 20vh;
+  margin-bottom: -20vh;
+}

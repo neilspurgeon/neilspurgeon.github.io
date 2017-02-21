@@ -14,10 +14,19 @@
   }
 }
 
-.hover-enlarge {
-  transition: .1s ease all;
+// .hover-enlarge {
+//   transition: .1s ease all;
 
-  &:hover {
-    transform: scale(1.03);
-  }
+//   &:hover {
+//     transform: scale(1.03);
+//   }
+// }
+
+.secondary-link {
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: 1.4rem;
+  color: #000;
+
+  &:hover {}
 }

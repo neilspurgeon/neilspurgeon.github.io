@@ -6,6 +6,7 @@ featured_image: /assets/projects/fresh-step/fresh-step-hero-2.png/
 hero_image: /assets/projects/fresh-step/fresh-step-iphones-iso-grid.jpg
 tags: ["UI Design"]
 credits: ["Photography: Jordan Vogua", "Art Direction: Rich Hansen"]
+description_preview: "Lorem ipsum dolor site amet ton asd aser yurt."
 description: "<p>Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand.
 Redesigned packaging for their complete line including Trail Soap, Backpacker's Cologne, Cabin Spray, Campfire Incense and Smudge's.</p>"
 ---
