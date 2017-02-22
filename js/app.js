@@ -28,8 +28,10 @@ $(document).ready(function() {
     document.activeElement.blur();
     if (menu.classList.contains('is-open')) {
       menu.classList.remove('is-open');
+      menuBtn.classList.remove('is-open');
     } else {
       menu.classList.add('is-open');
+      menuBtn.classList.add('is-open');
     }
   }
 });
