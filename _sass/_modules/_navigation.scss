@@ -1,4 +1,4 @@
-$dark-color: #14141E;
+$dark-color: #141419;
 $white: #FFF;
 $container-width-lg: 90%;
 $outer-padding: 30px;
@@ -91,13 +91,14 @@ $max-width: 1560px;
   opacity: 0;
   // transition-property: ease;
   transition-duration: .2s;
-  transition-delay: .1s;
+  transition-delay: 0s;
 }
 
+.closed-menu { opacity: 1; }
+
 .menu-btn.is-open {
-  .opened-menu {
-    opacity: 1;
-  }
+  .opened-menu { opacity: 1; }
+  .closed-menu { opacity: 0; }
 }
 
 .menu-btn.is-open {
