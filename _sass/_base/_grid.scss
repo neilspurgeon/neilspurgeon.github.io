@@ -58,6 +58,7 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
   @include breakpoint(md) {
     // max-width: calc(100% - 160px);
+    max-width: 1560px;
   }
 }
 

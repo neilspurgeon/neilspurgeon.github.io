@@ -11,13 +11,13 @@ img {
 }
 
 .container {
-  position: relative;
-  width: 90%;
+  // position: relative;
+  // width: 90%;
   // max-width: 1560px;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   @include breakpoint(lg) {
-    width: 90%;
+    // width: 90%;
   }
 }
 
