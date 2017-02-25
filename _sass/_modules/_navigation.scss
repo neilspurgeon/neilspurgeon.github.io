@@ -69,7 +69,7 @@ $max-width: 1560px;
     transition: .2s ease all;
   }
 
-  &:hover {
+  &:hover :active {
     .closed-menu__top {
       x: 11;
       width: 18px;
