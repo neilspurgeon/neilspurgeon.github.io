@@ -14,11 +14,17 @@
   }
 }
 
+.hover-underline--on-light:after {
+  border-bottom: 1px solid #000;
+}
+
 .secondary-link {
   text-decoration: none;
   letter-spacing: 0;
   font-size: 1.4rem;
+  font-weight: 300;
   color: #000;
+  opacity: .6;
 
   &:hover {}
 }
