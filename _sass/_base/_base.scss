@@ -1,5 +1,6 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
+  /* apply a natural box layout model to all elements, but allowing components to change */
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -34,20 +35,6 @@ img {
 
 body.default { margin-top: 100px; }
 
-
-// Transition fade between pages
-.content-bg,
-.site-footer {
-    opacity: 1;
-    transition: 1s opacity;
-}
-.content-bg.fade-out,
-.site-footer.fade-out {
-    opacity: 0;
-    transition: none;
-}
-
-// Footer needs to fade in after main content
-.site-footer {
-  transition-delay: 1s;
+.main-content-wrapper {
+  min-height: calc(100vh - 100px);
 }

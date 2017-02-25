@@ -14,7 +14,7 @@ var setNav = function () {
 };
 
 var setDarkTheme = function() {
-  $('html').css({'background-color': '#171817'});
+  // $('html').css({'background-color': '#171817'});
 };
 
 $(document).ready(function() {
