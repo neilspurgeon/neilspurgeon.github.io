@@ -3,6 +3,9 @@ layout: project
 permalink: fresh-step
 title: "Fresh Step Redesign"
 featured_image: /assets/projects/fresh-step/fresh-step-hero-2.png/
+featured_image_size:
+  height: 40vmax
+  column_width: 7
 hero_image: /assets/projects/fresh-step/fresh-step-iphones-iso-grid.jpg
 tags: ["UI Design"]
 credits: ["Photography: Jordan Vogua", "Art Direction: Rich Hansen"]

@@ -3,6 +3,9 @@ layout: project
 permalink: red-bull-metro
 title: "Red Bull"
 featured_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg/
+featured_image_size:
+  height: 60vmax
+  column_width: 7
 hero_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg
 tags: ["UI Design", "UX Design"]
 credits: ["Photography: Red Bull"]

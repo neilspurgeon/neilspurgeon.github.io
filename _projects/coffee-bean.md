@@ -3,6 +3,9 @@ layout: project
 permalink: coffee-bean
 title: "Coffee Bean"
 featured_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
+featured_image_size:
+  height: 50vmax
+  column_width: 7
 hero_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
 tags: ["Application Development", "UI/UX Design"]
 description_preview: "Lorem ipsum dolor site amet ton asd aser yurt."

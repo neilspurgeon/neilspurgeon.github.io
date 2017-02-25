@@ -3,6 +3,9 @@ layout: project
 permalink: juniper-ridge
 title: "Juniper Ridge"
 featured_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg/
+featured_image_size:
+  height: 30vmax
+  column_width: 7
 hero_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg
 tags: ["Packaging Design", "Print Design", "Branding"]
 credits: ["Photography: Jordan Vogua", "Art Direction: Rich Hansen"]

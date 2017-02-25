@@ -1,15 +1,15 @@
 ---
 layout: home
 ---
-<div class="grid">
 
   {% for project in site.projects %}
-    <a class="project-card  grid__col-sm-6" href="{{ project.permalink }}">
+  <div class="grid {% cycle '', 'grid--justify-end' %}">
+    <a class="project-card  grid__col-sm-{{ project.featured_image_size.column_width }}" href="{{ project.permalink }}" style="height: {{ project.featured_image_size.height }}">
       <div class="hover-zoom">
         <div class="hover-zoom__image" style="background-image: url({{ project.featured_image }});"></div>
       </div>
       {{ project.title }}
     </a>
+    </div>
   {% endfor %}
 
-</div>
