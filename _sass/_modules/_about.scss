@@ -1,15 +1,16 @@
 $margin-top: 100px;
+$dark-color: #141419;
 
 body.about {
-  margin-top: $margin-top;
+  // margin-top: $margin-top;
 
   // About uses a dark theme
   .content-bg {
-    background-color: $charcoal;
-    min-height: calc(100vh - #{$margin-top})
+    // background-color: $dark-color;
+    // min-height: calc(100vh - #{$margin-top})
   }
 }
 
 .about-content {
-  position: initial;
+  // position: initial;
 }
