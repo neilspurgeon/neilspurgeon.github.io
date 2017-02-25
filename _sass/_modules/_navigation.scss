@@ -69,19 +69,19 @@ $max-width: 1560px;
     transition: .2s ease all;
   }
 
-  &:hover :active {
+  &:hover, &:active {
     .closed-menu__top {
-      x: 11;
+      x: 11px;
       width: 18px;
     }
 
     .closed-menu__middle {
-      x: 16;
+      x: 16px;
       width: 13px;
     }
 
     .closed-menu__bottom {
-      x: 7;
+      x: 7px;
       width: 22px;
     }
   }
@@ -108,9 +108,9 @@ $max-width: 1560px;
     width: 0;
   }
 
-  .closed-menu__top {x: 0}
-  .closed-menu__middle {x: 22}
-  .closed-menu__bottom {x: 0}
+  .closed-menu__top {x: 0px}
+  .closed-menu__middle {x: 22px}
+  .closed-menu__bottom {x: 0px}
 }
 
 .primary-nav {
