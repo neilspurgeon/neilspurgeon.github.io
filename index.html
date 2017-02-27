@@ -4,12 +4,20 @@ layout: home
 
   {% for project in site.projects %}
   <div class="grid {% cycle '', 'grid--justify-end' %}">
-    <a class="project-card  grid__col-sm-{{ project.featured_image_size.column_width }}" href="{{ project.permalink }}" style="height: {{ project.featured_image_size.height }}">
-      <div class="hover-zoom">
-        <div class="hover-zoom__image" style="background-image: url({{ project.featured_image }});"></div>
+
+    <div class="project-card grid__col-sm-{{ project.featured_image_size.column_width }}">
+
+      <a class="project-card__image" href="{{ project.permalink }}" style="height: {{ project.featured_image_size.height }}">
+        <div class="hover-zoom">
+          <div class="hover-zoom__image" style="background-image: url({{ project.featured_image }});"></div>
+        </div>
+      </a>
+
+      <div class="project-card__footer">
+        <h2 class="project-card__title"><a class="hover-underline">{{ project.title }}</a></h2>
       </div>
-      {{ project.title }}
-    </a>
+
     </div>
+  </div>
   {% endfor %}
 

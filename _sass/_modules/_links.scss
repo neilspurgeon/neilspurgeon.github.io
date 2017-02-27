@@ -4,18 +4,20 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 0%;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #000;
     transition: .4s;
   }
   &:hover:after {
     width: 100%;
+    left: 0;
+    right: auto;
   }
 }
 
-.hover-underline--on-light:after {
-  border-bottom: 1px solid #000;
+.hover-underline--on-dark:after {
+  border-bottom: 1px solid #FFF;
 }
 
 .secondary-link {

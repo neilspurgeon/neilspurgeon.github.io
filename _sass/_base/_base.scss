@@ -22,18 +22,13 @@ img {
   }
 }
 
-.content-bg {
-  width: 100%;
-  margin-bottom: 225px;
-  background-color: $white;
-  min-height: 100vh;
+body.default {
+  margin-top: 100px;
 
   @include breakpoint(md) {
-    // min-height: 100vh;
+    margin-top: 200px;
   }
 }
-
-body.default { margin-top: 200px; }
 
 .main-content-wrapper {
   min-height: calc(100vh - 200px);

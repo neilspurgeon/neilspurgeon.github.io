@@ -19,13 +19,28 @@
 }
 
 .project-card {
-  position: relative;
-  // width: 25vmax;
-  height: 30vmax;
-  display: flex;
-  // box-shadow: 0 15px 40px -20px rgba(0,0,0,.6);
+
+
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 100px;
 }
 
-.project-card__text {
-  // position: absolute;
+.project-card__image {
+  // position: relative;
+  height: 30vmax;
+}
+
+.project-card__title {
+  margin:0 ;
+  font-weight: 300;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.project-card__footer {
+  margin-top: 10px;
 }
