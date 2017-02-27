@@ -1,8 +1,9 @@
 .hover-zoom {
   display: block;
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   overflow: hidden;
+  background: blue;
 }
 
 
@@ -11,11 +12,14 @@
   height: 100%;
   background-position: center;
   background-size: cover;
-  transition: 4s ease all;
+  transition: .3s ease all;
+  transform: scale(1.1);
+  // overflow: hidden;
+  display: block;
 }
 
 .hover-zoom:hover .hover-zoom__image {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .project-card {
@@ -27,8 +31,9 @@
 }
 
 .project-card__image {
+  overflow: hidden;
   // position: relative;
-  height: 30vmax;
+  // height: 30vmax;
 }
 
 .project-card__title {
