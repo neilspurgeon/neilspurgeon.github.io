@@ -11,11 +11,15 @@ layout: home
         <div class="hover-zoom">
           <img class="hover-zoom__image" src="{{ project.featured_image }}"/>
         </div>
+
+        <div class="project-card__footer">
+          <h2 class="project-card__title ">{{ project.title }}</h2>
+        </div>
       </a>
 
-      <div class="project-card__footer">
+{% comment %}      <div class="project-card__footer">
         <h2 class="project-card__title"><a class="hover-underline">{{ project.title }}</a></h2>
-      </div>
+      </div>{% endcomment %}
 
     </div>
   </div>

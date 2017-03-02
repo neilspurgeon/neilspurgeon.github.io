@@ -18,7 +18,7 @@
   display: block;
 }
 
-.hover-zoom:hover .hover-zoom__image {
+.project-card:hover .hover-zoom__image {
   transform: scale(1);
 }
 
@@ -38,9 +38,8 @@
 
 .project-card__title {
   margin:0 ;
-  font-weight: 300;
-  font-weight: 300;
-  font-size: 1.6rem;
+  font-weight: 200;
+  font-size: 2rem;
   text-transform: none;
   letter-spacing: 0;
   cursor: pointer;
@@ -48,4 +47,5 @@
 
 .project-card__footer {
   margin-top: 10px;
+  display: inline-block;
 }
