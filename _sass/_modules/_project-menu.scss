@@ -68,6 +68,19 @@
   opacity: 0;
 }
 
-.project-card-link:hover .project-hover {
-  opacity: 1;
+.project-card-link:hover {
+
+ .project-hover {
+    opacity: 1;
+  }
+  .arrow-stem {
+    transform: scaleX(1.2);
+  }
+}
+
+// Arrow
+.arrow-stem {
+  overflow: visible;
+  transition: .3s ease all;
+  transform-origin: bottom right;
 }
