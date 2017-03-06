@@ -1,6 +1,8 @@
 $dark-color: #141419;
 
 .site-footer {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: 225px;
   margin-top: 30px;
