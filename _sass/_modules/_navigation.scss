@@ -199,5 +199,22 @@ $max-width: 1560px;
   color: $white;
   font-size: 14px;
   opacity: .7;
+}
 
+// overlay
+.full-screen-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: .15s ease all;
+}
+
+.full-screen-overlay.is-open {
+  // opacity: 1;
+  visibility: visible;
 }

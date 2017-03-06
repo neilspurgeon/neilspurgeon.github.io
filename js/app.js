@@ -23,15 +23,18 @@ $(document).ready(function() {
 
   var menuBtn = document.getElementById('menu-btn');
   var menu = document.getElementById('primary-nav');
+  var overlay = document.getElementById('menu-overlay');
 
   menuBtn.onclick = function() {
     document.activeElement.blur();
     if (menu.classList.contains('is-open')) {
       menu.classList.remove('is-open');
       menuBtn.classList.remove('is-open');
+      overlay.classList.remove('is-open');
     } else {
       menu.classList.add('is-open');
       menuBtn.classList.add('is-open');
+      overlay.classList.add('is-open');
     }
   }
 });
