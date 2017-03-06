@@ -2,7 +2,7 @@
 layout: project
 permalink: fresh-step
 title: "Fresh Step Redesign"
-featured_image: /assets/projects/fresh-step/fresh-step-hero-2.png/
+featured_image: /assets/projects/fresh-step/fresh-step-card.jpg/
 featured_image_size:
   height: 40vmax
   column_width: 7
