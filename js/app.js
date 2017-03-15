@@ -1,29 +1,10 @@
-var setActive = function (el) {
-  $('#' + el).addClass('is-active');
-  $('#' + el).siblings().removeClass('is-active');
-};
-
-var setNav = function () {
-  var page = $('body').attr('class');
-  if (page !== 'default') {
-    setActive(page);
-  }
-  if (page === 'about') {
-    setDarkTheme();
-  }
-};
-
-var setDarkTheme = function() {
-  // $('html').css({'background-color': '#171817'});
-};
-
 $(document).ready(function() {
   console.log('app.js running...');
-  setNav();
 
   var menuBtn = document.getElementById('menu-btn');
   var menu = document.getElementById('primary-nav');
   var overlay = document.getElementById('menu-overlay');
+  var body = document.body;
 
   menuBtn.onclick = function() {
     document.activeElement.blur();
@@ -31,15 +12,20 @@ $(document).ready(function() {
       menu.classList.remove('is-open');
       menuBtn.classList.remove('is-open');
       overlay.classList.remove('is-open');
+      body.classList.remove('lock-scroll');
     } else {
       menu.classList.add('is-open');
       menuBtn.classList.add('is-open');
       overlay.classList.add('is-open');
+      body.classList.add('lock-scroll');
     }
   }
-});
 
-$(function() {
-    $('#content-bg').removeClass('fade-out');
-    $('footer').removeClass('fade-out');
+  overlay.onclick = function() {
+    body.classList.remove('lock-scroll');
+    menu.classList.remove('is-open');
+    menuBtn.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+  }
+
 });

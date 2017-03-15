@@ -5,7 +5,7 @@
 
     {% for project in site.projects %}
 
-      <li class="project-item">
+      <li class="primary-nav__li project-item">
         <a href="{{ project.url }}">
           <h3 class="project-item__title">{{ project.title }}</h3>
           <p class="project-item__description">{{ project.description_preview }}</p>
@@ -18,7 +18,7 @@
     {% for page in site.pages %}
 
     {% if page.title %}
-    <li>
+    <li class="primary-nav__li">
       <a class="h2 primary-nav__section-title primary-nav__section-title--page" href="{{ page.permalink }}">{{ page.title }}</a>
     </li>
     {% endif %}

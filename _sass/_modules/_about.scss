@@ -4,6 +4,7 @@ $dark-color: #141419;
 body.about {
   background-color: $dark-color;
   color: #FFF;
+  margin-top: 100px;
 
   .site-title,
   .site-byline,
@@ -11,6 +12,10 @@ body.about {
   h1,
   h2 {
     color: #FFF;
+  }
+
+  @include breakpoint(md) {
+    margin-top: 200px;
   }
 
 }
