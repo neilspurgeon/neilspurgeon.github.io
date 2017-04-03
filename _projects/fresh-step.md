@@ -16,24 +16,18 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
 
 <div class="grid grid--justify-center ">
   <div class="grid__col-12">
-    <img src="/assets/projects/fresh-step/fresh-step-rewards-laptop-iphone.png" />
+    <img src="/assets/projects/fresh-step/fresh-step-rewards-laptop-iphone.jpg" />
   </div>
 
   <div class="grid__col-10">
-    <img src="/assets/projects/fresh-step/fresh-step-reward-detail.png" />
+    <img class="shadow" src="/assets/projects/fresh-step/fresh-step-reward-detail.jpg" />
   </div>
-</div>
 
-  <!-- <div class="grid__col-12"> -->
-<img src="/assets/projects/fresh-step/fresh-step-mmm-banner.png" />
-  <!-- </div> -->
-
-<div class="grid grid--justify-center">
   <div class="grid__col-10">
-    <img src="/assets/projects/fresh-step/fresh-step-product-detail.png" />
+    <img class="shadow" src="/assets/projects/fresh-step/fresh-step-product-detail.jpg" />
   </div>
 
   <div class="grid__col-12">
-    <img src="/assets/projects/fresh-step/fresh-step-mmm.png" />
+    <img src="/assets/projects/fresh-step/fresh-step-mmm.jpg" />
   </div>
 </div>
