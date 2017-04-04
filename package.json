@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/neilspurgeon/portfolio-0716#readme",
   "dependencies": {
+    "headroom.js": "^0.9.3",
     "reflex-grid": "^1.1.1"
   }
 }

@@ -1,0 +1,18 @@
+.site-title,
+.site-byline,
+.menu-btn {
+  transition: .5s ease all;
+  will-change: transform;
+}
+
+.site-header.headroom--unpinned .site-title {
+  transform: translateY(-150px);
+}
+
+.site-header.headroom--unpinned .site-byline {
+  transform: rotate(90deg) translateX(150px);
+}
+
+.site-header.headroom--unpinned .menu-btn {
+  transform: translateY(-150px);
+}

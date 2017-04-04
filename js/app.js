@@ -28,4 +28,14 @@ $(document).ready(function() {
     overlay.classList.remove('is-open');
   }
 
+  // grab an element
+  var el = document.getElementById('site-header');
+  // construct an instance of Headroom, passing the element
+  var headroom  = new Headroom(el, {
+    offset : 800,
+    tolerance : 5
+  });
+  // initialise
+  headroom.init();
+
 });
