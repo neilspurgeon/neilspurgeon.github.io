@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="project">
+<section class="project">
 
   <img class="project-hero" src="{{ page.hero_image }}" />
 
@@ -44,4 +44,25 @@ layout: default
 
   </div>
 
-</article>
+  <footer class="project-footer">
+
+    <div class="grid">
+
+      {% if page.next %}
+        {% assign next_page = page.next %}
+      {% else %}
+        {% assign next_page = site.projects.first %}
+      {% endif %}
+
+      <div class="grid__col-md-12">
+        <a class="project-pagination" href="{{ next_page.url }}">
+          <p class="project-pagination__label">Next</p>
+          <p class="project-pagination__title">{{ next_page.title }}</p>
+        </a>
+      </div>
+
+    </div>
+
+  </footer>
+
+</section>
