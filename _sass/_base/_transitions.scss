@@ -29,6 +29,16 @@
   }
 }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
 // Page transitions
 
 .m-scene {
@@ -54,6 +64,10 @@
   &.is-exiting {
       .scene-element {
         animation-direction: alternate-reverse;
+      }
+
+      .is-open.scene-element--slideoutright {
+        animation-name: slideInLeft;
       }
   }
 }
