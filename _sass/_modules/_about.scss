@@ -1,25 +1,9 @@
-$dark-color: #141419;
-
-
-body.about {
-  background-color: $dark-color;
-  color: #FFF;
+.about-container {
   margin-top: 100px;
-
-  .site-title,
-  .site-byline,
-  p,
-  h1,
-  h2 {
-    color: #FFF;
-  }
+  min-height: calc(100vh - 100px);
 
   @include breakpoint(md) {
     margin-top: 200px;
+    min-height: calc(100vh - 200px);
   }
-
-}
-
-.about-content {
-  // position: initial;
 }

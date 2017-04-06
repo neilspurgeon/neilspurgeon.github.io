@@ -36,7 +36,9 @@ in Object-Oriented JavaScript. The app is designed and built mobile first and is
 
 </div>
 
-<img src="http://placehold.it/1400x800/111" />
+<div>
+  <img src="http://placehold.it/1400x800/111" />
+</div>
 
 <div class="grid">
   <div class="grid__col-12">

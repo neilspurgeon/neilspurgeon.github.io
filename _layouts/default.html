@@ -3,15 +3,16 @@
 
   {% include head.html %}
 
-  <body class="{{ page.layout }}">
+  <body>
 
-    {% include header.html %}
-
-    <div class="main-content-wrapper">
-      {{ content }}
+    <div id="main" class="m-scene">
+      {% include header.html %}
+      <div class="scene-element scene-element--fadein">
+        {{ content }}
+        {% include footer.html %}
+      </div>
     </div>
 
-    {% include footer.html %}
     {% include scripts.html %}
 
   </body>

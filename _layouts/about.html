@@ -5,13 +5,18 @@
 
   <body class="{{ page.layout }}">
 
-    {% include header.html %}
+    <div id="main" class="m-scene">
+      {% include header.html %}
 
-    <div class="main-content-wrapper">
-      {{ content }}
+      <div class="scene-element scene-element--fadein">
+        <div class="push-footer about-container">
+          {{ content }}
+        </div>
+
+        {% include footer.html %}
+      </div>
     </div>
 
-    {% include footer.html %}
     {% include scripts.html %}
 
   </body>

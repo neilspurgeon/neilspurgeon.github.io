@@ -11,6 +11,8 @@ $dark-color: #141419;
   background-color: $dark-color;
   font-size: 1.4rem;
   color: $white;
+  // transition: .5s ease all;
+  // transition-delay: 2s;
 
   .grid {
     position: initial; //reset grid from fixed to normal flow
@@ -43,17 +45,5 @@ $dark-color: #141419;
 
   @include breakpoint(lg) {
     text-align: right;
-  }
-}
-
-body.about {
-  // About uses a dark theme. Footer colors get inversed.
-  .site-footer {
-    background-color: $white;
-    color: $charcoal;
-
-    a {
-    color: $charcoal;
-    }
   }
 }
