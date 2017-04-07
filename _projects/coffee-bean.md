@@ -8,7 +8,7 @@ featured_image_size:
   column_width: 7
 hero_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
 tags: ["Application Development", "UI/UX Design"]
-description_preview: "Lorem ipsum dolor site amet ton asd aser yurt."
+description_preview: "Order ahead and customer loyalty app"
 description: "<p>Designed and developed a single page application, that blends SoundCloud and Rdio's API's into one seamless music
 database and player. Used Angular, Susy, SASS, and HTML to create the user interface while keeping the core music player functions
 in Object-Oriented JavaScript. The app is designed and built mobile first and is fully responsive.</p>

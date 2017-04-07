@@ -8,10 +8,9 @@ featured_image_size:
   column_width: 7
 hero_image: /assets/projects/fresh-step/fresh-step-iphones-iso-grid.jpg
 tags: ["UI Design"]
-credits: ["Photography: Jordan Vogua", "Art Direction: Rich Hansen"]
-description_preview: "Lorem ipsum dolor site amet ton asd aser yurt."
-description: "<p>Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand.
-Redesigned packaging for their complete line including Trail Soap, Backpacker's Cologne, Cabin Spray, Campfire Incense and Smudge's.</p>"
+credits: ["Design with Thomas Charlet", "UX Wireframes by Fluid"]
+description_preview: "Ecommerce website"
+description: "<p>Fresh Step, a Clorox brand, came to us wanting to incorporate their newly released Paw Points app with their complete web experience. Along the way it was also decided that a complete website redesign was in order to accomodate for mobile devices and to better match the Fresh Step brand.</p>"
 ---
 
 <div class="grid grid--justify-center ">

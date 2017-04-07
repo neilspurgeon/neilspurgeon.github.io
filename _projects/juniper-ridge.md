@@ -8,8 +8,8 @@ featured_image_size:
   column_width: 7
 hero_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg
 tags: ["Packaging Design", "Print Design", "Branding"]
-credits: ["Photography: Jordan Vogua", "Art Direction: Rich Hansen"]
-description_preview: "Lorem ipsum dolor site amet ton asd aser yurt."
+credits: ["Photography by Jordan Vogua", "Designed with Lee Williams"]
+description_preview: "Rebranding and packaging design"
 description: "<p>Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand.
 Redesigned packaging for their complete line including Trail Soap, Backpacker's Cologne, Cabin Spray, Campfire Incense and Smudge's.</p>"
 ---

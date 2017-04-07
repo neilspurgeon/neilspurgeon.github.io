@@ -9,7 +9,7 @@ featured_image_size:
 hero_image: /assets/projects/lee-williams/itsleewilliams-laptop-iphone.jpg
 tags: ["UI Design", "UX Design"]
 credits: ["Photography:"]
-description_preview: "Lorem ipsum dolor site amet ton asd aser yurt."
+description_preview: "Website development"
 description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.</p>"
 ---
 
