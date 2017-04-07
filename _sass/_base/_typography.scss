@@ -16,13 +16,30 @@ body {
   }
 }
 
-p {
+.list-item {
   font-size: 1.6rem;
   font-family: "clear sans", sans-serif;
   font-weight: 200;
   line-height: 2.5rem;
   color: $charcoal;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "clear sans", sans-serif;
+  font-weight: 200;
+  line-height: 1.3em;
+  color: $charcoal;
   margin: 0 0 1rem;
+  max-width: 50em;
+}
+
+p.p-large {
+  font-size: 3rem;
+
+  @include breakpoint(lg) {
+    font-size: 4rem;
+  }
 }
 
 h1, .h1 {
@@ -31,6 +48,7 @@ h1, .h1 {
   font-family: "clear sans", sans-serif;
   font-weight: 200;
   color: $charcoal;
+  margin-top: 2rem;
 }
 
 h2, .h2 {
@@ -38,6 +56,7 @@ h2, .h2 {
   font-weight: 600;
   letter-spacing: .2em;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 
 h3, .h3 {
@@ -45,9 +64,13 @@ h3, .h3 {
   font-weight: 100;
   letter-spacing: .2em;
   text-transform: uppercase;
+  margin-top: 2 rem;
 }
 
+
 .on-dark {
+  color: $white;
+
   h1, .h1,
   h2, .h2,
   h3, .h3,

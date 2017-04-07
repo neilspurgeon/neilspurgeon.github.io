@@ -2,44 +2,42 @@
 layout: home
 ---
 
-<div class="grid grid--align-center grid--justify-space-between project-grid-row">
-    
-    <a class="grid__col-sm-7 project-tile" href="{{ '1-coffee-bean' | prepend: site.baseurl }}">
-      <img src="http://placehold.it/750x500/ff0"/>
-      <span class="project-tile__title project-tile__title__right">The Coffee Bean & Tea Leaf</span>
-    </a>
+  {% for project in site.projects %}
+  <div class="grid {% cycle '', 'grid--justify-end' %}">
 
-    <a class="grid__col-sm-4 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
-      <img src="http://placehold.it/350x350/00f"/>
-      <span class="project-tile__title project-tile__title__bottom">We Are Hathway</span>
-    </a>
+    <div class="project-card grid__col-sm-{{ project.featured_image_size.column_width }}">
 
-</div>
+      <a class="project-card-link" href="{{ project.permalink }}">
+        <div class="hover-zoom">
+          <div class="project-hover">— View Project</div>
+          <img class="hover-zoom__image" src="{{ project.featured_image }}"/>
+        </div>
 
-<div class="grid grid--align-center grid--justify-space-between project-grid-row">
-    
-    <a class="grid__col-sm-3 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
-      <img src="http://placehold.it/300x375/0ff"/>
-      <span class="project-tile__title project-tile__title__right">Lee Williams</span>
-    </a>
+        <div class="project-card__footer">
+          <h2 class="project-card__title ">{{ project.title }}</h2>
 
-    <a class="grid__col-sm-8 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
-      <img src="http://placehold.it/750x500/f00"/>
-      <span class="project-tile__title project-tile__title__bottom">Juniper Ridge</span>
-    </a>
+          <div class="footer-arrow">
 
-</div>
 
-<div class="grid grid--align-center grid--justify-space-between project-grid-row">
-    
-    <a class="grid__col-sm-6 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
-      <img src="http://placehold.it/500x500"/>
-      <span class="project-tile__title project-tile__title__bottom">Red Bull</span>
-    </a>
+            <svg class="arrow-right" width="37px" height="20px" viewBox="0 0 37 20" style="overflow: visible;">
 
-    <a class="grid__col-sm-5 project-tile" href="{{ 'test' | prepend: site.baseurl }}">
-      <img src="http://placehold.it/500x500"/>
-      <span class="project-tile__title project-tile__title__bottom">Fresh Step</span>
-    </a>
+              <g transform="translate(-780.000000, -1409.000000)">
 
-</div>
+                <polyline fill="none" stroke="#000" transform="translate(810.779167, 1419.000000) rotate(-90.000000) translate(-810.779167, -1419.000000) " points="820.279167 1414.22083 810.779167 1423.77917 801.279167 1414.22083"></polyline>
+              </g>
+
+                <path d="M0,10 35,10" class="arrow-stem" stroke="#000"></path>
+            </svg>
+          </div>
+
+        </div>
+      </a>
+
+{% comment %}      <div class="project-card__footer">
+        <h2 class="project-card__title"><a class="hover-underline">{{ project.title }}</a></h2>
+      </div>{% endcomment %}
+
+    </div>
+  </div>
+  {% endfor %}
+

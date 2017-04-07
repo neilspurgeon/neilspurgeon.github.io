@@ -53,11 +53,11 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   margin: 0 auto;
 
   @include breakpoint(xs) {
-    max-width: calc(100% - 50px);
+    width: 90%;
   }
 
   @include breakpoint(md) {
-    max-width: calc(100% - 160px);
+    max-width: 1560px;
   }
 }
 
@@ -65,6 +65,14 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 // -------------------------
 .grid--full-width {
   max-width: 100%;
-  margin-right: -$reflex-grid-spacing;
-  margin-left: -$reflex-grid-spacing;
+  // margin-right: -$reflex-grid-spacing;
+  // margin-left: -$reflex-grid-spacing;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+// Overides and added classes
+.grid__col--bleed-bottom {
+  padding-bottom: 0;
 }

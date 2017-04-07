@@ -1,0 +1,34 @@
+$dark-color: #141419;
+
+.hover-underline {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    border-bottom: 1px solid $dark-color;
+    transition: .4s;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+.hover-underline--on-dark:after {
+  border-bottom: 1px solid #FFF;
+}
+
+.secondary-link {
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #000;
+  opacity: .6;
+
+  &:hover {}
+}

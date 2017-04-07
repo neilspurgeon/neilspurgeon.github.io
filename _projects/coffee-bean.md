@@ -1,8 +1,14 @@
 ---
 layout: project
-title: "Rcloud"
-featured_image: /assets/featured-images/rcloud.jpg
+permalink: coffee-bean
+title: "Coffee Bean"
+featured_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
+featured_image_size:
+  height: 50vmax
+  column_width: 7
+hero_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
 tags: ["Application Development", "UI/UX Design"]
+description_preview: "Order ahead and customer loyalty app"
 description: "<p>Designed and developed a single page application, that blends SoundCloud and Rdio's API's into one seamless music
 database and player. Used Angular, Susy, SASS, and HTML to create the user interface while keeping the core music player functions
 in Object-Oriented JavaScript. The app is designed and built mobile first and is fully responsive.</p>
@@ -30,7 +36,9 @@ in Object-Oriented JavaScript. The app is designed and built mobile first and is
 
 </div>
 
-<img src="http://placehold.it/1400x800/111" />
+<div>
+  <img src="http://placehold.it/1400x800/111" />
+</div>
 
 <div class="grid">
   <div class="grid__col-12">

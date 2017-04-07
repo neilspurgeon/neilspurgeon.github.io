@@ -1,5 +1,6 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
+  /* apply a natural box layout model to all elements, but allowing components to change */
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -11,24 +12,16 @@ img {
 }
 
 .container {
-  width: calc(100% - 100px);
-  margin: 0 auto;
+  // position: relative;
+  // width: 90%;
+  // max-width: 1560px;
+  // margin: 0 auto;
 
   @include breakpoint(lg) {
-    width: 54em;
+    // width: 90%;
   }
 }
 
-.content-bg {
-  width: 100%;
-  min-height: 100vh;
-  margin-bottom: 225px;
-  background-color: $white;
-  min-height: 100vh;
-
-  @include breakpoint(md) {
-    min-height: inherit;
-  }
+body {
+  background-color: #FFF;
 }
-
-body.default { margin-top: 100px; }

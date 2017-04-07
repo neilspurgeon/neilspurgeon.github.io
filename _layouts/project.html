@@ -1,36 +1,68 @@
 ---
 layout: default
 ---
-<article class="project">
+<section>
 
-  <img src="http://placehold.it/1400x800/222" />
+  <img class="project-hero" src="{{ page.hero_image }}" />
 
-  <header class="grid">
-    <div class="grid__col-12">
+  <div class="container">
+    <header class="grid project-header">
+      <div class="grid__col-12">
+        <h1 class="project__title"  >{{ page.title }}</h1>
+      </div>
 
-      <h1 class="project__title"  >{{ page.title }}</h1>
-    </div>
+      <div class="grid__col-md-7 project-description">
+        <h2 class="h2">Description</h2>
+        {{ page.description }}
+      </div>
 
-    <div class="grid__col-md-6">
-      {{ page.description }}
-    </div>
-
-    <div class="grid__col-md-3">
       {% if page.tags %}
-      <ul class="description__tags">
-      {% for tag in page.tags %}
-        <li>{{ tag }}</li>
-      {% endfor %}
-      </ul>
+        <div class="grid__col-md-2">
+          <h2 class="h2">Role / Tags</h2>
+          <ul class="description__tags">
+          {% for tag in page.tags %}
+            <li class="list-item">{{ tag }}</li>
+          {% endfor %}
+          </ul>
+        </div>
       {% endif %}
+
+      {% if page.credits %}
+        <div class="grid__col-md-3">
+          <h2 class="h2">Credits</h2>
+            <ul class="description__credits">
+              {% for credit in page.credits %}
+                <li class="list-item">{{ credit }}</li>
+              {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+    </header>
+
+    {{ content }}
+
+  </div>
+
+  <footer class="project-footer">
+
+    <div class="grid">
+
+      {% if page.next %}
+        {% assign next_page = page.next %}
+      {% else %}
+        {% assign next_page = site.projects.first %}
+      {% endif %}
+
+      <div class="grid__col-md-12">
+        <a class="project-pagination" href="{{ next_page.url }}">
+          <p class="project-pagination__label">Next</p>
+          <p class="project-pagination__title">{{ next_page.title }}</p>
+        </a>
+      </div>
+
     </div>
 
-    <div class="grid__col-md-3">
-      Credits
-    </div>
+  </footer>
 
-  </header>
-
-  {{ content }}
-
-</article>
+</section>

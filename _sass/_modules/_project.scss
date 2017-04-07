@@ -1,13 +1,41 @@
-.description__tags {
+.project__title {
+  margin: 0;
+}
+
+.description__tags,
+.description__credits {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
 
-  & > li {
-    color: lighten($charcoal, 50%);
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: .05em;
+.project-hero {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.project-header {
+  padding: 35px 0;
+
+  @include breakpoint(sm) {
+    padding: 75px 0;
   }
+}
+
+.shadow {
+  box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+}
+
+.project-pagination {
+  padding: 80px 0 60px;
+  text-decoration: none;
+}
+
+.project-pagination__label {
+  font-size: 1.6rem;
+}
+
+.project-pagination__title {
+  font-size: 3rem;
 }

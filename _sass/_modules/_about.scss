@@ -1,7 +1,9 @@
-body.about {
+.about-container {
   margin-top: 100px;
-  // About uses a dark theme
-  .content-bg {
-    background-color: $charcoal;
+  min-height: calc(100vh - 100px);
+
+  @include breakpoint(md) {
+    margin-top: 200px;
+    min-height: calc(100vh - 200px);
   }
 }

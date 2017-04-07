@@ -17,4 +17,7 @@
   @else if $point == xl {
     @media (min-width: $bp-xl) { @content ; }
   }
+  @else {
+    @media (min-width: $point ) { @content ; }
+  }
 }

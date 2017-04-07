@@ -4,14 +4,20 @@
   {% include head.html %}
 
   <body class="{{ page.layout }}">
-    {% include nav.html %}
-    {% include header.html %}
 
-    <div id="content-bg" class="content-bg">
-      {{ content }}
+    <div id="main" class="m-scene">
+      {% include header.html %}
+
+      <div class="scene-element scene-element--fadein">
+        <div class="push-footer about-container">
+          {{ content }}
+        </div>
+
+        {% include footer.html %}
+      </div>
     </div>
 
-    {% include footer.html %}
+    {% include scripts.html %}
 
   </body>
 
