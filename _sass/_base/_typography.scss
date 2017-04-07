@@ -36,6 +36,10 @@ p {
 
 p.p-large {
   font-size: 3rem;
+
+  @include breakpoint(lg) {
+    font-size: 4rem;
+  }
 }
 
 h1, .h1 {

@@ -91,13 +91,15 @@ $max-width: 1560px;
   opacity: 0;
   // transition-property: ease;
   transition-duration: .2s;
-  transition-delay: 0s;
 }
 
 .closed-menu { opacity: 1; }
 
 .menu-btn.is-open {
-  .opened-menu { opacity: 1; }
+  .opened-menu {
+    opacity: 1;
+    transition-delay: .2s;
+  }
   .closed-menu { opacity: 0; }
 }
 
