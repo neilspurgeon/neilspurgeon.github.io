@@ -218,12 +218,6 @@ $max-width: 1560px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  will-change: opacity;
-
-  &:hover {
-    background-color: rgba(0,0,0,.7);
-    .full-screen-overlay__close  { opacity: 1; }
-  }
 }
 
 .full-screen-overlay.is-open {
