@@ -80,6 +80,8 @@ var pageFunctions = function() {
   });
   // initialise
   headroom.init();
+
+  $('.slider').slick();
 }
 
 pageFunctions();
