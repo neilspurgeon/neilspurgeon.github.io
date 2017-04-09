@@ -12,9 +12,14 @@ description_preview: "Order Ahead Web Framework"
 description: "–"
 ---
 
+<div class="grid">
+  <div class="grid__col-12">
 
-<div class="slider">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
+    <div class="slider">
+      <div><img src="http://placehold.it/1500x800/033"></div>
+      <div><img src="http://placehold.it/1500x800/030"></div>
+      <div><img src="http://placehold.it/1500x800/003"></div>
+    </div>
+
+  </div>
 </div>
