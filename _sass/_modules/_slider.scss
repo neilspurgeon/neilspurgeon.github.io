@@ -59,7 +59,7 @@
 
 
 /* Dots */
-.slick-dotted.slick-slider {margin-bottom: 30px;}
+.slick-slider {margin: 50px 0;}
 
 .slick-dots {
   position: absolute;
@@ -91,7 +91,7 @@
   color: transparent;
   border: 0;
   outline: none;
-  background-color: #FFF;
+  background-color: transparent;
 }
 
 .slick-dots li button:hover,

@@ -6,20 +6,26 @@ featured_image: http://placehold.it/400x400
 featured_image_size:
   height: 60vmax
   column_width: 7
-hero_image: http://placehold.it/1500x800
+hero_image: /assets/projects/nomnom/nomnom-hero.jpg
 tags: ["UI Design", "UX Design"]
-description_preview: "Order Ahead Web Framework"
-description: "–"
+description_preview: "White label order ahead website"
+description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.</p>"
 ---
 
-<div class="grid">
-  <div class="grid__col-12">
+<div class="grid grid--justify-center">
 
-    <div class="slider">
-      <div><img src="http://placehold.it/1500x800/033"></div>
-      <div><img src="http://placehold.it/1500x800/030"></div>
-      <div><img src="http://placehold.it/1500x800/003"></div>
+  <div class="grid__col-12"><img src="/assets/projects/nomnom/nomnom-stores.jpg"></div>
+
+  <div class="grid__col-10">
+
+    <div class="slider shadow">
+      <div><img src="/assets/projects/nomnom/sign-up.jpg"></div>
+      <div><img src="/assets/projects/nomnom/store-locator-start.jpg"></div>
+      <div><img src="/assets/projects/nomnom/store-locations.jpg"></div>
+      <div><img src="/assets/projects/nomnom/store-location-detail.jpg"></div>
     </div>
+
+    <img class="shadow" src="/assets/projects/nomnom/checkout-guest-create-account.png">
 
   </div>
 </div>
