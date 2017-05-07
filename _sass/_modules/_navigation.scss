@@ -6,7 +6,7 @@ $max-width: 1560px;
 
 .site-title {
   position: fixed;
-  top: $outer-padding;
+  top: 42px;
   left: 10px;
   z-index: 9998;
   color: $dark-color;
@@ -17,24 +17,6 @@ $max-width: 1560px;
   @include breakpoint(xs) {
     left: #{(100% - $container-width-lg) / 2};
     margin-left: 1rem;
-  }
-}
-
-.site-byline {
-  transform: rotate(90deg);
-  transform-origin: right top;
-  position: fixed;
-  right: 10px;
-  bottom: $outer-padding;
-  z-index: 1;
-  color: $dark-color;
-  font-weight: 700;
-  font-size: 14px;
-
-
-  @include breakpoint(xs) {
-    right: #{(100% - $container-width-lg) / 2};
-    margin-right: 1rem;
   }
 }
 
