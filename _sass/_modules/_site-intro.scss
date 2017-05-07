@@ -1,8 +1,14 @@
 .site-intro {
-  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
+  margin-top: 100px;
+
+  @include breakpoint(md) {
+    margin-top: 0;
+    min-height: 80vh;
+    padding-top: .5em;
+  }
 }
 
 .site-intro__arrow {

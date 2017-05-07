@@ -1,14 +1,12 @@
 <nav id="primary-nav" class="primary-nav scene-element scene-element--slideoutright">
-  <ul class="primary-nav__ul">
 
-    <h2 class="primary-nav__section-title">Work</h2>
+  <ul class="primary-nav__ul">
 
     {% for project in site.projects %}
 
       <li class="primary-nav__li project-item">
-        <a class="hover-right" href="{{ project.url }}">
-          <h3 class="project-item__title">{{ project.title }}</h3>
-          <p class="project-item__description">{{ project.description_preview }}</p>
+        <a class="primary-nav__link" href="{{ project.url }}">
+          {{ project.title }}
         </a>
       </li>
 
@@ -16,11 +14,14 @@
 
 
     {% for page in site.pages %}
-
     {% if page.title %}
-    <li class="primary-nav__li">
-      <a class="h2 primary-nav__section-title primary-nav__section-title--page" href="{{ page.permalink }}">{{ page.title }}</a>
+
+    <li class="primary-nav__li page-item ">
+      <a class="primary-nav__link" href="{{ page.permalink }}">
+        {{ page.title }}
+      </a>
     </li>
+
     {% endif %}
     {% endfor %}
   </ul>

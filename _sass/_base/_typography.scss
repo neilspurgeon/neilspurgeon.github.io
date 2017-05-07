@@ -43,12 +43,17 @@ p.p-large {
 }
 
 h1, .h1 {
-  font-size: 6rem;
-  line-height: 8rem;
+  font-size: 3rem;
+  // line-height: 5rem;
   font-family: "maison neue", sans-serif;
   font-weight: 200;
   color: $charcoal;
   margin-top: 2rem;
+
+  @include breakpoint(md) {
+    font-size: 6rem;
+    // line-height: 8rem;
+  }
 }
 
 h2, .h2 {
