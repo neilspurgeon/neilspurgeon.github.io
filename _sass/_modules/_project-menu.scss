@@ -2,6 +2,7 @@
   display: block;
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 
 .hover-zoom__image {
@@ -12,6 +13,7 @@
   transition: .3s ease all;
   transform: scale(1.05);
   display: block;
+  object-fit: cover;
 }
 
 .project-card:hover .hover-zoom__image {
@@ -21,33 +23,35 @@
 .project-card {
   text-decoration: none;
   color: #000;
-  margin-bottom: 100px;
 }
 
 .project-card-link {
   text-decoration: none;
   color: #000;
+  height: 100%;
 }
 
-.footer-arrow {
-  display: flex;
-  justify-content: center;
-}
+// .footer-arrow {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .project-card__title {
-  margin:0 ;
+  // margin:0 ;
   font-weight: 200;
   font-size: 1.8rem;
   text-transform: none;
   letter-spacing: 0;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
-.project-card__footer {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
+// .project-card__footer {
+//   margin-top: 10px;
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .project-hover {
   position: absolute;
@@ -56,10 +60,11 @@
   top: 0;
   left: 0;
   z-index: 1;
+  padding: 20px;
   background: rgba(0,0,0,.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   color: #FFF;
   font-size: 14px;
   letter-spacing: .05em;

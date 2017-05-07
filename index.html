@@ -1,43 +1,23 @@
 ---
 layout: home
 ---
+<div class="grid flex-content">
 
   {% for project in site.projects %}
-  <div class="grid {% cycle '', 'grid--justify-end' %}">
 
-    <div class="project-card grid__col-sm-{{ project.featured_image_size.column_width }}">
+    <div class="project-card grid__col-sm-6">
 
       <a class="project-card-link" href="{{ project.permalink }}">
         <div class="hover-zoom">
-          <div class="project-hover">— View Project</div>
+          <div class="project-hover">
+            <h2 class="project-card__title ">{{ project.title }}</h2>
+          </div>
           <img class="hover-zoom__image" src="{{ project.featured_image }}"/>
         </div>
 
-        <div class="project-card__footer">
-          <h2 class="project-card__title ">{{ project.title }}</h2>
-
-          <div class="footer-arrow">
-
-
-            <svg class="arrow-right" width="37px" height="20px" viewBox="0 0 37 20" style="overflow: visible;">
-
-              <g transform="translate(-780.000000, -1409.000000)">
-
-                <polyline fill="none" stroke="#000" transform="translate(810.779167, 1419.000000) rotate(-90.000000) translate(-810.779167, -1419.000000) " points="820.279167 1414.22083 810.779167 1423.77917 801.279167 1414.22083"></polyline>
-              </g>
-
-                <path d="M0,10 35,10" class="arrow-stem" stroke="#000"></path>
-            </svg>
-          </div>
-
-        </div>
       </a>
 
-{% comment %}      <div class="project-card__footer">
-        <h2 class="project-card__title"><a class="hover-underline">{{ project.title }}</a></h2>
-      </div>{% endcomment %}
-
     </div>
-  </div>
   {% endfor %}
+</div>
 

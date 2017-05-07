@@ -4,15 +4,10 @@ $dark-color: #141419;
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 225px;
-  margin-top: 30px;
+  padding: 100px 0;
   display: flex;
   align-items: center;
-  background-color: $dark-color;
   font-size: 1.4rem;
-  color: $white;
-  // transition: .5s ease all;
-  // transition-delay: 2s;
 
   .grid {
     position: initial; //reset grid from fixed to normal flow
@@ -35,7 +30,6 @@ $dark-color: #141419;
 
   a {
     font-weight: 100;
-    color: $white;
     text-decoration: none;
   }
 }
