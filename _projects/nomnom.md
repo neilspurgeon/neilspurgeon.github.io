@@ -10,6 +10,7 @@ hero_image: /assets/projects/nomnom/nomnom-hero.jpg
 tags: ["UI Design", "UX Design"]
 description_preview: "White label order ahead website"
 description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.</p>"
+published: false
 ---
 
 <div class="grid grid--justify-center">

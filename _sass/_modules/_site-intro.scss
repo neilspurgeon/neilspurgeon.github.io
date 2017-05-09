@@ -1,17 +1,9 @@
 .site-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 
-  @include breakpoint(md) {
-    margin-top: 0;
-    min-height: 80vh;
-    padding-top: .5em;
+  @include breakpoint(sm) {
+    padding-top: 250px;
+    padding-bottom: 150px;
   }
-}
-
-.site-intro__arrow {
-  padding-top: 20vh;
-  margin-bottom: -20vh;
 }

@@ -6,6 +6,7 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   // Import Base
+  "_base/variables",
   "_base/normalize",
   "_base/config",
   "_base/mixins",

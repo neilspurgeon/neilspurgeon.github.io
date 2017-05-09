@@ -1,5 +1,9 @@
-.project__title {
-  margin: 0;
+.project-header {
+  padding: 100px 0 40px;
+
+  @include breakpoint(sm) {
+    padding: 250px 0 150px;
+  }
 }
 
 .description__tags,
@@ -14,23 +18,18 @@
   object-fit: cover;
 }
 
-.project-header {
-  padding: 35px 0;
-
-  @include breakpoint(sm) {
-    padding: 75px 0;
-  }
-}
-
 .shadow {
   box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.3);
   margin: 50px 0;
 }
 
+.project-footer {
+  padding: 100px 0 0;
+}
+
 .project-pagination {
   // padding: 80px 0 60px;
   padding: 100px 0 0;
-  margin: 0 0 -100px;
   text-decoration: none;
 }
 

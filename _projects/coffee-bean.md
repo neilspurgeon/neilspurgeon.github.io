@@ -15,6 +15,7 @@ in Object-Oriented JavaScript. The app is designed and built mobile first and is
 <p>Built with Ruby on Rails, PostgreSQL, AngularJS, Rdio, and SoundCloud.</p>
 <p><strike>View live at rcloud.io</strike></p>
 <p>*Unfortunately as of 12/22/2015 Rdio has closed it's doors, which has effectively shut down Rcloud. The code can still be viewed at <a href='https://github.com/neilspurgeon/rcloud'>github.com/neilspurgeon/rcloud</a> and an unfunctional site reamins at <a href='http://rcloud.io/'>rcloud.io</a></p>"
+published: false
 ---
 
 <div class="grid">

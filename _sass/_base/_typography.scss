@@ -1,7 +1,3 @@
-// Variables
-$white: #FFF;
-$charcoal: #171817;
-
 // 62.5% * 16px = 10px base font size
 html { font-size: 62.5%; }
 
@@ -9,7 +5,7 @@ body {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
   font-weight: 300;
-  color: $charcoal;
+  color: $dark-text-color;
 
   @include breakpoint(xsonly) {
     font-size: 1.4rem;
@@ -19,35 +15,40 @@ body {
 .list-item {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6em;
-  color: $charcoal;
+  color: $dark-text-color;
 }
 
 p {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6em;
-  color: $charcoal;
+  color: $dark-text-color;
   margin: 0 0 1rem;
   max-width: 50em;
 }
 
-p.p-large {
-  font-size: 3rem;
+.p-small {
+  font-size: 1.4rem;
+}
+
+.p-large {
+  font-size: 2rem;
 
   @include breakpoint(lg) {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
 h1, .h1 {
   font-size: 3rem;
+  line-height: 1.3em;
   // line-height: 5rem;
   font-family: "maison neue", sans-serif;
-  font-weight: 200;
-  color: $charcoal;
+  font-weight: 300;
+  color: $dark-text-color;
   margin-top: 2rem;
 
   @include breakpoint(md) {
@@ -57,35 +58,12 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   // letter-spacing: .2em;
   margin-top: 2rem;
 }
 
-h3, .h3 {
-  font-size: 1.2rem;
-  font-weight: 100;
-  // letter-spacing: .2em;
-  margin-top: 2 rem;
-}
-
-
-.on-dark {
-  color: $white;
-
-  h1, .h1,
-  h2, .h2,
-  h3, .h3,
-  h4, .h4,
-  h5, .h5,
-  h6, .h6,
-  p, .p {
-    color: $white;
-  }
-
-  p {
-    font-weight: 100;
-    // letter-spacing: .01em;
-  }
+.light {
+  color: $light-text-color;
 }

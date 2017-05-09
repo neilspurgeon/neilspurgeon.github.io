@@ -1,5 +1,3 @@
-$dark-color: #141419;
-$white: #FFF;
 $container-width-lg: 90%;
 $outer-padding: 30px;
 $max-width: 1560px;
@@ -9,10 +7,10 @@ $max-width: 1560px;
   top: 42px;
   left: 10px;
   z-index: 9998;
-  color: $dark-color;
+  color: $dark-text-color;
   font-weight: 700;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.4rem;
 
   @include breakpoint(xs) {
     left: #{(100% - $container-width-lg) / 2};
@@ -80,7 +78,7 @@ $max-width: 1560px;
   width: 500px;
   max-width: 90%;
   height: 100vh;
-  background-color: #0D0D0D;
+  background-color: $black;
   overflow: auto;
   padding-top: 120px;
   z-index: 9998;
@@ -105,56 +103,41 @@ $max-width: 1560px;
 
   a {
     text-decoration: none;
-    color: #FFF;
+    color: $white;
+    opacity: 1;
+    transition: .2s ease all;
+  }
+  a:hover {
+    opacity: .6;
   }
 }
 
 .page-item {
   font-size: 1.6rem;
   font-weight: 100;
-  // opacity: .8;
-  // margin-top: 2em;
 
   a {
     text-decoration: none;
-    color: #FFF;
+    color: $white;
+    opacity: 1;
+    transition: .2s ease all;
+  }
+  a:hover {
+    opacity: .6;
   }
 }
 
 .primary-nav__ul {
-  padding: 0 30px;
+  padding: 0 20px;
+  // padding-right: ;
   margin-bottom: 200px;
+  text-align: right;
 
   @include breakpoint(md) {
     padding: 0 60px;
-  }
+    padding-right: calc(5vw + 15px);  }
 }
 
-// .primary-nav__section-title--page {
-//   display: block;
-//   margin-top: 60px;
-//   text-decoration: none;
-//   transition: 1s ease all;
-
-//   &:after {
-//     background-image: url('../assets/images/link-arrow.svg');
-//     width: 14px;
-//     height: 7px;
-//     margin-left: 10px;
-//     background-color: transparent;
-//     display: inline-block;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     overflow: visible;
-//     transition: .1s ease all;
-//   }
-
-//   &:hover {
-//     &:after {
-//       margin-left: 15px;
-//     }
-//   }
-// }
 
 .project-item__title {
   color: $white;
@@ -165,11 +148,6 @@ $max-width: 1560px;
   margin: 1.5em 0 .5em;
 }
 
-// .project-item__description {
-//   color: $white;
-//   font-size: 14px;
-//   opacity: .7;
-// }
 
 // overlay
 .full-screen-overlay {
@@ -192,18 +170,6 @@ $max-width: 1560px;
   opacity: 1;
   visibility: visible;
   overflow: hidden;
-  transition: .3s ease all;
-}
-
-.full-screen-overlay__close {
-  color: #FFF;
-  min-width: 10%;
-  width: 100%;
-  text-align: center;
-  max-width: calc(100vw - 500px);
-  font-size: 22px;
-  font-weight: 200;
-  opacity: 0;
   transition: .3s ease all;
 }
 

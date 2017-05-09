@@ -1,13 +1,15 @@
-$dark-color: #141419;
-
 .site-footer {
   position: absolute;
   z-index: 1;
   width: 100%;
-  padding: 80px 0 120px;
+  padding: 50px 0 30px;
   display: flex;
   align-items: center;
   font-size: 1.4rem;
+
+  @include breakpoint(md) {
+    padding: 80px 0 120px;
+  }
 
   .grid {
     position: initial; //reset grid from fixed to normal flow
@@ -29,15 +31,17 @@ $dark-color: #141419;
   }
 
   a {
-    font-weight: 100;
+    font-weight: 300;
     text-decoration: none;
+    color: $dark-text-color;
   }
 }
 
 .footer-message {
   margin-bottom: 0;
+  font-size: 1.1rem;
+  padding-top: 15px;
 
-  @include breakpoint(lg) {
-    text-align: right;
-  }
+  @include breakpoint(md) { text-align: right; }
+  @include breakpoint(lg) { font-size: 1.4rem; }
 }

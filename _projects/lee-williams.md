@@ -1,12 +1,11 @@
 ---
 layout: project
 permalink: lee-williams
-title: "Lee Williams Portfolio"
+title: "Lee Williams"
 featured_image: /assets/projects/lee-williams/lee-williams-card.jpg/
 featured_image_size:
   height: 60vmax
   column_width: 7
-hero_image: /assets/projects/lee-williams/itsleewilliams-laptop-iphone.jpg
 tags: ["UI Design", "UX Design"]
 credits: ["Photography:"]
 description_preview: "Website development"
@@ -15,14 +14,18 @@ description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof part
 
 <div class="grid">
   <div class="grid__col-12">
-    <img src="/assets/projects/lee-williams/itsleewilliams-ipads.jpg"/>
+    <img src="/assets/projects/lee-williams/lwd-1.jpg"/>
   </div>
 
   <div class="grid__col-12">
-    <img src="/assets/projects/lee-williams/itsleewilliams-macbook-1.jpg"/>
+    <img src="/assets/projects/lee-williams/lwd-2.jpg"/>
   </div>
 
   <div class="grid__col-12">
-    <img src="/assets/projects/lee-williams/itsleewilliams-macbook-2.jpg"/>
+    <img src="/assets/projects/lee-williams/lwd-3.jpg"/>
+  </div>
+
+  <div class="grid__col-12">
+    <img src="/assets/projects/lee-williams/lwd-4.jpg"/>
   </div>
 </div>

@@ -1,68 +1,63 @@
 ---
 layout: default
 ---
-<section>
+<div class="container">
 
-  <img class="project-hero" src="{{ page.hero_image }}" />
+  <header class="grid project-header">
+    <div class="grid__col-12">
+      <h1>{{ page.title }}</h1>
+    </div>
 
-  <div class="container">
-    <header class="grid project-header">
-      <div class="grid__col-12">
-        <h1 class="project__title"  >{{ page.title }}</h1>
+    <div class="grid__col-md-7 project-description">
+      <h2 class="h2">Description</h2>
+      {{ page.description }}
+    </div>
+
+    {% if page.tags %}
+      <div class="grid__col-md-2">
+        <h2 class="h2">Role / Tags</h2>
+        <ul class="description__tags">
+        {% for tag in page.tags %}
+          <li class="list-item">{{ tag }}</li>
+        {% endfor %}
+        </ul>
       </div>
+    {% endif %}
 
-      <div class="grid__col-md-7 project-description">
-        <h2 class="h2">Description</h2>
-        {{ page.description }}
+    {% if page.credits %}
+      <div class="grid__col-md-3">
+        <h2 class="h2">Credits</h2>
+          <ul class="description__credits">
+            {% for credit in page.credits %}
+              <li class="list-item">{{ credit }}</li>
+            {% endfor %}
+        </ul>
       </div>
+    {% endif %}
 
-      {% if page.tags %}
-        <div class="grid__col-md-2">
-          <h2 class="h2">Role / Tags</h2>
-          <ul class="description__tags">
-          {% for tag in page.tags %}
-            <li class="list-item">{{ tag }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
+  </header>
 
-      {% if page.credits %}
-        <div class="grid__col-md-3">
-          <h2 class="h2">Credits</h2>
-            <ul class="description__credits">
-              {% for credit in page.credits %}
-                <li class="list-item">{{ credit }}</li>
-              {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
+  {{ content }}
 
-    </header>
+</div>
 
-    {{ content }}
+<footer class="project-footer">
+
+  <div class="grid">
+
+    {% if page.next %}
+      {% assign next_page = page.next %}
+    {% else %}
+      {% assign next_page = site.projects.first %}
+    {% endif %}
+
+    <div class="grid__col-md-12">
+      <a class="project-pagination" href="{{ next_page.url }}">
+        <p class="project-pagination__label">Next</p>
+        <p class="project-pagination__title">{{ next_page.title }}</p>
+      </a>
+    </div>
 
   </div>
 
-  <footer class="project-footer">
-
-    <div class="grid">
-
-      {% if page.next %}
-        {% assign next_page = page.next %}
-      {% else %}
-        {% assign next_page = site.projects.first %}
-      {% endif %}
-
-      <div class="grid__col-md-12">
-        <a class="project-pagination" href="{{ next_page.url }}">
-          <p class="project-pagination__label">Next</p>
-          <p class="project-pagination__title">{{ next_page.title }}</p>
-        </a>
-      </div>
-
-    </div>
-
-  </footer>
-
-</section>
+</footer>

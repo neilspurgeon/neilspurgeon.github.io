@@ -1,9 +1,33 @@
-.about-container {
-  margin-top: 100px;
-  min-height: calc(100vh - 100px);
+.about-header {
+  padding: 100px 0 0;
+
+  @include breakpoint(sm) {
+    padding: 250px 0 150px;
+  }
+}
+
+.about-label {
+  padding-bottom: 0;
+}
+
+.about-label__p {
+  margin-bottom: 0;
+}
+
+.about-section{
+  position: relative;
+  padding-bottom: 7px;
 
   @include breakpoint(md) {
-    margin-top: 200px;
-    min-height: calc(100vh - 200px);
+    padding: 50px 0 40px;
   }
+}
+
+.about-section:after {
+  position: absolute;
+    content: '';
+    border-bottom: 1px solid #E6E6E6;
+    width: calc(100% - 20px);
+    bottom: 0;
+    left: 10px;
 }

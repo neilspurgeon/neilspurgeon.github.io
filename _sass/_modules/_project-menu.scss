@@ -22,19 +22,13 @@
 
 .project-card {
   text-decoration: none;
-  color: #000;
 }
 
 .project-card-link {
   text-decoration: none;
-  color: #000;
+  color: $dark-text-color;
   height: 100%;
 }
-
-// .footer-arrow {
-//   display: flex;
-//   justify-content: center;
-// }
 
 .project-card__title {
   // margin:0 ;
@@ -47,12 +41,6 @@
   padding: 0;
 }
 
-// .project-card__footer {
-//   margin-top: 10px;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
 .project-hover {
   position: absolute;
   width: 100%;
@@ -62,10 +50,7 @@
   z-index: 1;
   padding: 20px;
   background: rgba(0,0,0,.6);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  color: #FFF;
+  color: $white;
   font-size: 14px;
   letter-spacing: .05em;
   font-weight: 100;

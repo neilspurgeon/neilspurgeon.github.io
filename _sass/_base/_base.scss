@@ -1,4 +1,3 @@
-
 html {
   /* apply a natural box layout model to all elements, but allowing components to change */
   box-sizing: border-box;
@@ -9,17 +8,6 @@ html {
 
 img {
   width: 100%;
-}
-
-.container {
-  // position: relative;
-  // width: 90%;
-  // max-width: 1560px;
-  // margin: 0 auto;
-
-  @include breakpoint(lg) {
-    // width: 90%;
-  }
 }
 
 body {
