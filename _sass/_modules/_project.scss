@@ -34,11 +34,19 @@
 }
 
 .project-pagination__label {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0;
+  color: $dark-text-color;
 }
 
 .project-pagination__title {
-  font-size: 2rem;
+  font-size: 3.6rem;
+  font-family: "tiempos text", sans-serif;
+  color: $dark-text-color;
+  transition: .2s ease all;
+
+  &:hover {
+    opacity: .6;
+  }
 }

@@ -23,11 +23,19 @@ body {
 p {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.6em;
-  color: $dark-text-color;
+  color: $light-text-color;
   margin: 0 0 1rem;
   max-width: 50em;
+}
+
+.p {
+  font-size: 1.6rem;
+  font-family: "maison neue", sans-serif;
+  font-weight: 100;
+  line-height: 1.6em;
+  color: $light-text-color;
 }
 
 .p-small {
@@ -45,7 +53,6 @@ p {
 h1, .h1 {
   font-size: 3rem;
   line-height: 1.3em;
-  // line-height: 5rem;
   font-family: "maison neue", sans-serif;
   font-weight: 300;
   color: $dark-text-color;
@@ -53,17 +60,19 @@ h1, .h1 {
 
   @include breakpoint(md) {
     font-size: 6rem;
-    // line-height: 8rem;
   }
 }
 
 h2, .h2 {
   font-size: 1.4rem;
   font-weight: 600;
-  // letter-spacing: .2em;
   margin-top: 2rem;
 }
 
 .light {
   color: $light-text-color;
+}
+
+.page-heading {
+  font-family: "tiempos text", sans-serif;
 }

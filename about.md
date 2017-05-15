@@ -11,7 +11,7 @@ permalink: /about/
 
     <div class="grid about-header">
       <div class="grid__col-12">
-        <h1>About</h1>
+        <h1 class="page-heading">About</h1>
       </div>
     </div>
 

@@ -41,7 +41,7 @@ $max-width: 1560px;
   }
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 6 {
   .primary-nav.is-open {
     .primary-nav__li:nth-child(#{$i}) {
       animation-delay: $i * .1s;
@@ -127,14 +127,17 @@ $max-width: 1560px;
   width: 500px;
   max-width: 90%;
   height: 100vh;
-  background-color: $black;
+  background-color: $white;
   overflow: auto;
   padding-top: 120px;
   z-index: 9998;
   transform: translateX(500px);
   transition: .2s ease all;
 
-  @include breakpoint(md) {}
+  @include breakpoint(md) {
+    transform: translateX(33vw);
+    width: 33vw;
+  }
 }
 
 .primary-nav__li {
@@ -149,9 +152,10 @@ $max-width: 1560px;
   font-size: 2.8rem;
   font-weight: 100;
   margin-bottom: .7em;
+  font-family: "tiempos text", sans-serif;
   a {
     text-decoration: none;
-    color: $white;
+    color: $dark-text-color;
     opacity: 1;
     transition: .2s ease all;
   }
@@ -161,12 +165,13 @@ $max-width: 1560px;
 }
 
 .page-item {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 100;
+  margin-bottom: 1em;
 
   a {
     text-decoration: none;
-    color: $white;
+    color: $light-text-color;
     opacity: 1;
     transition: .2s ease all;
   }
