@@ -53,7 +53,7 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   margin: 0 auto;
 
   @include breakpoint(xs) {
-    width: 90%;
+    width: 100%;
   }
 
   @include breakpoint(md) {

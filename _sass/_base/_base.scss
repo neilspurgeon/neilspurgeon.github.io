@@ -13,3 +13,10 @@ img {
 body {
   background-color: #FFF;
 }
+
+.main-container {
+  @include breakpoint(md){
+    width: calc(100% - 150px);
+    margin: 0 auto;
+  }
+}

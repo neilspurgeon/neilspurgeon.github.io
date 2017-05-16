@@ -79,7 +79,7 @@ var pageFunctions = function() {
     tolerance : 5
   });
   // initialise
-  headroom.init();
+  // headroom.init();
 
   $('.slider').slick({
     infinite: true,
@@ -88,6 +88,43 @@ var pageFunctions = function() {
     dots: true
 
   });
+
+
+  var didScroll = false;
+  window.onscroll = doThisStuffOnScroll;
+  nudge = 1;
+  lastScrollPos = 0
+
+  function doThisStuffOnScroll() {
+    didScroll = true;
+  }
+
+  setInterval(function() {
+    scrollPos = document.body.scrollTop + window.innerHeight;
+    bodyHeight = document.body.scrollHeight;
+
+    if(didScroll) {
+      didScroll = false;
+      // console.log('You scrolled');
+
+      if ((scrollPos + 100) >= bodyHeight && scrollPos > lastScrollPos) {
+        console.log('going up')
+        newPos = (bodyHeight) - (scrollPos + 100);
+        $('.site-title').css({'transform': 'translate3d(0, ' + newPos + 'px, 0) rotate(90deg)'});
+        lastScrollPos = scrollPos;
+
+      } else if ((scrollPos + 100) >= bodyHeight && scrollPos < lastScrollPos) {
+        console.log('going down')
+        newPos = (bodyHeight) - (scrollPos + 100);
+        $('.site-title').css({'transform': 'translate3d(0, ' + newPos + 'px, 0) rotate(90deg)'});
+        lastScrollPos = scrollPos;
+      }
+
+
+    }
+  }, 1);
+
+
 }
 
 pageFunctions();

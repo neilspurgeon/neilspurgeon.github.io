@@ -6,22 +6,22 @@ $max-width: 1560px;
 @keyframes slide-fade-in {
   0% {
     opacity: 0;
-    transform: translateX(10%);
+    transform: translate3d(-10%, 0, 0);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slide-fade-out {
   0% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translate3d(-20%, 0, 0);
   }
 }
 
@@ -51,54 +51,12 @@ $max-width: 1560px;
 
 // -------------------------------
 
-.site-title {
-  position: fixed;
-  top: 42px;
-  left: 10px;
-  z-index: 9998;
-  color: $dark-text-color;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.4rem;
-
-  @include breakpoint(xs) {
-    left: #{(100% - $container-width-lg) / 2};
-    margin-left: 1rem;
-  }
-}
-
-.menu-btn {
-  border: none;
-  position: fixed;
-  top: $outer-padding;
-  right: 10px;
-  z-index: 9999;
-  padding: 0;
-  background: none;
-  padding: 0;
-  font-size: 0;
-  appearance: none;
-  box-shadow: none;
-  border: none;
-  cursor: pointer;
-
-  @include breakpoint(xs) {
-    right: #{(100% - $container-width-lg) / 2};
-    margin-right: 1rem;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
 .opened-menu {
   opacity: 0;
-  // transition-property: ease;
   transition-duration: .2s;
 }
 
-.closed-menu { opacity: 1; }
+// .closed-menu { opacity: 1; }
 
 .menu-btn.is-open {
   .opened-menu {
@@ -123,7 +81,7 @@ $max-width: 1560px;
 .primary-nav {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 500px;
   max-width: 90%;
   height: 100vh;
@@ -131,11 +89,11 @@ $max-width: 1560px;
   overflow: auto;
   padding-top: 120px;
   z-index: 9998;
-  transform: translateX(500px);
+  transform: translateX(-500px);
   transition: .2s ease all;
 
   @include breakpoint(md) {
-    transform: translateX(33vw);
+    transform: translateX(-33vw);
     width: 33vw;
   }
 }
@@ -167,7 +125,8 @@ $max-width: 1560px;
 .page-item {
   font-size: 2rem;
   font-weight: 100;
-  margin-bottom: 1em;
+  margin-top: 0.7em;
+  padding-top: 10px;
 
   a {
     text-decoration: none;
@@ -181,14 +140,13 @@ $max-width: 1560px;
 }
 
 .primary-nav__ul {
-  padding: 0 20px;
-  // padding-right: ;
+  padding-left: 5%;
   margin-bottom: 200px;
-  text-align: right;
 
   @include breakpoint(md) {
     padding: 0 60px;
-    padding-right: calc(5vw + 15px);  }
+    padding-left: calc(5vw + 1rem);
+  }
 }
 
 
