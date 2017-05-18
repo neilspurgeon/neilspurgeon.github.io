@@ -52,14 +52,15 @@ p {
 
 h1, .h1 {
   font-size: 3rem;
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-family: "maison neue", sans-serif;
   font-weight: 300;
   color: $dark-text-color;
   margin-top: 2rem;
 
   @include breakpoint(md) {
-    font-size: 5rem;
+    line-height: 1.6em;
+    font-size: 5.4rem;
   }
 }
 
