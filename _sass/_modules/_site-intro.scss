@@ -2,13 +2,15 @@
   // padding-top: 150px;
   // padding-bottom: 100px;
 
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+
   @include breakpoint(sm) {
     // padding-top: 27vh;
     // padding-bottom: 27vh;
 
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
+
   }
 }
 
