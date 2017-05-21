@@ -1,13 +1,18 @@
 .site-intro {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  // padding-top: 150px;
+  // padding-bottom: 100px;
 
   @include breakpoint(sm) {
-    padding-top: 27vh;
-    padding-bottom: 27vh;
+    // padding-top: 27vh;
+    // padding-bottom: 27vh;
+
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
   }
 }
 
 .intro-text {
-  margin-bottom: 1em;
+  padding-top: 100px;
+  // margin-bottom: 1em;
 }
