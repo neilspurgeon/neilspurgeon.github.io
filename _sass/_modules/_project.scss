@@ -1,9 +1,41 @@
+// Header
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-header {
-  padding: 100px 0 40px;
+  // padding: 100px 0 40px;
 
   @include breakpoint(sm) {
-    padding: 250px 0 150px;
+    display: flex;
   }
+}
+
+.project-header__hero {
+  object-fit: cover;
+  width: 50%;
+  height: calc(100vh + 80px);
+}
+
+.project-header__info {
+  width: 50%;
+  height: 100vh;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  animation: fadeIn 2s ease;
+}
+
+.project-title {
+  margin-bottom: 0;
+}
+
+// Details section
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.project-details {
+  background: #F8F8F8;
+  padding: 230px 0 140px;
+  margin: -80px 0 -90px;
 }
 
 .description__tags,
@@ -13,31 +45,30 @@
   margin: 0;
 }
 
-.project-hero {
-  height: 100vh;
-  object-fit: cover;
+// Images
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.full-bleed {
+  width: 100%;
+
+  @include breakpoint(md) {
+    padding-bottom: 80px;
+  }
 }
 
-.shadow {
-  box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.3);
-  margin: 50px 0;
-}
-
+// Footer
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-footer {
-  padding: 100px 0 0;
+  // padding: 100px 0 0;
 }
 
 .project-pagination {
   // padding: 80px 0 60px;
-  padding: 100px 0 0;
+  // padding: 100px 0 0;
   text-decoration: none;
 }
 
 .project-pagination__label {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 0;
-  color: $dark-text-color;
+  margin: 0;
 }
 
 .project-pagination__title {

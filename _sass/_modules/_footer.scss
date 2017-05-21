@@ -1,46 +1,47 @@
+$fade-transition: .2s ease all;
+
+.main-container {
+  margin-bottom: 350px;
+}
+
 .site-footer {
-  position: absolute;
-  z-index: 1;
-  padding: 50px 0 30px;
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  margin: 0;
+  background-color: $black;
 
   @include breakpoint(md) {
-    padding: 80px 0 120px;
+    margin: 0 0 -60px;
+  }
+
+  p {
+    font-weight: 100;
+    font-size: 1.4rem;
+    letter-spacing: .03em;
+    color: $white;
   }
 
   .grid {
-    position: initial; //reset grid from fixed to normal flow
-  }
-
-  .h2 {
-    margin-top: 0;
-  }
-
-  ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 2em 0 0;
-  }
-
-  a {
-    font-weight: 300;
-    text-decoration: none;
-    color: $dark-text-color;
+    position: initial;
   }
 }
 
-.footer-message {
-  margin-bottom: 0;
-  font-size: 1.1rem;
-  padding-top: 15px;
+p.copyright {
+  font-size: 1.2rem;
+  padding-top: 5em;
+}
 
-  @include breakpoint(md) { text-align: right; }
-  @include breakpoint(lg) { font-size: 1.4rem; }
+.footer-link {
+  font-weight: 100;
+  text-decoration: none;
+  color: $white;
+  opacity: 1;
+  transition: $fade-transition;
+
+  &:hover {
+    opacity: .7;
+  }
 }

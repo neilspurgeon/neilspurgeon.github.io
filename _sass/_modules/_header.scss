@@ -7,7 +7,7 @@
   border: none;
   position: fixed;
   top: $outer-padding;
-  left: 10px;
+  right: 10px;
   z-index: 9999;
   padding: 0;
   padding: 0;
@@ -18,7 +18,7 @@
   cursor: pointer;
 
   @include breakpoint(xs) {
-    left: 25px;
+    right: 35px;
     // margin-left: 1rem;
   }
 
@@ -33,20 +33,18 @@
   left: 10px;
   z-index: 9998;
   color: $dark-text-color;
-  font-weight: 300;
+  font-weight: 100;
   text-decoration: none;
   font-size: 1.4rem;
 
-  @include breakpoint(xs) {
-    left: #{(100% - $container-width-lg) / 2};
-    // margin-left: 1rem;
-  }
-
-  @include breakpoint(md) {
-    transform-origin: left center;
-    transform: rotate(90deg);
+  @include breakpoint(sm) {
+    transform-origin: right center;
+    transform: rotate(90deg) translate3d( 0, 0, 0);
     top: auto;
-    left: 40px;
-    bottom: 130px;
+    left: auto;
+    right: 55px;
+    bottom: 30px;
+    color: #FFF;
+    mix-blend-mode: difference;
   }
 }

@@ -24,8 +24,8 @@ p {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
   font-weight: 100;
-  line-height: 1.6em;
-  color: $light-text-color;
+  line-height: 1.75em;
+  color: $dark-text-color;
   margin: 0 0 1rem;
   max-width: 50em;
 }
@@ -35,7 +35,7 @@ p {
   font-family: "maison neue", sans-serif;
   font-weight: 100;
   line-height: 1.6em;
-  color: $light-text-color;
+  color: $dark-text-color;
 }
 
 .p-small {
@@ -50,10 +50,16 @@ p {
   }
 }
 
+.label {
+  font-size: 1.4rem;
+  color: $light-text-color;
+}
+
 h1, .h1 {
   font-size: 3rem;
   line-height: 1.4em;
-  font-family: "maison neue", sans-serif;
+  // font-family: "maison neue", sans-serif;
+  font-family: "tiempos text", sans-serif;
   font-weight: 300;
   color: $dark-text-color;
   margin-top: 2rem;

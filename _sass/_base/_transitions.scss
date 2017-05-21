@@ -70,3 +70,28 @@
       }
   }
 }
+
+
+// JS Reveals
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.reveal {
+  transition: clip-path 1.1s cubic-bezier(.19,1,.22,1), opacity 1.1s;
+}
+
+.reveal--out {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}
+
+.reveal--in {
+  opacity: 1;
+  clip-path: inset(0 0% 0 0);
+}
+
+
+// Reveal Classes
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.fade-in {
+  animation: fadeIn 2s ease;
+}
+

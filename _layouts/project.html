@@ -1,21 +1,27 @@
 ---
 layout: default
 ---
-<div class="container">
 
-  <header class="grid project-header">
-    <div class="grid__col-12">
-      <h1 class="page-heading">{{ page.title }}</h1>
-    </div>
+<div class="project-header">
+  <img class="project-header__hero reveal reveal--out" src="{{ page.hero_image }}">
+  <div class="project-header__info">
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </div>
+</div>
+
+<div class="project-details">
+
+  <div class="grid">
 
     <div class="grid__col-md-7 project-description">
-      <h2 class="h2">Description</h2>
+      <p class="label">Description</p>
       {{ page.description }}
     </div>
 
     {% if page.tags %}
       <div class="grid__col-md-2">
-        <h2 class="h2">Role / Tags</h2>
+        <p class="label">Role / Tags</p>
         <ul class="description__tags">
         {% for tag in page.tags %}
           <li class="list-item p">{{ tag }}</li>
@@ -26,20 +32,21 @@ layout: default
 
     {% if page.credits %}
       <div class="grid__col-md-3">
-        <h2 class="h2">Credits</h2>
-          <ul class="description__credits">
-            {% for credit in page.credits %}
-              <li class="list-item p">{{ credit }}</li>
-            {% endfor %}
+        <p class="label">Credits</p>
+        <ul class="description__credits">
+          {% for credit in page.credits %}
+            <li class="list-item p">{{ credit }}</li>
+          {% endfor %}
         </ul>
       </div>
     {% endif %}
 
-  </header>
-
-  {{ content }}
+  </div>
 
 </div>
+
+{{ content }}
+
 
 <footer class="project-footer">
 
@@ -53,7 +60,7 @@ layout: default
 
     <div class="grid__col-md-12">
       <a class="project-pagination" href="{{ next_page.url }}">
-        <p class="project-pagination__label">Next</p>
+        <p class="project-pagination__label label">Next</p>
         <p class="project-pagination__title">{{ next_page.title }}</p>
       </a>
     </div>
