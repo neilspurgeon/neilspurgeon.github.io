@@ -1,0 +1,18 @@
+.about-header {
+  padding: 100px 0 50px;
+
+  @include breakpoint(sm) {
+    padding: 20vh 0 15vh;
+  }
+}
+
+.about-section {
+
+  @include breakpoint(sm) {
+    padding-bottom: 30px;
+  }
+}
+
+.about-section:last-child {
+  padding-bottom: 100px;
+}
