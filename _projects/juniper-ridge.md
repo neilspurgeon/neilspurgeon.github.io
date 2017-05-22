@@ -2,10 +2,9 @@
 layout: project
 permalink: juniper-ridge
 title: "Juniper Ridge"
-featured_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg/
-featured_image_size:
-  height: 30vmax
-  column_width: 7
+featured_image:
+  horizontal: /assets/projects/juniper-ridge/jr-feature-horizontal.jpg
+  vertical: /assets/projects/juniper-ridge/jr-feature-vertical.jpg
 hero_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg
 tags: ["Packaging Design", "Print Design", "Branding"]
 credits: ["Photography by Jordan Vogua", "Designed with Lee Williams"]

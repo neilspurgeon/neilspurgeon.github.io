@@ -2,10 +2,9 @@
 layout: project
 permalink: fresh-step
 title: "Fresh Step"
-featured_image: /assets/projects/fresh-step/fresh-step-card.jpg/
-featured_image_size:
-  height: 40vmax
-  column_width: 7
+featured_image:
+  horizontal: /assets/projects/fresh-step/fresh-step-feature-horizontal.jpg
+  vertical: /assets/projects/fresh-step/fresh-step-feature-vertical.jpg
 hero_image: /assets/projects/fresh-step/fresh-step-iphones-iso-grid.jpg
 tags: ["UI Design"]
 credits: ["Design with Thomas Charlet", "UX Wireframes by Fluid"]

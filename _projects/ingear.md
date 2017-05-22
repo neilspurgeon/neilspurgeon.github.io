@@ -2,7 +2,9 @@
 layout: project
 permalink: ingear
 title: "Ingear Auto"
-featured_image: http://placehold.it/400x400
+featured_image:
+  horizontal: "/assets/projects/ingear/ingear-feature-horizontal.jpg"
+  vertical: "/assets/projects/ingear/ingear-feature-vertical.jpg"
 tags: ["UI Design", "UX Design", "Brand Strategy"]
 description: "<p>Ingear specializes in high end auto safety devices. While there are many other companies that produce similar tools, none match the level of precision, quality, and design that Ingear provides. After testing their product on Amazon, Ingear was ready to invest in a full ecommerce website that matched the quality of their products.</p>"
 ---
