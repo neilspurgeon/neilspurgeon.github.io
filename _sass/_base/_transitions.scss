@@ -79,13 +79,13 @@
 }
 
 .reveal--out {
-  clip-path: inset(0 100% 0 0);
+  clip-path: polygon(0 0,0 0,0 100%,0 100%);
   opacity: 0;
 }
 
 .reveal--in {
   opacity: 1;
-  clip-path: inset(0 0% 0 0);
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 
 

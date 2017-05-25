@@ -58,15 +58,15 @@ p {
 h1, .h1 {
   font-size: 3rem;
   line-height: 1.4em;
-  font-family: "maison neue", sans-serif;
-  // font-family: "tiempos text", sans-serif;
-  font-weight: 300;
+  // font-family: "maison neue", sans-serif;
+  font-family: "tiempos text", sans-serif;
+  font-weight: 100;
   color: $dark-text-color;
-  margin-top: 2rem;
+  letter-spacing: -.01em;
 
   @include breakpoint(md) {
-    line-height: 1.6em;
-    font-size: 5.4rem;
+    line-height: 1.4em;
+    font-size: 5rem;
   }
 }
 
