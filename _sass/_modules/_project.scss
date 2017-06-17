@@ -68,9 +68,11 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .full-bleed {
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
 
-  @include breakpoint(md) {
-    padding-bottom: 80px;
+  @include breakpoint(sm) {
+    padding-bottom: 40px;
   }
 }
 

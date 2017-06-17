@@ -12,7 +12,7 @@ overview: "Graphic design portfolio website"
 description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.</p>"
 ---
 
-<div class="grid">
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/lee-williams/lwd-1.jpg"/>
   </div>

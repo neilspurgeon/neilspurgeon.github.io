@@ -13,7 +13,7 @@ description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof part
 published: false
 ---
 
-<div class="grid grid--justify-center">
+<div class="grid grid--offset">
 
   <div class="grid__col-12"><img src="/assets/projects/nomnom/nomnom-stores.jpg"></div>
 

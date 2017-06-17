@@ -51,7 +51,6 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 .grid {
   margin: 0 auto;
-  padding: 15px;
 
   @include breakpoint(xs) {
     width: 100%;
@@ -60,7 +59,7 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   @include breakpoint(sm) {
     width: 100%;
     max-width: 1490px;
-    padding: 0 10px 80px;
+    padding: 0 10px 40px;
   }
 
   @media (min-width: 1490px) {
@@ -84,12 +83,6 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 // Added Classes
 // -------------------------
-.grid--full-width {
-  max-width: 100%;
-  margin-right: 0;
-  margin-left: 0;
-}
-
 
 // Overides and added classes
 .grid__col--bleed-bottom {
@@ -98,8 +91,4 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 .grid--bleed-bottom {
   padding-bottom: 0;
-}
-
-.grid--full-bleed {
-  padding: 0;
 }

@@ -13,7 +13,7 @@ description: "<p>Worked on a complete rebrand of Juniper Ridge, a wild-harvested
 Redesigned packaging for their complete line including Trail Soap, Backpacker's Cologne, Cabin Spray, Campfire Incense and Smudge's.</p>"
 ---
 
-<div class="grid">
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/juniper-ridge/jr-box-set-1.jpg" />
   </div>
@@ -23,13 +23,13 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
   <img src="/assets/projects/juniper-ridge/jr-soaps.jpg"/>
 </div>
 
-<div class="grid">
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/juniper-ridge/jr-trail-resin-cologne-big-sur-1.jpg" />
   </div>
 </div>
 
-<div class="grid">
+<div class="grid grid--offset">
   <div class="grid__col-12 grid__col--bleed-bottom">
     <img src="/assets/projects/juniper-ridge/jr-christmas-fur-set-1.jpg" />
   </div>

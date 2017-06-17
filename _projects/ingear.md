@@ -10,7 +10,7 @@ description: "<p>Ingear specializes in high end auto safety devices. While there
 overview: "An ecommerce website for high-end auto safety tools"
 ---
 
-<div class="grid grid--justify-center">
+<div class="grid grid--offset">
 
   <div class="grid__col-12">
     <img src="/assets/projects/ingear/ingear-1.jpg">
