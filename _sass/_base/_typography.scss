@@ -38,11 +38,21 @@ p {
   color: $dark-text-color;
 }
 
-.p-small {
+.p--on-dark {
+  font-weight: 100;
+  letter-spacing: .02em;
+  color: $white;
+}
+
+.p--xsmall {
+  font-size: 1.2rem;
+}
+
+.p--small {
   font-size: 1.4rem;
 }
 
-.p-large {
+.p--large {
   font-size: 2rem;
 
   @include breakpoint(lg) {
@@ -51,29 +61,44 @@ p {
 }
 
 .label {
-  font-size: 1.4rem;
-  color: $light-text-color;
+  font-size: 1.6rem;
+  color: $black-text-color;
+  margin-bottom: .2em;
+  font-weight: 900;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.label--on-dark {
+  color: $white;
+  letter-spacing: .03em;
+  letter-spacing: .13em;
 }
 
 h1, .h1 {
   font-size: 3rem;
-  line-height: 1.4em;
-  // font-family: "maison neue", sans-serif;
-  font-family: "tiempos text", sans-serif;
-  font-weight: 100;
+  line-height: 1.3;
+  font-family: "maison neue", sans-serif;
+  font-weight: 600;
   color: $dark-text-color;
-  letter-spacing: -.01em;
+  letter-spacing: .025em;
 
   @include breakpoint(md) {
-    line-height: 1.4em;
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
 }
 
 h2, .h2 {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: 600;
-  margin-top: 2rem;
+  color: $dark-text-color;
+  // margin-top: 2rem;
+
+  @include breakpoint(md) {
+    font-size: 3.6rem;
+  }
 }
 
 .light {

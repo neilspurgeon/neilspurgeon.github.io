@@ -51,17 +51,38 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 .grid {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 15px;
 
   @include breakpoint(xs) {
     width: 100%;
   }
 
   @include breakpoint(sm) {
-    width: calc(100% - 140px);
-    padding: 0 0 80px;
+    // width: calc(100% - 140px);
+    // max-width: 1340px;
+    width: 100%;
+    max-width: 1490px;
+    padding: 0 10px 80px;
+  }
+
+  @media (min-width: 1490px) {
+    max-width: 1440px;
   }
 }
+
+.grid--inset {
+  @include breakpoint(md) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+.grid--offset {
+  @include breakpoint(sm) {
+    padding-right: 60px;
+  }
+}
+
 
 // Added Classes
 // -------------------------
@@ -77,4 +98,12 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 // Overides and added classes
 .grid__col--bleed-bottom {
   padding-bottom: 0;
+}
+
+.grid--bleed-bottom {
+  padding-bottom: 0;
+}
+
+.grid--full-bleed {
+  padding: 0;
 }

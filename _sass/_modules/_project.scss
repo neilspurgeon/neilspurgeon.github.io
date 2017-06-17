@@ -31,12 +31,23 @@
     height: 100vh;
     margin-left: 50px;
     margin-right: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 }
 
 .project-title {
   margin-bottom: 0;
+}
+
+.project-overview {
+  font-size: 2rem;
+  line-height: 1.25;
+  // color: $light-gray;
+
+  @include breakpoint(sm) {
+    font-size: 1.8rem;
+  }
+
 }
 
 // Details section
@@ -87,9 +98,9 @@
 }
 
 .project-pagination__title {
-  font-size: 3.6rem;
-  font-family: "tiempos text", sans-serif;
-  color: $dark-text-color;
+  // font-size: 3.6rem;
+  // font-weight: 600;
+  // color: $dark-text-color;
   transition: .2s ease all;
 
   &:hover {

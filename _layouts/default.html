@@ -5,13 +5,15 @@
 
   <body>
 
-    <div id="main" class="m-scene main-container">
+    <div id="main" class="main-container">
+
       {% include header.html %}
       <div class="scene-element scene-element--fadein">
         {{ content }}
       </div>
 
     </div>
+
     {% include footer.html %}
 
     {% include scripts.html %}

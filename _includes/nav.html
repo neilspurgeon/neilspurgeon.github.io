@@ -1,28 +1,31 @@
-<nav id="primary-nav" class="primary-nav scene-element scene-element--slideoutleft">
-
-  <ul class="primary-nav__ul">
-
-    {% for project in site.projects %}
-
-      <li class="primary-nav__li project-item">
-        <a class="primary-nav__link" href="{{ project.url }}">
-          {{ project.title }}
-        </a>
-      </li>
-
-    {% endfor %}
+<nav id="primary-nav" class="primary-nav">
 
 
-    {% for page in site.pages %}
-    {% if page.title %}
 
-    <li class="primary-nav__li page-item ">
-      <a class="primary-nav__link" href="{{ page.permalink }}">
-        {{ page.title }}
-      </a>
-    </li>
+      <ul class="primary-nav__ul">
 
-    {% endif %}
-    {% endfor %}
-  </ul>
+        {% for project in site.projects %}
+
+          <li class="primary-nav__li project-item">
+            <a class="primary-nav__link" href="{{ project.url }}">
+              {{ project.title }}
+            </a>
+          </li>
+
+        {% endfor %}
+
+
+        {% for page in site.pages %}
+        {% if page.title %}
+
+        <li class="primary-nav__li page-item ">
+          <a class="primary-nav__link" href="{{ page.permalink }}">
+            {{ page.title }}
+          </a>
+        </li>
+
+        {% endif %}
+        {% endfor %}
+      </ul>
+
 </nav>

@@ -6,7 +6,7 @@ layout: default
   <img class="project-header__hero reveal reveal--out" src="{{ page.featured_image.vertical }}">
   <div class="project-header__info">
     <h1 class="project-title">{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
+    <p class="project-overview">{{ page.overview }}</p>
   </div>
 </div>
 
@@ -61,7 +61,7 @@ layout: default
     <div class="grid__col-md-12">
       <a class="project-pagination" href="{{ next_page.url }}">
         <p class="project-pagination__label label">Next</p>
-        <p class="project-pagination__title">{{ next_page.title }}</p>
+        <p class="project-pagination__title h2">{{ next_page.title }}</p>
       </a>
     </div>
 

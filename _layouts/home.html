@@ -5,26 +5,31 @@
 
   <body>
 
-    <div id="main" class="m-scene main-container">
+    <div class="main-container"">
+
+      <div class="grid grid--full-bleed">
+        <span class="site-title grid__col--md-6">Neil Spurgeon</span>
+      </div>
+
       {% include header.html %}
 
-      <div class="scene-element scene-element--fadein">
 
-        <div class="grid">
+      <div class="grid grid--inset">
 
-          <section class="site-intro grid__col-sm-12 grid__col-xlg-9">
-            <h1 class="intro-text page-heading">Hi, I’m Neil, a designer and frontend developer based in San Luis Obispo, California.</h1>
+          <section class="site-intro grid__col-sm-12 grid__col-xlg-11">
+            <h1 class="intro-text page-heading">Hello, I’m a designer and frontend developer living in San Luis Obispo, California.</h1>
             <p><a class="capsule-link" href="/about">Learn More</a></p>
           </section>
-        </div>
-
-        {{ content }}
 
       </div>
 
-      {% include footer.html %}
+
+      {{ content }}
 
     </div>
+
+    {% include footer.html %}
+
     {% include scripts.html %}
 
   </body>

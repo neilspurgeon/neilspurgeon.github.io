@@ -8,7 +8,7 @@ featured_image_size:
   column_width: 7
 tags: ["UI Design", "UX Design"]
 credits: ["Photography:"]
-description_preview: "Website development"
+overview: "Graphic design portfolio website"
 description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag.</p>"
 ---
 

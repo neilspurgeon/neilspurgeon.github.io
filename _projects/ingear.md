@@ -7,6 +7,7 @@ featured_image:
   vertical: "/assets/projects/ingear/ingear-feature-vertical.jpg"
 tags: ["UI Design", "UX Design", "Brand Strategy"]
 description: "<p>Ingear specializes in high end auto safety devices. While there are many other companies that produce similar tools, none match the level of precision, quality, and design that Ingear provides. After testing their product on Amazon, Ingear was ready to invest in a full ecommerce website that matched the quality of their products.</p>"
+overview: "An ecommerce website for high-end auto safety tools"
 ---
 
 <div class="grid grid--justify-center">
