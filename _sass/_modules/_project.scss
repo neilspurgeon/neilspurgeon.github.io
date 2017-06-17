@@ -1,8 +1,6 @@
 // Header
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-header {
-  // padding: 100px 0 40px;
-
   @include breakpoint(sm) {
     display: flex;
   }
@@ -42,20 +40,15 @@
 .project-overview {
   font-size: 2rem;
   line-height: 1.25;
-  // color: $light-gray;
 
   @include breakpoint(sm) {
     font-size: 1.8rem;
   }
-
 }
 
 // Details section
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-details {
-  // background: #F8F8F8;
-  // padding: 100px 0 140px;
-  // margin: -80px 0 -90px;
 
   @include breakpoint(sm) {
     background: #F8F8F8;
@@ -83,13 +76,7 @@
 
 // Footer
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
-.project-footer {
-  // padding: 100px 0 0;
-}
-
 .project-pagination {
-  // padding: 80px 0 60px;
-  // padding: 100px 0 0;
   text-decoration: none;
 }
 
@@ -98,9 +85,6 @@
 }
 
 .project-pagination__title {
-  // font-size: 3.6rem;
-  // font-weight: 600;
-  // color: $dark-text-color;
   transition: .2s ease all;
 
   &:hover {

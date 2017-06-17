@@ -101,14 +101,7 @@ $max-width: 1560px;
 }
 
 .primary-nav__ul {
-  // padding-left: 5%;
-  // margin-bottom: 200px;
-  // margin-right: 35px;
   padding: 0;
-
-  @include breakpoint(md) {
-    // margin-right: 80px;
-  }
 
   @media (min-width: 1490px) {
     // right: calc((100vw - 1450px) / 2 + 20px);

@@ -58,8 +58,6 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   }
 
   @include breakpoint(sm) {
-    // width: calc(100% - 140px);
-    // max-width: 1340px;
     width: 100%;
     max-width: 1490px;
     padding: 0 10px 80px;
@@ -88,8 +86,6 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 // -------------------------
 .grid--full-width {
   max-width: 100%;
-  // margin-right: -$reflex-grid-spacing;
-  // margin-left: -$reflex-grid-spacing;
   margin-right: 0;
   margin-left: 0;
 }
