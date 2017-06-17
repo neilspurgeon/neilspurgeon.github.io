@@ -11,19 +11,30 @@ overview: "An ecommerce website for high-end auto safety tools"
 ---
 
 <div class="grid grid--offset">
-
   <div class="grid__col-12">
     <img src="/assets/projects/ingear/ingear-1.jpg">
   </div>
+</div>
+
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/ingear/ingear-2.jpg">
   </div>
+</div>
+
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/ingear/ingear-3.jpg">
   </div>
+</div>
+
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/ingear/ingear-4.jpg">
   </div>
+</div>
+
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/ingear/ingear-5.jpg">
   </div>

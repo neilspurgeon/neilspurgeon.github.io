@@ -16,15 +16,21 @@ description: "<p>Retro occupy organic, stumptown shabby chic pour-over roof part
   <div class="grid__col-12">
     <img src="/assets/projects/lee-williams/lwd-1.jpg"/>
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/lee-williams/lwd-2.jpg"/>
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/lee-williams/lwd-3.jpg"/>
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/lee-williams/lwd-4.jpg"/>
   </div>

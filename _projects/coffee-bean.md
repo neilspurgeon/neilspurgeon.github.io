@@ -22,26 +22,27 @@ published: false
   <div class="grid__col-12">
     <img src="http://placehold.it/1400x800/333" />
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-md-6">
     <img src="http://placehold.it/400x400" />
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-md-6">
     <img src="http://placehold.it/400x400" />
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="http://placehold.it/1400x3000" />
   </div>
-
 </div>
 
-<div>
-  <img src="http://placehold.it/1400x800/111" />
-</div>
-
-<div class="grid">
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="http://placehold.it/1400x800" />
   </div>

@@ -16,15 +16,21 @@ description: "<p>Fresh Step, a Clorox brand, came to us wanting to incorporate t
   <div class="grid__col-12">
     <img src="/assets/projects/fresh-step/fresh-step-home-1.jpg" />
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/fresh-step/fresh-step-mobile-1.jpg" />
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/fresh-step/fresh-step-product-details.jpg" />
   </div>
+</div>
 
+<div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/fresh-step/fresh-step-home-2.jpg" />
   </div>
