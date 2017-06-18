@@ -1,11 +1,22 @@
 .site-title {
   position: absolute;
   margin-top: 28px;
+  z-index: 9998;
   letter-spacing: 0;
   font-weight: 600;
   letter-spacing: -.02em;
   font-size: 14px;
   margin-left: 10px;
+  color: $dark-text-color;
+  text-decoration: none;
+
+  @include breakpoint(sm) {
+    left: 10px;
+  }
+
+  @media (min-width: 1490px) {
+    left: calc((100vw - 1440px) / 2 + 10px);
+  }
 }
 
 .site-byline {
