@@ -3,14 +3,14 @@ layout: home
 title: Home
 permalink: /
 ---
-<div class="grid grid--offset">
+<div class="grid grid--offset project-card-menu">
 
     {% for project in site.projects %}
 
       <div class="project-card grid__col-sm-6">
 
         <a class="project-card-link" href="{{ project.permalink }}">
-          <div class="hover-zoom reveal reveal--out">
+          <div class="hover-zoom ">
             <div class="project-hover">
               <h2 class="project-card__title ">{{ project.title }}</h2>
             </div>

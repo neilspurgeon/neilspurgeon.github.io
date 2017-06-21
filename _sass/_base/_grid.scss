@@ -51,6 +51,7 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 .grid {
   margin: 0 auto;
+  padding: 0 15px;
 
   @include breakpoint(xs) {
     width: 100%;
@@ -59,7 +60,11 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
   @include breakpoint(sm) {
     width: 100%;
     max-width: 1490px;
-    padding: 0 10px 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 95vw;
   }
 
   @media (min-width: 1490px) {
