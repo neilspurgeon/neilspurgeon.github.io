@@ -94,7 +94,6 @@ h2, .h2 {
   font-size: 2.4rem;
   font-weight: 600;
   color: $dark-text-color;
-  // margin-top: 2rem;
 
   @include breakpoint(md) {
     font-size: 3.6rem;
@@ -103,8 +102,4 @@ h2, .h2 {
 
 .light {
   color: $light-text-color;
-}
-
-.page-heading {
-  // font-family: "tiempos text", sans-serif;
 }

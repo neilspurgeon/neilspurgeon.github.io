@@ -37,69 +37,6 @@
   }
 }
 
-// Page transitions
-
-.m-scene {
-  .scene-element {
-    animation-duration: .25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-  }
-
-  // .scene-element--fadein {
-  //   animation-name: fadeIn;
-  //   animation-duration: .5s;
-  //   animation-delay: .1s;
-
-  // }
-
-  .scene-element--fadeinup {
-    animation-name: fadeInUp;
-  }
-
-  /** Reverse "exit" animations */
-  &.is-exiting {
-    .scene-element {
-      animation-direction: alternate-reverse;
-    }
-
-    .primary-nav.is-open {
-      transform: translateX(500px);
-    }
-  }
-}
-
-
-// JS Reveals
-// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-// Slide Left
-.reveal.reveal--slide-left {
-  transition: clip-path 2s cubic-bezier(.19,1,.22,1), opacity 1s;
-  opacity: 1;
-  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
-  transition-delay: .2s;
-}
-
-.reveal.reveal--slide-left.reveal--out {
-  clip-path: polygon(0 0,0 0,0 100%,0 100%);
-}
-
-// Slide Up
-.reveal.reveal--slide-up {
-  transition: transform 1s,
-              opacity 1s;
-}
-
-.reveal.reveal--slide-up.reveal--out {
-  opacity: 0;
-  transform: translate3d(0, 30px, 0);
-}
-
-
-
-
-
 // Main
 .m-scene.m-scene--fade-in {
   animation-duration: 400ms;
