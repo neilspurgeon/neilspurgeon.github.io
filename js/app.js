@@ -4,10 +4,14 @@ $(function(){
       options = {
         debug: true,
         prefetch: false,
-        cacheLength: 0,
+        cacheLength: 2,
         onStart: {
-          duration: 500, // Duration of our animation
+          duration: 800, // Duration of our animation
           render: function ($container) {
+            var menu = document.getElementById('primary-nav');
+            if (menu.classList.contains('is-open')) {
+              closeMenu();
+            }
             // Add your CSS animation reversing class
             $container.addClass('is-exiting');
             // Restart your animation
@@ -22,7 +26,7 @@ $(function(){
             // Inject the new content
             $container.html($newContent);
             // Remove scroll lock caused by side nav
-            $('body').removeClass('lock-scroll');
+            // $('body').removeClass('lock-scroll');
           }
         },
         onAfter: function($container, $newContent) {
@@ -32,8 +36,17 @@ $(function(){
       smoothState = $page.smoothState(options).data('smoothState');
 });
 
-var pageFunctions = function() {
+function toggleMenu() {
+  var menu = document.getElementById('primary-nav');
 
+  if (menu.classList.contains('is-open')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+}
+
+function closeMenu() {
   var menuBtn = document.getElementById('menu-btn');
   var menu = document.getElementById('primary-nav');
   var overlay = document.getElementById('menu-overlay');
@@ -41,35 +54,39 @@ var pageFunctions = function() {
   var footer = document.getElementById('site-footer');
   var body = document.body;
 
+  menu.classList.remove('is-open');
+  menuBtn.classList.remove('is-open');
+  overlay.classList.remove('menu-is-open');
+  body.classList.remove('lock-scroll');
+  footer.classList.remove('nav-is-open');
+}
+
+function openMenu() {
+  var menuBtn = document.getElementById('menu-btn');
+  var menu = document.getElementById('primary-nav');
+  var overlay = document.getElementById('menu-overlay');
+  var main = document.getElementById('main');
+  var footer = document.getElementById('site-footer');
+  var body = document.body;
+
+  menu.classList.add('is-open');
+  menuBtn.classList.add('is-open');
+  overlay.classList.add('menu-is-open');
+  body.classList.add('lock-scroll');
+  footer.classList.add('nav-is-open');
+  menu.classList.add('scene-element--fadeinright');
+}
+
+var pageFunctions = function() {
+
   $('#menu-btn').on('click', function() {
     console.log('clicked');
     document.activeElement.blur();
-    if (menu.classList.contains('is-open')) {
-      // menu.classList.remove('scene-element--fadeinright');
-      menu.classList.remove('is-open');
-      menuBtn.classList.remove('is-open');
-      overlay.classList.remove('menu-is-open');
-      body.classList.remove('lock-scroll');
-      main.classList.remove('nav-is-open');
-      footer.classList.remove('nav-is-open');
-
-    } else {
-      menu.classList.add('is-open');
-      menuBtn.classList.add('is-open');
-
-      overlay.classList.add('menu-is-open');
-      body.classList.add('lock-scroll');
-      main.classList.add('nav-is-open');
-      footer.classList.add('nav-is-open');
-      menu.classList.add('scene-element--fadeinright');
-    }
+    toggleMenu();
   });
 
-  overlay.onclick = function() {
-    body.classList.remove('lock-scroll');
-    menu.classList.remove('is-open');
-    menuBtn.classList.remove('is-open');
-    overlay.classList.remove('is-open');
+  document.getElementById('menu-overlay').onclick = function() {
+    closeMenu();
   }
 
   var reveal = function() {
