@@ -17,6 +17,8 @@ body {
 .main-container {
   @include breakpoint(md){
     margin: 0 auto;
+    background-color: #FFF;
+    min-height: 100vh;
   }
 }
 

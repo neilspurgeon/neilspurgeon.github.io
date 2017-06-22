@@ -46,12 +46,12 @@
     animation-fill-mode: both;
   }
 
-  .scene-element--fadein {
-    animation-name: fadeIn;
-    animation-duration: .5s;
-    animation-delay: .1s;
+  // .scene-element--fadein {
+  //   animation-name: fadeIn;
+  //   animation-duration: .5s;
+  //   animation-delay: .1s;
 
-  }
+  // }
 
   .scene-element--fadeinup {
     animation-name: fadeInUp;
@@ -94,4 +94,20 @@
 .reveal.reveal--slide-up.reveal--out {
   opacity: 0;
   transform: translate3d(0, 30px, 0);
+}
+
+
+
+
+
+// Main
+.m-scene.m-scene--fade-in {
+  animation-duration: 400ms;
+  transition-timing-function: ease-all;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+.is-exiting .m-scene.m-scene--fade-in {
+  animation-direction: alternate-reverse;
 }

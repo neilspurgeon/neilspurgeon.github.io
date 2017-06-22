@@ -1,8 +1,8 @@
 .about-header {
-  padding: 100px 0 50px;
+  padding-top: 100px;
 
   @include breakpoint(sm) {
-    padding: 20vh 0 15vh;
+    padding-top: 20vh;
   }
 }
 

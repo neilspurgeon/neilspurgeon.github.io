@@ -99,7 +99,7 @@ $max-width: 1560px;
   padding-left: 25px;
   padding-right: 25px;
   transform: translateX(500px);
-  box-shadow: 0 0 100px 0px rgba(0,0,0,.2);
+  box-shadow: 0 0 100px 0px rgba(0,0,0,0);
 
   @media (min-width: 1490px) {
     padding: calc((100vw - 1450px) / 2 + 30px);
@@ -109,6 +109,7 @@ $max-width: 1560px;
 
 .primary-nav.is-open {
   transform: none;
+  box-shadow: 0 0 100px 0px rgba(0,0,0,.2);
 }
 
 .full-screen-overlay {
@@ -129,10 +130,10 @@ $max-width: 1560px;
   opacity: .5;
 }
 
-.main-container,
-.site-footer {
-  transition: .2s ease all;
-}
+// .main-container,
+// .site-footer {
+//   transition: .2s ease all;
+// }
 
 .main-container.nav-is-open,
 .site-footer.nav-is-open {

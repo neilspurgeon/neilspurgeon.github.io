@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  animation: fadeIn 2s ease;
+  // animation: fadeIn 2s ease;
 
   @include breakpoint(sm) {
     width: 50%;
