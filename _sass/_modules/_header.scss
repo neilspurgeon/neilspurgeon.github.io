@@ -9,6 +9,7 @@
   margin-left: 10px;
   color: $dark-text-color;
   text-decoration: none;
+  transition: .5s ease all;
 
   @include breakpoint(sm) {
     left: 10px;
@@ -20,6 +21,12 @@
 
   @media (min-width: 1490px) {
     left: calc((100vw - 1440px) / 2 + 10px);
+  }
+}
+
+.site-header.site-header--on-dark {
+  .site-title {
+    color: #FFF;
   }
 }
 
