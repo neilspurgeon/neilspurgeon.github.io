@@ -1,6 +1,6 @@
 .main-container {
   @include breakpoint(md) {
-    margin-bottom: 350px;
+    // margin-bottom: 350px;
   }
 }
 
@@ -12,10 +12,10 @@
   background-color: $black;
 
   @include breakpoint(md) {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 0;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // padding: 0;
   }
 
   .grid {

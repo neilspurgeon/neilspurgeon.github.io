@@ -10,18 +10,11 @@ img {
   width: 100%;
 }
 
-body {
-  background-color: #FFF;
-}
-
 .main-container {
   @include breakpoint(md){
     margin: 0 auto;
-    background-color: #FFF;
+    // background-color: #FFF;
     min-height: 100vh;
+    background-color: #FFF;
   }
-}
-
-html {
-  background: $black;
 }
