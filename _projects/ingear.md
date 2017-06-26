@@ -31,7 +31,7 @@ overview: "An ecommerce website for high-end auto safety tools"
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/ingear/ingear-4.jpg">
+    <img src="/assets/projects/ingear/ingear-4-fs.jpg">
   </div>
 </div>
 

@@ -12,6 +12,7 @@
   background-color: $black;
 
   @include breakpoint(md) {
+    padding: 120px 0 20px;
     // position: fixed;
     // bottom: 0;
     // left: 0;

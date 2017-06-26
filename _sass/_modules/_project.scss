@@ -51,7 +51,8 @@
 .project-details {
 
   @include breakpoint(sm) {
-    background: #F8F8F8;
+    // background: #F8F8F8;
+    background:  linear-gradient(-180deg, #F8F8FA 0%, rgba(248,248,250,0.00) 100%);
     padding: 230px 0 140px;
     margin: -80px 0 -90px;
   }
