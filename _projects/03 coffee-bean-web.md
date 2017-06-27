@@ -1,7 +1,9 @@
 ---
 layout: project
 permalink: coffeebeanwebsite
-title: "The Coffee Bean &nbsp;& Tea Leaf – Website"
+title: "The Coffee Bean <br />& Tea Leaf"
+subtitle: "Website"
+short_title: "Coffee Bean"
 featured_image:
   horizontal: /assets/projects/coffee-bean/web/cbtl-web-feature-horizontal.jpg
   vertical: /assets/projects/coffee-bean/web/cbtl-web-feature-vertical.jpg

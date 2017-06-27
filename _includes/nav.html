@@ -6,7 +6,11 @@
 
           <li class="primary-nav__li project-item">
             <a class="primary-nav__link" href="{{ project.url }}">
-              {{ project.title }}
+              {% if project.short_title %}
+                {{  project.short_title }}
+              {% else %}
+                {{ project.title }}
+              {% endif %}
             </a>
           </li>
 

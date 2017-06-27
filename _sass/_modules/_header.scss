@@ -1,26 +1,20 @@
 .site-title {
   position: absolute;
   margin-top: 28px;
-  z-index: 9998;
-  letter-spacing: 0;
+  z-index: 9999;
   font-weight: 600;
-  letter-spacing: -.02em;
   font-size: 14px;
-  margin-left: 10px;
   color: $dark-text-color;
   text-decoration: none;
   transition: .5s ease all;
+  left: 25px;
 
   @include breakpoint(sm) {
-    left: 10px;
-  }
-
-  @media (min-width: 1200px) {
-    left: calc(2.5vw + 15px);
+    left: calc(2.5% + 15px);
   }
 
   @media (min-width: 1490px) {
-    left: calc((100vw - 1440px) / 2 + 10px);
+    left: calc(5% + 15px);
   }
 }
 
@@ -34,7 +28,7 @@
   position: fixed;
   top: 4px;
   left: 10px;
-  z-index: 9998;
+  z-index: 9999;
   color: $dark-text-color;
   font-weight: 300;
   text-decoration: none;
@@ -56,11 +50,11 @@
 
   }
 
-  @media (min-width: 1200px) {
-    right: calc(2.5vw + 20px);
+  @include breakpoint(sm) {
+    right: calc(2.5% + 15px);
   }
 
   @media (min-width: 1490px) {
-    right: calc((100vw - 1440px) / 2 + 20px);
+    right: calc(5% + 15px);
   }
 }
