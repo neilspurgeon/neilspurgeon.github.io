@@ -10,11 +10,7 @@ img {
   width: 100%;
 }
 
-.main-container {
-  @include breakpoint(md){
-    margin: 0 auto;
-    // background-color: #FFF;
-    min-height: 100vh;
-    background-color: #FFF;
-  }
+.main-wrapper {
+  // Background color must be set for mix-blend mode to work
+  background-color: #FFF;
 }
