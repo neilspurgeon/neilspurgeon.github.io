@@ -26,7 +26,7 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
 </div> -->
 
 <div class="grid grid--offset">
-  <div class="grid__col-12 grid__col--bleed-bottom">
+  <div class="grid__col-12">
     <img src="/assets/projects/coffee-bean/web/cbtl-web-shop.jpg"/>
   </div>
 </div>
@@ -44,19 +44,19 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
 </div>
 
 <div class="grid grid--offset">
-  <div class="grid__col-12 grid__col--bleed-bottom">
+  <div class="grid__col-12">
     <img src="/assets/projects/coffee-bean/web/cbtl-web-desk-nav.jpg" />
   </div>
 </div>
 
 <div class="grid grid--offset">
-  <div class="grid__col-12 grid__col--bleed-bottom">
+  <div class="grid__col-12">
     <img src="/assets/projects/coffee-bean/web/cbtl-web-mobile-nav.jpg" />
   </div>
 </div>
 
 <div class="grid grid--offset">
-  <div class="grid__col-12 grid__col--bleed-bottom">
+  <div class="grid__col-12">
     <img src="/assets/projects/coffee-bean/web/cbtl-web-careers.jpg" />
   </div>
 </div>

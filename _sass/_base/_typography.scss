@@ -12,30 +12,14 @@ body {
   }
 }
 
-.list-item {
-  font-size: 1.6rem;
-  font-family: "maison neue", sans-serif;
-  font-weight: 300;
-  line-height: 1.6em;
-  color: $dark-text-color;
-}
-
-p {
+p, .p {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
   font-weight: 100;
-  line-height: 1.75em;
+  line-height: 1.75;
   color: $dark-text-color;
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
   max-width: 50em;
-}
-
-.p {
-  font-size: 1.6rem;
-  font-family: "maison neue", sans-serif;
-  font-weight: 100;
-  line-height: 1.6em;
-  color: $dark-text-color;
 }
 
 .p--on-dark {
@@ -60,23 +44,6 @@ p {
   }
 }
 
-.label {
-  font-size: 1.6rem;
-  color: $black-text-color;
-  margin-bottom: .2em;
-  font-weight: 900;
-
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-}
-
-.label--on-dark {
-  color: $white;
-  letter-spacing: .03em;
-  letter-spacing: .13em;
-}
-
 h1, .h1 {
   font-size: 3rem;
   line-height: 1.3;
@@ -98,6 +65,27 @@ h2, .h2 {
   @include breakpoint(md) {
     font-size: 3.6rem;
   }
+}
+
+.label {
+  font-size: 1.6rem;
+  color: $black-text-color;
+  margin-bottom: 1.6rem;
+  font-weight: 900;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.label--on-dark {
+  color: $white;
+  letter-spacing: .03em;
+  letter-spacing: .13em;
+}
+
+.list-item {
+  margin-bottom: 0;
 }
 
 .light {
