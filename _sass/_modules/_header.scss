@@ -25,11 +25,11 @@
 }
 
 .site-byline {
+  position: fixed;
   visibility: hidden;
 
   @include breakpoint(sm) {
     visibility: visible;
-    position: fixed;
     right: calc(2.5% + 15px);
     bottom: 10px;
     z-index: 9999;
