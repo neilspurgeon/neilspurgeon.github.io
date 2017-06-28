@@ -100,14 +100,14 @@ $max-width: 1560px;
   box-shadow: 0 0 100px 0px rgba(0,0,0,0);
 
   @include breakpoint(sm) {
-    transform: translateX( calc(500px + 5%));
-    padding-right: 2.5vw;
-  }
-
-  @media (min-width: 1490px) {
     transform: translateX( calc(500px + 10%));
     padding-right: calc(5vw + 20px);
   }
+
+  // @media (min-width: 1490px) {
+  //   transform: translateX( calc(500px + 10%));
+  //   padding-right: calc(5vw + 20px);
+  // }
 }
 
 .primary-nav.is-open {
