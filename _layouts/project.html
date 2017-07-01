@@ -3,12 +3,14 @@ layout: default
 ---
 
 <div class="project-header">
-<!-- <img class="project-header__hero reveal reveal--slide-left reveal--out" src="{{ page.featured_image.vertical }}"> -->
-  <img class="project-header__hero" src="{{ page.featured_image.vertical }}">
-  <div class="project-header__info">
-    <h1 class="project-title">{{ page.title }}{% if page.subtitle %} <span class="project-subtitle">—&nbsp;{{ page.subtitle }}</span>{% endif %}</h1>
-    <p class="project-overview">{{ page.overview }}</p>
+
+  <div class="project-header__info grid">
+    <h1 class="project-title grid__col-12">{{ page.title }}{% if page.subtitle %} <span class="project-subtitle">—&nbsp;{{ page.subtitle }}</span>{% endif %}</h1>
+    <p class="project-tags grid__col-12">{{ page.tags | join: ", " }}</p>
   </div>
+
+  <img class="project-header__hero" src="{{ page.featured_image.horizontal }}" />
+
 </div>
 
 <div class="project-details">

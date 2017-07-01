@@ -1,43 +1,25 @@
 // Header
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
-.project-header {
-  @include breakpoint(sm) {
-    display: flex;
-  }
-}
 
 .project-header__hero {
-  object-fit: cover;
   width: 100%;
-  height: 50vh;
-
-  @include breakpoint(sm) {
-    width: 50%;
-    height: calc(100vh + 80px);
-  }
+  height: 100%;
 }
 
 .project-header__info {
-  margin: 25px 25px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  @include breakpoint(sm) {
-    width: 45%;
-    height: 100vh;
-
-    padding-bottom: 100px;
-  }
-
-  @include breakpoint(md) {
-    margin-left: 50px;
-  }
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .project-title {
-  font-weight: 600;
+  // font-weight: 600;
   margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-tags {
+  padding-top: 5px;
+  color: $light-text-color;
 }
 
 .project-subtitle {
@@ -47,12 +29,13 @@
 .project-overview {
   font-size: 2rem;
   line-height: 1.25;
+  color: #7B7B7B;
 
   @include breakpoint(sm) {
     font-size: 1.8rem;
     font-weight: 100;
     line-height: 1.6;
-    padding-top: 1em;
+    padding-top: .5em;
     max-width: 30em;
   }
 }
@@ -75,6 +58,13 @@
   margin: 0;
 }
 
+.project-description {
+
+  @include breakpoint(md) {
+    padding-right: 1.5em;
+  }
+}
+
 // Images
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .full-bleed {
@@ -94,7 +84,7 @@
   padding: 40px 0 20px;
 
   @include breakpoint(sm) {
-    padding: 80px 0;
+    padding: 100px 0 80px;
   }
 }
 
