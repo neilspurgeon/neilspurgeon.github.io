@@ -79,7 +79,9 @@ function openMenu() {
 
 var pageFunctions = function() {
 
-  var rellax = new Rellax('.rellax');
+  if (document.querySelector(".rellax")) {
+    var rellax = new Rellax('.rellax');
+  }
 
   $('#menu-btn').on('click', function() {
     console.log('clicked');
