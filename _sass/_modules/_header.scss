@@ -7,7 +7,7 @@
   font-weight: 600;
   color: $dark-text-color;
   text-decoration: none;
-  transition: .5s ease all;
+  // transition: .5s ease all;
 
   @include breakpoint(sm) {
     left: calc(2.5% + 25px);
