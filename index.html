@@ -11,11 +11,11 @@ permalink: /
 
         <a class="project-card-link" href="{{ project.permalink }}">
           <div class="hover-zoom ">
-            <div class="project-hover">
-              <h2 class="project-card__title ">{{ project.title }}</h2>
-            </div>
             <img class="hover-zoom__image" src="{{ project.featured_image.horizontal }}"/>
           </div>
+
+          <h2 class="project-card__title">{{ project.title }}</h2>
+          <p class="project-card__tags">{{ project.tags | join: ", "}}</p>
 
         </a>
 
