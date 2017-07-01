@@ -1,6 +1,13 @@
 <header id="site-header" class="site-header">
 
-  <a class="site-title"  href="{{ site.url }}">Neil Spurgeon</a>
+  {% if page.title == "Home" %}
+    <a class="site-title"  href="{{ site.url }}">Neil Spurgeon</a>
+  {% else %}
+    <a class="site-title site-title--back"  href="{{ site.url }}">
+      <img src="/assets/images/back-arrow.svg" style="width: 19px;"/>
+      All Projects
+    </a>
+  {% endif %}
 
   <button class="menu-btn" id="menu-btn">
     <div id="menu-btn__top-line"></div>
