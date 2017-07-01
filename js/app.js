@@ -79,6 +79,8 @@ function openMenu() {
 
 var pageFunctions = function() {
 
+  var rellax = new Rellax('.rellax');
+
   $('#menu-btn').on('click', function() {
     console.log('clicked');
     document.activeElement.blur();
