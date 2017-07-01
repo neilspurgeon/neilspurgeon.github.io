@@ -2,17 +2,22 @@
   display: block;
   overflow: hidden;
   position: relative;
-  height: 100%;
+  pointer-events: auto;
+  margin-bottom: 1em;
 }
 
 .hover-zoom__image {
   height: 100%;
   background-position: center;
   background-size: cover;
-  transition: .3s ease all;
-  transform: scale(1.05);
+  transition: transform 3s cubic-bezier(.2,.96,.34,1);
+  transform: scale(1.1);
   display: block;
   object-fit: cover;
+}
+
+.project-card:hover .hover-zoom {
+  // transform: scale(.5);
 }
 
 .project-card:hover .hover-zoom__image {
@@ -21,42 +26,79 @@
 
 .project-card {
   text-decoration: none;
+  // text-align: center;
+
+  cursor: pointer;
+  pointer-events: none;
+
+  @include breakpoint(sm) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &:nth-child(2n - 1) {
+      padding-left: 1rem;
+    }
+
+    &:nth-child(2n) {
+      padding-right: 1rem;
+    }
+  }
+
+  &:nth-child(2n) {
+
+
+
+    @include breakpoint(sm) {
+
+      // transform: translateY(50%);
+      margin-bottom: 30px;
+      padding-right: 1rem;
+    }
+  }
 }
 
 .project-card-link {
+  // Remove pointer events and then add them back to areas that should be clickable. This is to prevent the empty space from triggering the hover effects.
   text-decoration: none;
   color: $dark-text-color;
   height: 100%;
+  pointer-events: none;
+  cursor: pointer;
 }
 
 .project-card__title {
-  // margin:0 ;
-  font-weight: 200;
-  font-size: 1.8rem;
+  font-weight: 300;
+  font-size: 2rem;
   text-transform: none;
   letter-spacing: 0;
   cursor: pointer;
   margin: 0;
   padding: 0;
-  color: #FFF;
+  display: inline;
+  pointer-events: auto;
 }
 
-.project-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  padding: 20px;
-  background: rgba(0,0,0,.6);
-  color: $white;
-  font-size: 14px;
-  letter-spacing: .05em;
-  font-weight: 100;
-  transition: .3s ease all;
-  opacity: 0;
+.project-card__tags {
+  color: $light-text-color;
+  font-size: 1.4rem;
 }
+
+// .project-hover {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+//   padding: 20px;
+//   background: rgba(0,0,0,.6);
+//   color: $white;
+//   font-size: 14px;
+//   letter-spacing: .05em;
+//   font-weight: 100;
+//   transition: .3s ease all;
+//   opacity: 0;
+// }
 
 .project-card-link:hover {
 
