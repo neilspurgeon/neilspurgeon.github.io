@@ -22,21 +22,11 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
   </div>
 </div>
 
-<!-- <div class="full-bleed">
-  <img src="/assets/projects/coffee-bean/web/cbtl-web-shop.jpg"/>
-</div> -->
-
 <div class="grid grid--offset">
   <div class="grid__col-12">
     <img src="/assets/projects/coffee-bean/web/cbtl-web-shop.jpg"/>
   </div>
 </div>
-
-
-
-<!-- <div class="full-bleed">
-  <img src="/assets/projects/coffee-bean/web/cbtl-web-icons.jpg"/>
-</div> -->
 
 <div class="grid grid--offset">
   <div class="grid__col-12">

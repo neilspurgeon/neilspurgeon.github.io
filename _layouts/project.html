@@ -2,72 +2,63 @@
 layout: default
 ---
 
-<div class="project-header">
+<article>
+  <div class="project-header">
 
-  <div class="project-header__info grid">
-    <h1 class="project-title grid__col-12">{{ page.title }}{% if page.subtitle %} <span class="project-subtitle">—&nbsp;{{ page.subtitle }}</span>{% endif %}</h1>
-    <p class="project-tags grid__col-12">{{ page.tags | join: ", " }}</p>
-  </div>
-
-  <img class="project-header__hero" src="{{ page.featured_image.horizontal }}" />
-
-</div>
-
-<div class="project-details">
-
-  <div class="grid">
-
-    <div class="grid__col-md-7 project-description">
-      <p class="label">Description</p>
-      {{ page.description }}
+    <div class="project-header__info grid">
+      <h1 class="project-title grid__col-12">{{ page.title }}{% if page.subtitle %} <span class="project-subtitle">—&nbsp;{{ page.subtitle }}</span>{% endif %}</h1>
+      <p class="project-tags grid__col-12">{{ page.tags | join: ", " }}</p>
     </div>
 
-    {% if page.tags %}
-      <div class="grid__col-md-2">
-        <p class="label">Role / Tags</p>
-        <ul class="description__tags">
-        {% for tag in page.tags %}
-          <li class="list-item p">{{ tag }}</li>
-        {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
+    <img class="project-header__hero" src="{{ page.featured_image.horizontal }}" />
 
-    {% if page.credits %}
-      <div class="grid__col-md-3">
+  </div>
+
+  <div class="project-details">
+
+    <div class="grid grid--justify-space-between">
+
+      <div class="grid__col-md-7 project-description">
+        {{ page.description }}
+      </div>
+
+      {% if page.credits %}
+      <div class="grid__col-md-4">
         <p class="label">Credits</p>
         <ul class="description__credits">
           {% for credit in page.credits %}
-            <li class="list-item p">{{ credit }}</li>
+            <li class="list-item project-credit">{{ credit }}</li>
           {% endfor %}
         </ul>
       </div>
-    {% endif %}
+      {% endif %}
 
-  </div>
-
-</div>
-
-{{ content }}
-
-
-<footer class="project-footer">
-
-  <div class="grid">
-
-    {% if page.next %}
-      {% assign next_page = page.next %}
-    {% else %}
-      {% assign next_page = site.projects.first %}
-    {% endif %}
-
-    <div class="grid__col-md-12">
-      <a class="project-pagination" href="{{ next_page.url }}">
-        <p class="project-pagination__label label">Next</p>
-        <p class="project-pagination__title h2">{{ next_page.title }}</p>
-      </a>
     </div>
 
   </div>
 
-</footer>
+  {{ content }}
+
+
+  <footer class="project-footer">
+
+    <div class="grid">
+
+      {% if page.next %}
+        {% assign next_page = page.next %}
+      {% else %}
+        {% assign next_page = site.projects.first %}
+      {% endif %}
+
+      <div class="grid__col-md-12">
+        <a class="project-pagination" href="{{ next_page.url }}">
+          <p class="project-pagination__label label">Next</p>
+          <p class="project-pagination__title h2">{{ next_page.title }}</p>
+        </a>
+      </div>
+
+    </div>
+
+  </footer>
+
+</article>

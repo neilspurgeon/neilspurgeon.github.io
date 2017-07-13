@@ -59,7 +59,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 300;
   color: $dark-text-color;
 
   @include breakpoint(md) {
@@ -68,20 +68,20 @@ h2, .h2 {
 }
 
 .label {
-  font-size: 1.6rem;
-  color: $black-text-color;
-  margin-bottom: 1.6rem;
-  font-weight: 900;
-
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
+  font-size: 1.4rem;
+  color: $light-text-color;
+  margin-bottom: .5em;
+  font-weight: 300;
 }
 
 .label--on-dark {
   color: $white;
-  letter-spacing: .03em;
-  letter-spacing: .13em;
+  letter-spacing: .02em;
+}
+
+.label--large {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .list-item {
@@ -90,4 +90,8 @@ h2, .h2 {
 
 .light {
   color: $light-text-color;
+}
+
+.bold {
+  font-weight: 600;
 }

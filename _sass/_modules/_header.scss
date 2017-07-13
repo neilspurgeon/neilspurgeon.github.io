@@ -40,8 +40,8 @@
     font-weight: 300;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #FFF;
-    mix-blend-mode: difference;
+    color: $dark-text-color;
+    // mix-blend-mode: difference;
     text-rendering: geometricPrecision;
   }
 

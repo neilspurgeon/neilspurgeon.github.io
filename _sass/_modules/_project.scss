@@ -44,10 +44,11 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-details {
 
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @include breakpoint(sm) {
-    background:  linear-gradient(-180deg, #F8F8FA 0%, rgba(248,248,250,0.00) 100%);
-    padding: 230px 0 140px;
-    margin: -80px 0 0;
+    padding: 200px 0 150px;
   }
 }
 
@@ -58,11 +59,14 @@
   margin: 0;
 }
 
-.project-description {
+.project-description p {
+  font-size: 1.8rem;
+}
 
-  @include breakpoint(md) {
-    padding-right: 1.5em;
-  }
+.project-credit {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1em;
 }
 
 // Images
@@ -82,6 +86,7 @@
 .project-pagination {
   text-decoration: none;
   padding: 40px 0 20px;
+  pointer-events: none;
 
   @include breakpoint(sm) {
     padding: 100px 0 80px;
@@ -93,9 +98,13 @@
 }
 
 .project-pagination__title {
-  transition: .2s ease all;
+  pointer-events: auto;
+  transition: .1s ease all;
+  display: inline;
+  // border-bottom: 3px inset #FFF;
 
   &:hover {
-    opacity: .6;
+    // border-bottom: 3px inset #000;
+    opacity: .8;
   }
 }
