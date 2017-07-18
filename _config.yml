@@ -23,3 +23,6 @@ collections:
   projects:
     output: true
     permalink: "/:permalink"
+
+gems:
+  - jekyll-babel
