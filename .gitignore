@@ -4,3 +4,4 @@ _site
 .DS_Store
 /assets/fonts/*
 node_modules
+/assets/js/bundle.js

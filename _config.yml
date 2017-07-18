@@ -24,5 +24,4 @@ collections:
     output: true
     permalink: "/:permalink"
 
-gems:
-  - jekyll-babel
+exclude: ['node_modules', 'webpack']
