@@ -30,11 +30,11 @@ heading: "Interested in the intersection of design and technology."
       <div class="grid__col-12">
         <p class="label">Work</p>
         <p>Hathway — San Luis Obispo, CA<br />
-          <span class="light">Senior Designer, Jan. 2017 - Now</span><br />
-          <span class="light">Visual Designer, Sep. 2015 - Dec. 2016</span>
+          <span>Senior Designer, Jan. 2017 - Now</span><br />
+          <span>Visual Designer, Sep. 2015 - Dec. 2016</span>
         </p>
         <p>Indicate Design Groupe — San Francisco, CA<br />
-          <span class="light">Designer, April. 2014 - April. 2015</span>
+          <span>Designer, April. 2014 - April. 2015</span>
         </p>
       </div>
     </div>
@@ -42,8 +42,9 @@ heading: "Interested in the intersection of design and technology."
     <div class="grid grid--nested">
       <div class="grid__col-12">
         <p class="label">Education</p>
-        <p>California Polytechnic State University — San Luis Obispo, CA<br /><span class="light">BFA Art & Design; Graphic Design Concentration</span></p>
-        <p >General Assembly  — San Francisco, CA <br /><span class="light">Web Development Immersive</span></p>
+        <p>California Polytechnic State University — San Luis Obispo, CA<br /><span>BFA Art & Design; Graphic Design Concentration</span></p>
+        <p >General Assembly  — San Francisco, CA <br />
+        <span>Web Development Immersive</span></p>
       </div>
     </div>
 
