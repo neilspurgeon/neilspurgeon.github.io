@@ -47,3 +47,25 @@
     background-color: $dark-text-color;
   }
 }
+
+.body-link {
+  position: relative;
+  color: initial;
+  text-decoration: none;
+  font-weight: 400;
+  padding-bottom: 5px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    transition: .4s ease all;
+  }
+  &:hover:after {
+    width: 0%;
+    left: 0;
+  }
+}
