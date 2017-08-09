@@ -21,14 +21,14 @@ heading: "Interested in the intersection of design and technology."
 
     <div class="grid grid--nested">
       <div class="grid__col-12">
-        <p>I’m a designer and developer based in San Luis Obispo, CA. I have a wide range of experience but specialize in user interface design and front end development. The combination of the two fascinate me.</p>
-        <P>I’m currently available for freelance work and interesting projects. Please get in touch at hello@neilspurgeon.com</P>
+        <p>I’m a designer and developer based in San Luis Obispo, CA. I have a wide range of experience but specialize in digital product design and front end development.</p>
+        <P>I’m currently available for freelance work and interesting projects.<br />Please get in touch at <a class="body-link" href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a></P>
       </div>
     </div>
 
     <div class="grid grid--nested">
       <div class="grid__col-12">
-        <p class="label">Work</p>
+        <p class="label">Experience</p>
         <p>Hathway — San Luis Obispo, CA<br />
           <span>Senior Designer, Jan. 2017 - Now</span><br />
           <span>Visual Designer, Sep. 2015 - Dec. 2016</span>
