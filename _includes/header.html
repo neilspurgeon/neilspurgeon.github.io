@@ -1,8 +1,6 @@
 <header id="site-header" class="site-header">
 
-  {% if page.title == "Home" %}
-    <a class="site-title"  href="{{ site.url }}">Neil Spurgeon</a>
-  {% else %}
+  {% if !page.title == "Home" %}
     <a class="site-title site-title--back"  href="{{ site.url }}">
       <img src="/assets/images/back-arrow.svg" style="width: 19px;"/>
       All Projects
@@ -15,7 +13,7 @@
     <div id="menu-btn__bottom-line"></div>
   </button>
 
-  <span class="site-byline">— Design & Code</span>
+  <span class="site-byline" href="{{ site.url }}">— Neil Spurgeon</span>
 
 </header>
 
