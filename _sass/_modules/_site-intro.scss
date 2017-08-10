@@ -6,10 +6,5 @@
 
 .intro-text {
   margin-top: 110px;
-  font-weight: 300;
-  max-width: 24em;
-
-  @include breakpoint(md) {
-    font-size: 4.4rem;
-  }
+  max-width: 16em;
 }
