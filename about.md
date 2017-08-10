@@ -5,7 +5,7 @@ permalink: /about/
 heading: "Interested in the intersection of design and technology."
 ---
 <div class="about-image rellax" data-rellax-speed="-3">
-  <img src="/assets/images/about.jpg" alt="Portrait of Neil" />
+  <img src="/assets/images/about-2.jpg" alt="Portrait of Neil" />
 </div>
 
 <div class="grid about-wrapper">
