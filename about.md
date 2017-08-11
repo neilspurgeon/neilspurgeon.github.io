@@ -4,9 +4,6 @@ title: About
 permalink: /about/
 heading: "Interested in the intersection of design and technology."
 ---
-<div class="about-image rellax" data-rellax-speed="-3">
-  <img src="/assets/images/about-2.jpg" alt="Portrait of Neil" />
-</div>
 
 <div class="grid about-wrapper">
   <span class="grid__col-sm-3 grid__col-md-4">
