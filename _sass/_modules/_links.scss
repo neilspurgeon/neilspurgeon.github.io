@@ -31,22 +31,45 @@
   &:hover {}
 }
 
-.capsule-link {
-  border: 1px solid $dark-text-color;
-  padding: 1em 1.5em .9em;
-  border-radius: 1.5px;
-  text-decoration: none;
-  letter-spacing: 0;
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: $dark-text-color;
-  transition: .3s ease all;
 
-  &:hover {
-    color: $white;
-    background-color: $dark-text-color;
+.arrow-link{
+  position: relative;
+  padding-right: 30px;
+  letter-spacing: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $dark-text-color;  color: #000;
+  text-decoration: none;
+  transition: .3s cubic-bezier(.34,.15,.31,.92);
+
+  &:before,
+  &:after {
+    content: " ";
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: 18px;
+    opacity: 0;
+    transition: .3s cubic-bezier(.34,.15,.31,.92);
+    background-image: url(../assets/images/link-arrow-dark.svg);
+    background-position: center;
+    top: calc(50% - 5px);
+  }
+  &:after {
+    right: 0;
+    opacity: 1;
   }
 }
+
+.arrow-link:hover:before {
+    transform: translate(23px, 0);
+    opacity: 1;
+}
+.arrow-link:hover:after {
+    transform: translate(23px, 0);
+    opacity: 0;
+}
+
 
 .body-link {
   position: relative;
