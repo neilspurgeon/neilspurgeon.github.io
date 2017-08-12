@@ -1,19 +1,26 @@
-<header id="site-header" class="site-header">
 
-  <nav class="nav">
-    <ul class="nav-ul">
-      <li class="nav-li">
-        <a class="nav-link" href="/">Work</a>
-      </li>
-      <li class="nav-li">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-    </ul>
+  {% if page.title != "Home" && page.title != "About" %}
+    <a class="site-title site-title--back"  href="{{ site.url }}">
+      <img src="/assets/images/back-arrow.svg" style="width: 19px;"/>
+      All Projects
+    </a>
+  {% endif %}
+  <header id="site-header" class="site-header">
 
-  </nav>
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a class="nav-link" href="/">Work</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
 
-  <span class="site-byline" href="{{ site.url }}">— Neil Spurgeon</span>
+    </nav>
 
-</header>
+    <span class="site-byline" href="{{ site.url }}">— Neil Spurgeon</span>
 
-<div id="menu-overlay" class="full-screen-overlay"></div>
+  </header>
+
+  <div id="menu-overlay" class="full-screen-overlay"></div>
