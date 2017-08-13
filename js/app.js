@@ -7,9 +7,13 @@ var pageFunctions = function() {
   }
   document.querySelectorAll('.nav-li').forEach(function(el) {
     el.onclick = function() {
+      var siblings = this.parentElement.children;
+      for (var i=0; i<siblings.length; i++) {
+        siblings[i].classList.remove('active');
+      }
       this.classList.add('active');
     };
-  })
+  });
 };
 
 Barba.Pjax.start();
