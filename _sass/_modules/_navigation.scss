@@ -21,6 +21,7 @@ $max-width: 1560px;
 .nav-ul {
   list-style: none;
   margin: 0;
+  visibility: hidden;
 }
 
 .nav-li {
@@ -30,10 +31,22 @@ $max-width: 1560px;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: .05em;
+  padding-bottom: 2px;
+  visibility: visible;
+  border-bottom: 2px solid rgba(0,0,0,0);
+  transition: .5s ease all;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.nav-li.active {
+  border-bottom: 2px solid rgba(0,0,0,1);
+}
+
+.nav-li:hover {
+  border-bottom: 2px solid rgba(0,0,0,.5);
 }
 
 .nav-link {
