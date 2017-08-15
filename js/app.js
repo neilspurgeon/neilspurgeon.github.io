@@ -1,6 +1,23 @@
 ---
 ---
 
+var animateLinks = function() {
+  var links = document.querySelectorAll('.body-link');
+  if (links[0]) {
+
+    for (var i=0; i<links.length; i++) {
+      console.log('for loop');
+      links[i].addEventListener('mouseover', function(e) {
+        this.classList.add('hover');
+      }, false);
+      links[i].addEventListener('animationend', function() {
+        this.classList.remove('hover');
+      }, false);
+    }
+
+  }
+}
+
 var pageFunctions = function() {
   if (document.querySelector('.rellax')) {
     var rellax = new Rellax('.rellax');
@@ -27,6 +44,7 @@ var pageFunctions = function() {
   for(var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', cbk);
   }
+  animateLinks();
 };
 
 Barba.Pjax.start();

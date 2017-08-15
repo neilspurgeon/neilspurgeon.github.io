@@ -77,7 +77,7 @@
     transition: 1s ease all;
   }
 
-  &:hover:after{
+  &.hover:after{
     animation-name: underline-link;
   }
 }
