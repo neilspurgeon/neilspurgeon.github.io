@@ -15,7 +15,7 @@ body {
 p, .p {
   font-size: 1.6rem;
   font-family: "maison neue", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.75;
   color: $dark-text-color;
   margin: 0 0 1em;
@@ -23,7 +23,7 @@ p, .p {
 }
 
 .p--on-dark {
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: .02em;
   color: $white;
 }

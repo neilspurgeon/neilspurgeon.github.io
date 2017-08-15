@@ -24,7 +24,6 @@
   text-decoration: none;
   letter-spacing: 0;
   font-size: 1.3rem;
-  font-weight: 300;
   color: $dark-text-color;
   opacity: .6;
 
@@ -37,7 +36,6 @@
   padding-right: 30px;
   letter-spacing: 0;
   font-size: 1.4rem;
-  font-weight: 300;
   color: $dark-text-color;  color: #000;
   text-decoration: none;
   transition: .3s cubic-bezier(.34,.15,.31,.92);
@@ -75,7 +73,6 @@
   position: relative;
   color: initial;
   text-decoration: none;
-  font-weight: 400;
   padding-bottom: 5px;
 
   &:after {

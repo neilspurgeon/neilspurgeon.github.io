@@ -12,7 +12,6 @@
 }
 
 .project-title {
-  font-weight: 600;
   margin: 0;
   padding-bottom: 0;
 }
@@ -22,10 +21,6 @@
   color: $light-text-color;
 }
 
-.project-subtitle {
-  font-weight: 100;
-}
-
 .project-overview {
   font-size: 2rem;
   line-height: 1.25;
@@ -33,7 +28,6 @@
 
   @include breakpoint(sm) {
     font-size: 1.8rem;
-    font-weight: 100;
     line-height: 1.6;
     padding-top: .5em;
     max-width: 30em;
@@ -65,7 +59,6 @@
 
 .project-credit {
   font-size: 1.4rem;
-  font-weight: 100;
   margin-bottom: 1em;
 }
 
