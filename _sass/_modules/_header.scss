@@ -1,4 +1,6 @@
 .site-header {
+  position: fixed;
+  z-index: 9999;
   animation: fadeIn 1.5s forwards;
 }
 
