@@ -1,3 +1,7 @@
+.site-header {
+  animation: fadeIn 1.5s forwards;
+}
+
 .site-title {
   position: absolute;
   left: 25px;
@@ -7,7 +11,6 @@
   font-weight: 600;
   color: $dark-text-color;
   text-decoration: none;
-  // transition: .5s ease all;
 
   @include breakpoint(sm) {
     left: calc(2.5% + 25px);
