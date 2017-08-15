@@ -35,6 +35,30 @@
     opacity: 0;
 }
 
+// Body Link
+//————————————————————————————————————————————————————————
+@keyframes underline-link {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  33% {
+    width: 0%;
+    left: auto;
+    right: 0;
+  }
+  34% {
+    width: 0%;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
 
 .body-link {
   position: relative;
@@ -45,14 +69,15 @@
   &:after {
     content: '';
     position: absolute;
-    left: 0;
     bottom: 0;
-    border-bottom: 1px solid #000;
-    width: 100%;
-    transition: .4s ease all;
-  }
-  &:hover:after {
-    width: 0%;
     left: 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    animation-duration: 1s;
+    transition: 1s ease all;
+  }
+
+  &:hover:after{
+    animation-name: underline-link;
   }
 }
