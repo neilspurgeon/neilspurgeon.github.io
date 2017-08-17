@@ -6,7 +6,6 @@ var animateLinks = function() {
   if (links[0]) {
 
     for (var i=0; i<links.length; i++) {
-      console.log('for loop');
       links[i].addEventListener('mouseover', function(e) {
         this.classList.add('hover');
       }, false);
