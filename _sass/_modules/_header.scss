@@ -13,6 +13,7 @@
   font-weight: 600;
   color: $dark-text-color;
   text-decoration: none;
+  animation: fadeIn 1.5s forwards;
 
   @include breakpoint(sm) {
     left: calc(2.5% + 25px);
