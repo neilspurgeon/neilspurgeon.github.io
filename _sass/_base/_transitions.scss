@@ -16,36 +16,3 @@
     transform: none;
   }
 }
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translate3d(-33vw, 0, 0);
-  }
-  100% {
-    transform: none;
-  }
-}
-
-// Main
-.m-scene.m-scene--fade-in {
-  animation-duration: 400ms;
-  transition-timing-function: ease-all;
-  animation-fill-mode: both;
-  animation-name: fadeIn;
-}
-
-.is-exiting .m-scene.m-scene--fade-in {
-  animation-direction: alternate-reverse;
-}

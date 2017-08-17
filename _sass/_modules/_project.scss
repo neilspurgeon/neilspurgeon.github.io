@@ -1,5 +1,33 @@
+// Animations
+// ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+@keyframes projectHeader{
+  0% {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes projectTtile {
+  0% {
+    transform: translate3d(0, 15px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
 // Header
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.project-header {
+  animation: projectHeader 1s forwards;
+}
 
 .project-header__hero {
   width: 100%;
@@ -14,6 +42,7 @@
 .project-title {
   margin: 0;
   padding-bottom: 0;
+  animation: projectTtile 1s forwards;
 }
 
 .project-tags {
