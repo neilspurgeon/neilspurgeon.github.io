@@ -4,16 +4,20 @@
   animation: fadeIn 1.5s forwards;
 }
 
-.site-title {
+.back-button {
   position: absolute;
   left: 25px;
   margin-top: 28px;
   z-index: 9998;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
   color: $dark-text-color;
   text-decoration: none;
   animation: fadeIn 1.5s forwards;
+
+  img {
+    margin-right: 10px;
+  }
 
   @include breakpoint(sm) {
     left: calc(2.5% + 25px);
@@ -21,14 +25,6 @@
 
   @media (min-width: 1490px) {
     left: calc(5% + 25px);
-  }
-}
-
-.site-title--back {
-  font-weight: 300;
-
-  img {
-    margin-right: 10px;
   }
 }
 

@@ -1,10 +1,9 @@
 
-  {% if page.title != "Home" && page.title != "About" %}
-    <a class="site-title site-title--back"  href="{{ site.url }}">
+
+    <a id="back-button" class="back-button"  href="{{ site.url }}" style="visibility:{% if page.title != "Home" and page.title != "About" %}visible{% else %} hidden {% endif %}">
       <img src="/assets/images/back-arrow.svg" style="width: 19px;"/>
       All Projects
     </a>
-  {% endif %}
   <header id="site-header" class="site-header">
 
     <nav class="nav">

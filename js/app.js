@@ -18,6 +18,19 @@ var animateLinks = function() {
   }
 }
 
+var backButtonShowHide = function() {
+  var path = window.location.pathname;
+  var homePath = '/';
+  var aboutPath = '/about/';
+  var backButton = document.getElementById('back-button');
+
+  if (path !== homePath && path !== aboutPath) {
+    backButton.style.visibility = 'visible';
+  } else {
+    backButton.style.visibility = 'hidden';
+  }
+}
+
 var pageFunctions = function() {
   if (document.querySelector('.rellax')) {
     var rellax = new Rellax('.rellax');
@@ -45,6 +58,7 @@ var pageFunctions = function() {
     links[i].addEventListener('click', cbk);
   }
   animateLinks();
+  backButtonShowHide();
 };
 
 Barba.Pjax.start();
