@@ -118,28 +118,17 @@
 // Footer
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-pagination {
-  text-decoration: none;
+  // text-decoration: none;
   padding: 40px 0 20px;
-  pointer-events: none;
+  // pointer-events: none;
 
   @include breakpoint(sm) {
     padding: 100px 0 80px;
   }
 }
 
-.project-pagination__label {
-  margin: 0;
-}
-
-.project-pagination__title {
+.project-pagination__text {
   pointer-events: auto;
-  transition: .1s ease all;
   display: inline;
-  color: $dark-text-color;
-  // border-bottom: 3px inset #FFF;
-
-  &:hover {
-    // border-bottom: 3px inset #000;
-    opacity: .8;
-  }
+  position: relative;
 }

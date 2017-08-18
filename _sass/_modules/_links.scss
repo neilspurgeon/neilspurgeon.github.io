@@ -3,7 +3,7 @@
   padding-right: 30px;
   letter-spacing: 0;
   font-size: 1.4rem;
-  color: $dark-text-color;  color: #000;
+  color: $dark-text-color;
   text-decoration: none;
   transition: .3s cubic-bezier(.34,.15,.31,.92);
 
@@ -35,6 +35,8 @@
     opacity: 0;
 }
 
+// Arrow Link Back
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .arrow-link--back {
   padding-right: 0;
   padding-left: 30px;
@@ -63,6 +65,33 @@
     transform: translate(-23px, 0) scaleX(-1);
 }
 
+// Arrow Link H1
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.arrow-link--h1{
+  padding-right: 90px;
+
+  &:before,
+  &:after {
+    width: 45px;
+    height: 27px;
+    right: 54px;
+    top: calc(50% - 23px);
+    background-size: contain;
+  }
+  &:after {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.arrow-link--h1:hover:before {
+    transform: translate(69px, 0);
+    opacity: 1;
+}
+.arrow-link--h1:hover:after {
+    transform: translate(69px, 0);
+    opacity: 0;
+}
 // Body Link
 //————————————————————————————————————————————————————————
 @keyframes underline-link {

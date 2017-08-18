@@ -43,20 +43,13 @@ layout: default
   <footer class="project-footer">
 
     <div class="grid">
-
-      {% if page.next %}
-        {% assign next_page = page.next %}
-      {% else %}
-        {% assign next_page = site.projects.first %}
-      {% endif %}
-
-      <div class="grid__col-md-12">
-        <a class="project-pagination" href="{{ next_page.url }}">
-          <p class="project-pagination__label label">Next</p>
-          <p class="project-pagination__title h2">{{ next_page.title }}</p>
-        </a>
+      <div class="grid__col-sm-12">
+        <div class="project-pagination">
+          <a class="arrow-link arrow-link--h1" href="{{ next_page.url }}">
+            <h1 class="project-pagination__text">Next Project</h1>
+          </a>
+        </div>
       </div>
-
     </div>
 
   </footer>
