@@ -71,7 +71,11 @@
   padding-bottom: 60px;
 
   @include breakpoint(sm) {
-    padding: 200px 0 150px;
+    padding: 100px 0 75px;
+  }
+
+  @include breakpoint(md) {
+    padding: 150px 0 125px;
   }
 }
 
@@ -83,7 +87,15 @@
 }
 
 .project-description p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+
+  @include breakpoint(sm) {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 1.8rem;
+  }
 }
 
 .project-credit {
