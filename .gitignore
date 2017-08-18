@@ -5,3 +5,4 @@ _site
 /assets/fonts/*
 node_modules
 /assets/js/bundle.js
+vendor

@@ -17,11 +17,15 @@ github_username:  neilspurgeon
 markdown: kramdown
 sass:
   style: compressed
-
+plugins:
+  - jekyll-feed
 
 collections:
   projects:
     output: true
     permalink: "/:permalink"
 
-exclude: ['node_modules', 'webpack']
+exclude:
+  - node_modules
+  - webpack
+  - vendor/bundle
