@@ -1,19 +1,19 @@
 ---
 ---
 
-var mask = function() {
-  var maskedEl = document.getElementById('site-byline');
+const mask = () => {
+  const maskedEl = document.getElementById('site-byline');
       maskedEl.height = maskedEl.offsetWidth;
       maskedEl.posTop = window.innerHeight - maskedEl.height - 20;
       maskedEl.posBottom = window.innerHeight - 20;
-  var footer = document.getElementById('site-footer');
+  const footer = document.getElementById('site-footer');
 
-  window.onscroll = function() {
-    var footer = document.getElementById('site-footer');
-    var footerPos = footer.getBoundingClientRect().top;
+  window.onscroll = () => {
+    const footer = document.getElementById('site-footer');
+    const footerPos = footer.getBoundingClientRect().top;
 
     if (footerPos > maskedEl.posTop && footerPos < maskedEl.posBottom) {
-      var clipAmount = window.innerHeight - 20 - footerPos;
+      const clipAmount = window.innerHeight - 20 - footerPos;
       maskedEl.style.clipPath = 'inset(0 ' +  clipAmount + 'px 0 0)';
     } else if (footerPos >= maskedEl.posBottom) {
         maskedEl.style.clipPath = 'inset(0 0 0 0)';
@@ -23,11 +23,11 @@ var mask = function() {
   }
 }
 
-var animateLinks = function() {
-  var links = document.querySelectorAll('.body-link');
-  if (links[0]) {
+const animateLinks = () => {
+  const links = document.querySelectorAll('.body-link');
 
-    for (var i=0; i<links.length; i++) {
+  if (links[0]) {
+    for (let i=0; i<links.length; i++) {
       links[i].addEventListener('mouseover', function(e) {
         this.classList.add('hover');
       }, false);
@@ -35,15 +35,14 @@ var animateLinks = function() {
         this.classList.remove('hover');
       }, false);
     }
-
   }
 }
 
-var backButtonShowHide = function() {
-  var path = window.location.pathname;
-  var homePath = '/';
-  var aboutPath = '/about/';
-  var backButton = document.getElementById('back-button');
+const backButtonShowHide = () => {
+  const path = window.location.pathname;
+  const homePath = '/';
+  const aboutPath = '/about/';
+  const backButton = document.getElementById('back-button');
 
   if (path !== homePath && path !== aboutPath) {
     backButton.style.visibility = 'visible';
@@ -52,14 +51,14 @@ var backButtonShowHide = function() {
   }
 }
 
-var pageFunctions = function() {
+const pageFunctions = () => {
   if (document.querySelector('.rellax')) {
-    var rellax = new Rellax('.rellax');
+    const rellax = new Rellax('.rellax');
   }
   document.querySelectorAll('.nav-li').forEach(function(el) {
     el.onclick = function() {
-      var siblings = this.parentElement.children;
-      for (var i=0; i<siblings.length; i++) {
+      const siblings = this.parentElement.children;
+      for (let i=0; i<siblings.length; i++) {
         siblings[i].classList.remove('active');
       }
       this.classList.add('active');
@@ -67,15 +66,15 @@ var pageFunctions = function() {
   });
 
   // Prevent links to current path from hard reloading
-  var links = document.querySelectorAll('a[href]');
-  var cbk = function(e) {
+  const links = document.querySelectorAll('a[href]');
+  const cbk = function(e) {
    if(e.currentTarget.href === window.location.href) {
      e.preventDefault();
      e.stopPropagation();
    }
   };
 
-  for(var i = 0; i < links.length; i++) {
+  for(let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', cbk);
   }
   animateLinks();
