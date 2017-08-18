@@ -118,12 +118,10 @@
 // Footer
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––
 .project-pagination {
-  // text-decoration: none;
-  padding: 40px 0 20px;
-  // pointer-events: none;
+  padding: 60px 0 50px;
 
   @include breakpoint(sm) {
-    padding: 100px 0 80px;
+    padding: 100px 0 90px;
   }
 }
 
