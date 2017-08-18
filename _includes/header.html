@@ -1,26 +1,24 @@
+<a id="back-button" class="back-button arrow-link arrow-link--back"  href="{{ site.url }}" style="visibility:{% if page.title != "Home" and page.title != "About" %}visible{% else %} hidden {% endif %}">
+  All Projects
+</a>
 
+<header id="site-header" class="site-header">
 
-    <a id="back-button" class="back-button"  href="{{ site.url }}" style="visibility:{% if page.title != "Home" and page.title != "About" %}visible{% else %} hidden {% endif %}">
-      <img src="/assets/images/back-arrow.svg" style="width: 19px;"/>
-      All Projects
-    </a>
-  <header id="site-header" class="site-header">
+  <nav class="nav">
+    <ul class="nav-ul">
+      <li class="nav-li  {% if page.url != '/about/' %}active{% endif %}">
+        <a class="nav-link" href="/">Work</a>
+      </li>
+      <li class="nav-li {% if page.url == '/about/' %}active{% endif %}">
+        <a class="nav-link" href="/about/">About</a>
+      </li>
+    </ul>
 
-    <nav class="nav">
-      <ul class="nav-ul">
-        <li class="nav-li  {% if page.url != '/about/' %}active{% endif %}">
-          <a class="nav-link" href="/">Work</a>
-        </li>
-        <li class="nav-li {% if page.url == '/about/' %}active{% endif %}">
-          <a class="nav-link" href="/about/">About</a>
-        </li>
-      </ul>
+  </nav>
 
-    </nav>
+  <span class="site-byline" href="{{ site.url }}">— Neil Spurgeon</span>
+  <span id="site-byline" class="site-byline site-byline--on-dark" href="{{ site.url }}">— Neil Spurgeon</span>
 
-    <span class="site-byline" href="{{ site.url }}">— Neil Spurgeon</span>
-    <span id="site-byline" class="site-byline site-byline--on-dark" href="{{ site.url }}">— Neil Spurgeon</span>
+</header>
 
-  </header>
-
-  <div id="menu-overlay" class="full-screen-overlay"></div>
+<div id="menu-overlay" class="full-screen-overlay"></div>

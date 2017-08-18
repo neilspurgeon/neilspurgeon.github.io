@@ -8,16 +8,8 @@
   position: absolute;
   left: 25px;
   margin-top: 28px;
-  z-index: 9998;
-  font-size: 14px;
-  font-weight: 300;
-  color: $dark-text-color;
   text-decoration: none;
   animation: fadeIn 1.5s forwards;
-
-  img {
-    margin-right: 10px;
-  }
 
   @include breakpoint(sm) {
     left: calc(2.5% + 25px);
@@ -53,8 +45,4 @@
 
 .site-byline--on-dark {
   color: #000;
-}
-
-.back-arrow {
-  vector-effect: non-scaling-stroke;
 }

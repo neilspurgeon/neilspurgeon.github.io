@@ -35,6 +35,34 @@
     opacity: 0;
 }
 
+.arrow-link--back {
+  padding-right: 0;
+  padding-left: 30px;
+
+  &:before,
+  &:after {
+    right: 0;
+    left: 18px;
+
+    // Flip Arrow
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  &:after {
+    left: 0;
+  }
+}
+
+.arrow-link--back:hover:before,
+.arrow-link--back:hover:after {
+    transform: translate(-23px, 0) scaleX(-1);
+}
+
 // Body Link
 //————————————————————————————————————————————————————————
 @keyframes underline-link {
