@@ -67,15 +67,14 @@
 
 // Arrow Link H1
 // –––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-.arrow-link--h1{
-  padding-right: 90px;
-
+.arrow-link--h1 {
+  padding-right: 60px;
   &:before,
   &:after {
-    width: 45px;
-    height: 27px;
-    right: 54px;
-    top: calc(50% - 23px);
+    width: 30px;
+    height: 18px;
+    right: 36px;
+    top: calc(50% - 15px);
     background-size: contain;
   }
   &:after {
@@ -83,15 +82,41 @@
     opacity: 1;
   }
 }
-
 .arrow-link--h1:hover:before {
-    transform: translate(69px, 0);
+    transform: translate(46px, 0);
     opacity: 1;
 }
 .arrow-link--h1:hover:after {
-    transform: translate(69px, 0);
+    transform: translate(46px, 0);
     opacity: 0;
 }
+
+@include breakpoint(md) {
+  .arrow-link--h1 {
+    padding-right: 90px;
+    &:before,
+    &:after {
+      width: 45px;
+      height: 27px;
+      right: 54px;
+      top: calc(50% - 23px);
+      background-size: contain;
+    }
+    &:after {
+      right: 0;
+      opacity: 1;
+    }
+  }
+  .arrow-link--h1:hover:before {
+      transform: translate(69px, 0);
+      opacity: 1;
+  }
+  .arrow-link--h1:hover:after {
+      transform: translate(69px, 0);
+      opacity: 0;
+  }
+}
+
 // Body Link
 //————————————————————————————————————————————————————————
 @keyframes underline-link {
