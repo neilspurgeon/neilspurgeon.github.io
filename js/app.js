@@ -9,6 +9,7 @@ var mask = function() {
   var footer = document.getElementById('site-footer');
 
   window.onscroll = function() {
+    var footer = document.getElementById('site-footer');
     var footerPos = footer.getBoundingClientRect().top;
 
     if (footerPos > maskedEl.posTop && footerPos < maskedEl.posBottom) {
@@ -79,10 +80,10 @@ var pageFunctions = function() {
   }
   animateLinks();
   backButtonShowHide();
-  mask();
 };
 
 Barba.Pjax.start();
+mask();
 pageFunctions();
 
 Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
