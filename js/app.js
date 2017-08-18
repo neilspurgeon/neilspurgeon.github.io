@@ -88,3 +88,9 @@ pageFunctions();
 Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
   pageFunctions();
 });
+
+Barba.Dispatcher.on('initStateChange', function() {
+  if (typeof ga === 'function') {
+    ga('send', 'pageview', location.pathname);
+  }
+});
