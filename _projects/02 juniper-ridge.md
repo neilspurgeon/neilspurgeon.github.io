@@ -16,22 +16,22 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/juniper-ridge/jr-box-set-1.jpg" />
+    {% responsive_image path: assets/projects/juniper-ridge/jr-box-set-1.jpg %}
   </div>
 </div>
 
 <div class="full-bleed">
-  <img src="/assets/projects/juniper-ridge/jr-soaps.jpg"/>
+  {% responsive_image path: assets/projects/juniper-ridge/jr-soaps.jpg %}
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/juniper-ridge/jr-trail-resin-cologne-big-sur-1.jpg" />
+    {% responsive_image path: assets/projects/juniper-ridge/jr-trail-resin-cologne-big-sur-1.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12 grid__col--bleed-bottom">
-    <img src="/assets/projects/juniper-ridge/jr-christmas-fur-set-1.jpg" />
+    {% responsive_image path: assets/projects/juniper-ridge/jr-christmas-fur-set-1.jpg %}
   </div>
 </div>

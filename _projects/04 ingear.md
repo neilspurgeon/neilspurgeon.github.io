@@ -15,30 +15,30 @@ description: "<p>Ingear specializes in high end auto safety devices. While there
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/ingear/ingear-1.jpg">
+    {% responsive_image path: assets/projects/ingear/ingear-1.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/ingear/ingear-2.jpg">
+    {% responsive_image path: assets/projects/ingear/ingear-2.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/ingear/ingear-3.jpg">
+    {% responsive_image path: assets/projects/ingear/ingear-3.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/ingear/ingear-4-fs.jpg">
+    {% responsive_image path: assets/projects/ingear/ingear-4-fs.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/ingear/ingear-5.jpg">
+    {% responsive_image path: assets/projects/ingear/ingear-5.jpg %}
   </div>
 </div>
