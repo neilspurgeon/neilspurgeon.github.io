@@ -1,3 +1,17 @@
+@keyframes backBttnfadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 .site-header {
   position: fixed;
   z-index: 9999;
@@ -10,7 +24,7 @@
   left: 25px;
   margin-top: 28px;
   text-decoration: none;
-  animation: fadeIn 1.5s forwards;
+  visibility: hidden;
 
   @include breakpoint(sm) {
     left: calc(2.5% + 25px);
@@ -19,6 +33,15 @@
   @media (min-width: 1490px) {
     left: calc(5% + 25px);
   }
+}
+
+.back-button.show {
+  visibility: visible;
+  animation: fadeIn 1.5s forwards;
+}
+
+.back-button.hide {
+  animation: backBttnfadeOut .5s forwards;
 }
 
 .site-byline {

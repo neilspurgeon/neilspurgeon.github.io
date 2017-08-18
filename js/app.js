@@ -45,9 +45,16 @@ const backButtonShowHide = () => {
   const backButton = document.getElementById('back-button');
 
   if (path !== homePath && path !== aboutPath) {
-    backButton.style.visibility = 'visible';
+    // Show
+    if (backButton.classList.contains('hide')) {
+      backButton.classList.remove('hide');
+    }
+    backButton.classList.add('show');
   } else {
-    backButton.style.visibility = 'hidden';
+    if (backButton.classList.contains('show')) {
+      backButton.classList.remove('show');
+      backButton.classList.add('hide');
+    }
   }
 }
 
