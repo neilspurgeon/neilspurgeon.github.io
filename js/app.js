@@ -1,6 +1,28 @@
 ---
 ---
 
+var mask = function() {
+  var maskedEl = document.getElementById('site-byline');
+  maskedEl.height = maskedEl.offsetWidth;
+  maskedEl.posTop = window.innerHeight - maskedEl.height - 20;
+  maskedEl.posBottom = window.innerHeight - 20;
+
+  var footer = document.getElementById('site-footer');
+
+  window.onscroll = function() {
+    var footerPos = footer.getBoundingClientRect().top;
+
+    console.log('posTop:' + maskedEl.posTop + ' posBottom:' + maskedEl.posBottom)
+
+    if (footerPos > maskedEl.posTop && footerPos < maskedEl.posBottom) {
+      var clipAmount = window.innerHeight - 20 - footerPos;
+      console.log(clipAmount);
+
+      maskedEl.style.clipPath = 'inset(0 ' +  clipAmount + 'px 0 0)';
+    }
+  }
+}
+
 var animateLinks = function() {
   var links = document.querySelectorAll('.body-link');
   if (links[0]) {
@@ -58,6 +80,7 @@ var pageFunctions = function() {
   }
   animateLinks();
   backButtonShowHide();
+  mask();
 };
 
 Barba.Pjax.start();

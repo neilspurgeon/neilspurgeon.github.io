@@ -35,24 +35,25 @@
   @include breakpoint(sm) {
     visibility: visible;
     right: calc(2.5% + 15px);
-    bottom: 10px;
+    bottom: 20px;
     height: 1;
     z-index: 9999;
     transform: rotate(90deg) translate3d(0px, 10px, 0);
-    transform-origin: right top;
+    transform-origin: right bottom;
     font-weight: 300;
     font-size: 1.2rem;
     text-decoration: none;
-    color: $dark-text-color;
+    color: #FFF;
     text-rendering: geometricPrecision;
-
-    mix-blend-mode: difference;
-    color: #FFF
   }
 
   @media (min-width: 1490px) {
     right: calc(5% + 15px);
   }
+}
+
+.site-byline--on-dark {
+  color: #000;
 }
 
 .back-arrow {
