@@ -18,36 +18,36 @@ Redesigned packaging for their complete line including Trail Soap, Backpacker's 
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/coffee-bean/web/cbtl-web-home.jpg" />
+    {% responsive_image path: assets/projects/coffee-bean/web/cbtl-web-home.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/coffee-bean/web/cbtl-web-shop.jpg"/>
+    {% responsive_image path: assets/projects/coffee-bean/web/cbtl-web-shop.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/coffee-bean/web/cbtl-web-icons.jpg" />
+    {% responsive_image path: assets/projects/coffee-bean/web/cbtl-web-icons.jpg" %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/coffee-bean/web/cbtl-web-desk-nav.jpg" />
+    {% responsive_image path: assets/projects/coffee-bean/web/cbtl-web-desk-nav.jpg" %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/coffee-bean/web/cbtl-web-mobile-nav.jpg" />
+    {% responsive_image path: assets/projects/coffee-bean/web/cbtl-web-mobile-nav.jpg" %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    <img src="/assets/projects/coffee-bean/web/cbtl-web-careers.jpg" />
+    {% responsive_image path: assets/projects/coffee-bean/web/cbtl-web-careers.jpg" %}
   </div>
 </div>
