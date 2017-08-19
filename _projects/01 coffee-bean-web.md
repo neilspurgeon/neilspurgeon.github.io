@@ -2,13 +2,9 @@
 layout: project
 permalink: coffeebeanwebsite
 title: "The Coffee Bean &&nbsp;Tea&nbsp;Leaf"
-subtitle:
 short_title: "Coffee Bean"
-home_image: /assets/projects/coffee-bean/web/cbtl-web-feature-horizontal.jpg
-featured_image:
-  horizontal: /assets/projects/coffee-bean/web/cbtl-web-feature-horizontal.jpg
-  vertical: /assets/projects/coffee-bean/web/cbtl-web-feature-vertical.jpg
-hero_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg
+hero_image: assets/projects/coffee-bean/web/cbtl-web-hero.jpg
+card_image: assets/projects/coffee-bean/web/cbtl-web-hero.jpg
 tags: ["UX Design", "Website Design"]
 credits: ["Designed at Hathway"]
 overview: "With over 1,000 stores throughout the United States and Asia, The Coffee Bean & Tea Leaf was ready to match their online presence to their physical."

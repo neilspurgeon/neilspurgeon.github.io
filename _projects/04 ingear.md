@@ -2,11 +2,8 @@
 layout: project
 permalink: ingear
 title: "Ingear Auto"
-home_image: /assets/projects/ingear/ingear-feature-vertical.jpg
-featured_image:
-  horizontal: "/assets/projects/ingear/ingear-feature-horizontal.jpg"
-  vertical: "/assets/projects/ingear/ingear-feature-vertical.jpg"
-dark-header: true
+hero_image: assets/projects/ingear/ingear-hero.jpg
+card_image: assets/projects/ingear/ingear-feature-horizontal.jpg
 tags: ["Website Design"]
 credits: ["Designed with Kyle Chuises"]
 overview: "After witnessing a massive flood in China that trapped many people in their cars and claimed 79 lives, Ingear set out to help mitigate future disasters by creating high quality auto safety tools."

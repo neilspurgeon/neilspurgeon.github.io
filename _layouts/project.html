@@ -9,13 +9,11 @@ layout: default
       <h1 class="project-title grid__col-12">{{ page.title }}{% if page.subtitle %} <span class="project-subtitle">—&nbsp;{{ page.subtitle }}</span>{% endif %}</h1>
       <p class="project-tags grid__col-12">{{ page.tags | join: ", " }}</p>
     </div>
-  <!-- page.featured_image.horizontal -->
-<!-- assets/projects/coffee-bean/web/cbtl-web-feature-horizontal.jpg }} -->
-        {% responsive_image_block %}
-          class: 'asdasdasd'
-          path: {{ page.featured_image.horizontal }}
-        {% endresponsive_image_block %}
 
+    {% responsive_image_block %}
+      class: 'project-header__hero'
+      path: {{ page.hero_image }}
+    {% endresponsive_image_block %}
 
   </div>
 

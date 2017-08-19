@@ -2,11 +2,8 @@
 layout: project
 permalink: fresh-step
 title: "Fresh Step"
-home_image: /assets/projects/fresh-step/fresh-step-feature-vertical.jpg
-featured_image:
-  horizontal: /assets/projects/fresh-step/fresh-step-feature-horizontal.jpg
-  vertical: /assets/projects/fresh-step/fresh-step-feature-vertical.jpg
-hero_image: /assets/projects/fresh-step/fresh-step-iphones-iso-grid.jpg
+hero_image: assets/projects/fresh-step/fresh-step-hero.jpg
+card_image: assets/projects/fresh-step/fresh-step-feature-horizontal.jpg
 tags: ["Website Design"]
 credits: ["Design with Thomas Charlet", "UX Wireframes by Fluid"]
 overview: "Fresh Step, a Clorox brand, is a premium cat litter company with a mission to help save shelter cats, all while keeping your home stink-free."

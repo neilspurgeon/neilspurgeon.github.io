@@ -2,8 +2,8 @@
 layout: project
 permalink: coffee-bean
 title: "Coffee Bean"
-featured_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
-hero_image: /assets/projects/coffee-bean/coffee-bean-iphones.jpg
+featured_image: assets/projects/coffee-bean/coffee-bean-iphones.jpg
+hero_image: assets/projects/coffee-bean/coffee-bean-iphones.jpg
 tags: ["Application Development", "UI/UX Design"]
 description_preview: "Order ahead and customer loyalty app"
 description: "<p>Designed and developed a single page application, that blends SoundCloud and Rdio's API's into one seamless music

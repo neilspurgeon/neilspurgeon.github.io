@@ -2,11 +2,8 @@
 layout: project
 permalink: juniper-ridge
 title: "Juniper Ridge"
-home_image: /assets/projects/juniper-ridge/jr-feature-horizontal.jpg
-featured_image:
-  horizontal: /assets/projects/juniper-ridge/jr-feature-horizontal.jpg
-  vertical: /assets/projects/juniper-ridge/jr-feature-vertical.jpg
-hero_image: /assets/projects/juniper-ridge/jr-backpacker-cologne-1.jpg
+hero_image: assets/projects/juniper-ridge/juniper-ridge-hero.jpg
+card_image: assets/projects/juniper-ridge/jr-feature-horizontal.jpg
 tags: ["Packaging", "Print", "Branding"]
 credits: ["Photography by Jordan Vogua", "Designed with Lee Williams"]
 overview: "Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings."
