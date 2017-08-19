@@ -20,7 +20,11 @@ permalink: /
 
         <a class="project-card-link" href="{{ project.permalink }}">
           <div class="hover-zoom ">
-            <img class="hover-zoom__image" src="{{ project.card_image }}"/>
+            <!-- <img class="hover-zoom__image" src="{{ project.card_image }}"/> -->
+            {% responsive_image_block %}
+              class: 'hover-zoom__image"'
+              path: {{ project.card_image }}
+            {% endresponsive_image_block %}
           </div>
 
           <h2 class="project-card__title">{{ project.title }}</h2>
