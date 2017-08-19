@@ -6,4 +6,4 @@
 
 {% assign largest = resized | sort: 'width' | last %}
 
-<img src="/{{ largest.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }}">
+<img {% if class %} class="{{class}}" {% endif %} src="/{{ largest.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }}">
