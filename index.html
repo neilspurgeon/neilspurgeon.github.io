@@ -20,10 +20,10 @@ permalink: /
 
         <a class="project-card-link" href="{{ project.permalink }}">
           <div class="hover-zoom ">
-            <!-- <img class="hover-zoom__image" src="{{ project.card_image }}"/> -->
             {% responsive_image_block %}
-              class: 'hover-zoom__image"'
+              class: 'hover-zoom__image'
               path: {{ project.card_image }}
+              media_rendition: tile_2col
             {% endresponsive_image_block %}
           </div>
 

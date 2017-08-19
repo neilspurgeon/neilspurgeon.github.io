@@ -60,3 +60,12 @@ responsive_image:
   # Cache the result of {% responsive_image %} and {% responsive_image_block %}
   # tags. See the "Caching" section of the README for more information.
   cache: false
+
+media_renditions:
+  tile_2col:
+    sizes:
+      - "(max-width: 2880px) and (min-width: 1601px) 1440px"
+      - "(max-width: 1600px) and (min-width: 961px) 800px"
+      - "(max-width: 960px) and (min-width: 768px) 480px"
+      - "(max-width: 767px) and (min-width: 480px) 800px"
+      - "(max-width: 479px) 480px"
