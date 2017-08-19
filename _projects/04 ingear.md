@@ -3,7 +3,7 @@ layout: project
 permalink: ingear
 title: "Ingear Auto"
 hero_image: assets/projects/ingear/ingear-hero.jpg
-card_image: assets/projects/ingear/ingear-feature-horizontal.jpg
+card_image: assets/projects/ingear/ingear-card.jpg
 tags: ["Website Design"]
 credits: ["Designed with Kyle Chuises"]
 overview: "After witnessing a massive flood in China that trapped many people in their cars and claimed 79 lives, Ingear set out to help mitigate future disasters by creating high quality auto safety tools."
@@ -30,7 +30,7 @@ description: "<p>Ingear specializes in high end auto safety devices. While there
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: assets/projects/ingear/ingear-4-fs.jpg %}
+    {% responsive_image path: assets/projects/ingear/ingear-4.jpg %}
   </div>
 </div>
 

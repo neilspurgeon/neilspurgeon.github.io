@@ -48,7 +48,7 @@ heading: "Interested in the intersection of design and technology."
     <div class="grid grid--nested">
       <div class="grid__col-12">
         <p class="label">Colophon</p>
-        <p>This site is built with Jekyll and is hosted on Github Pages. The type is set in Maison Neue by Milieu Grotesque. Smoothstate.js is used for AJAX page transitions.</p>
+        <p>This site is built with Jekyll and is hosted on Github Pages. The type is set in Maison Neue by Milieu Grotesque. Barba.js is used for AJAX page loads.</p>
       </div>
     </div>
 

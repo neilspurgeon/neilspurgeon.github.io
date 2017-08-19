@@ -5,10 +5,8 @@ title: "Juniper Ridge"
 hero_image: assets/projects/juniper-ridge/juniper-ridge-hero.jpg
 card_image: assets/projects/juniper-ridge/jr-feature-horizontal.jpg
 tags: ["Packaging", "Print", "Branding"]
-credits: ["Photography by Jordan Vogua", "Designed with Lee Williams"]
-overview: "Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings."
-description: "<p>Worked on a complete rebrand of Juniper Ridge, a wild-harvested fragrance company, to visually unify their brand.
-Redesigned packaging for their complete line including Trail Soap, Backpacker's Cologne, Cabin Spray, Campfire Incense and Smudge's.</p>"
+credits: ["Designed at Indicate Design Groupe", "Designed with Lee Williams", "Photography by Jordan Vogua"]
+description: "<p>Wild harvested on the trail, Juniper Ridge creates perfumes and fragrances by distilling and extracting natural scents from wildflowers, plants, and tree trimmings. With such unique process, Juniper Ridge felt their current brand didn’t represent them well enough. While our team worked on the full rebrand, I was heavily involved with the redesign of their fragrance packaging.</p>"
 ---
 
 <div class="grid grid--offset">
