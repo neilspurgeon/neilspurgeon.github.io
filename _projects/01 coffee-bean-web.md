@@ -4,7 +4,7 @@ permalink: coffeebeanwebsite
 title: "The Coffee Bean &&nbsp;Tea&nbsp;Leaf"
 short_title: "Coffee Bean"
 hero_image: assets/projects/coffee-bean/web/coffeebean-web-hero.jpg
-card_image: assets/projects/coffee-bean/web/coffeebean-web-hero.jpg
+card_image: assets/projects/coffee-bean/web/coffeebean-web-card.jpg
 tags: ["UX Design", "Website Design"]
 credits: ["Designed at Hathway"]
 description: "<p>Founded in 1963, The Coffee Bean & Tea Leaf now serves over 1,000 locations around the world. Wanting their e-commerce experience to match that of their store’s, The Coffee Bean & Tea Leaf came to Hathway for a solution. We fully redesigned both their marketing and e-commerce experience to better match their brand and to provide much more robust and simple to use shopping experience.</p>"
