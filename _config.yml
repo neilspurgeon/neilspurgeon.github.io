@@ -42,7 +42,7 @@ responsive_image:
       quality: 80
     - width: 1440
     - width: 2800
-  output_path_format: assets/resized/%{width}/%{basename}
+  output_path_format: assets/images/resized/%{width}/%{basename}
   cache: false
 
 media_renditions:
