@@ -1,11 +1,18 @@
 ---
 ---
 
+const setVendorPrefixedCss = (element, cssProperty, cssValue) => {
+  element.style["webkit" + cssProperty] = cssValue;
+  element.style["moz" + cssProperty] = cssValue;
+  element.style["ms" + cssProperty] = cssValue;
+  element.style["o" + cssProperty] = cssValue;
+}
+
 const mask = () => {
   const maskedEl = document.getElementById('site-byline');
-      maskedEl.height = maskedEl.offsetWidth;
-      maskedEl.posTop = window.innerHeight - maskedEl.height - 20;
-      maskedEl.posBottom = window.innerHeight - 20;
+    maskedEl.height = maskedEl.offsetWidth;
+    maskedEl.posTop = window.innerHeight - maskedEl.height - 20;
+    maskedEl.posBottom = window.innerHeight - 20;
   const footer = document.getElementById('site-footer');
 
   window.onscroll = () => {
@@ -13,12 +20,17 @@ const mask = () => {
     const footerPos = footer.getBoundingClientRect().top;
 
     if (footerPos > maskedEl.posTop && footerPos < maskedEl.posBottom) {
-      const clipAmount = window.innerHeight - 20 - footerPos;
-      maskedEl.style.clipPath = 'inset(0 ' +  clipAmount + 'px 0 0)';
+      let clipAmount = window.innerHeight - 20 - footerPos;
+      let clipPathValue = 'inset(0 ' +  clipAmount + 'px 0 0)';
+      setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue );
+
     } else if (footerPos >= maskedEl.posBottom) {
-        maskedEl.style.clipPath = 'inset(0 0 0 0)';
+        let clipPathValue = 'inset(0 0 0 0)';
+        setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue );
+
     } else if (footerPos <= maskedEl.posTop) {
-        maskedEl.style.clipPath = 'inset(0 100% 0 0)';
+        let clipPathValue = 'inset(0 100% 0 0)';
+        setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue );
     }
   }
 }
