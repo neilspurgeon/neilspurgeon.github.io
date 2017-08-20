@@ -20,6 +20,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-responsive-image
+  - jekyll-autoprefixer
 
 collections:
   projects:
