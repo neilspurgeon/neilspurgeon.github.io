@@ -1,60 +1,57 @@
----
----
+"use strict";
 
-const setVendorPrefixedCss = (element, cssProperty, cssValue) => {
+var setVendorPrefixedCss = function setVendorPrefixedCss(element, cssProperty, cssValue) {
   element.style["webkit" + cssProperty] = cssValue;
   element.style["moz" + cssProperty] = cssValue;
   element.style["ms" + cssProperty] = cssValue;
   element.style["o" + cssProperty] = cssValue;
-}
+};
 
-const mask = () => {
-  const maskedEl = document.getElementById('site-byline');
-    maskedEl.height = maskedEl.offsetWidth;
-    maskedEl.posTop = window.innerHeight - maskedEl.height - 20;
-    maskedEl.posBottom = window.innerHeight - 20;
-  const footer = document.getElementById('site-footer');
+var mask = function mask() {
+  var maskedEl = document.getElementById('site-byline');
+  maskedEl.height = maskedEl.offsetWidth;
+  maskedEl.posTop = window.innerHeight - maskedEl.height - 20;
+  maskedEl.posBottom = window.innerHeight - 20;
+  var footer = document.getElementById('site-footer');
 
-  window.onscroll = () => {
-    const footer = document.getElementById('site-footer');
-    const footerPos = footer.getBoundingClientRect().top;
+  window.onscroll = function () {
+    var footer = document.getElementById('site-footer');
+    var footerPos = footer.getBoundingClientRect().top;
 
     if (footerPos > maskedEl.posTop && footerPos < maskedEl.posBottom) {
-      let clipAmount = window.innerHeight - 20 - footerPos;
-      let clipPathValue = 'inset(0 ' +  clipAmount + 'px 0 0)';
-      setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue );
-
+      var clipAmount = window.innerHeight - 20 - footerPos;
+      var clipPathValue = 'inset(0 ' + clipAmount + 'px 0 0)';
+      setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue);
     } else if (footerPos >= maskedEl.posBottom) {
-        let clipPathValue = 'inset(0 0 0 0)';
-        setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue );
-
+      var clipPathValue = 'inset(0 0 0 0)';
+      setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue);
     } else if (footerPos <= maskedEl.posTop) {
-        let clipPathValue = 'inset(0 100% 0 0)';
-        setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue );
+      var clipPathValue = 'inset(0 100% 0 0)';
+      setVendorPrefixedCss(maskedEl, 'ClipPath', clipPathValue);
     }
-  }
-}
+  };
+};
 
-const animateLinks = () => {
-  const links = document.querySelectorAll('.body-link');
+var animateLinks = function animateLinks() {
+  var links = document.querySelectorAll('.body-link');
 
   if (links[0]) {
-    for (let i=0; i<links.length; i++) {
-      links[i].addEventListener('mouseover', function(e) {
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('mouseover', function (e) {
         this.classList.add('hover');
       }, false);
-      links[i].addEventListener('animationend', function() {
+      links[i].addEventListener('animationend', function () {
         this.classList.remove('hover');
       }, false);
     }
   }
-}
+};
 
-const backButtonShowHide = () => {
-  const path = window.location.pathname;
-  const homePath = '/';
-  const aboutPath = '/about/';
-  const backButton = document.getElementById('back-button');
+var backButtonShowHide = function backButtonShowHide() {
+  var path = window.location.pathname;
+  var homePath = '/';
+  var aboutPath = '/about/';
+  var backButton = document.getElementById('back-button');
 
   if (path !== homePath && path !== aboutPath) {
     // Show
@@ -68,16 +65,16 @@ const backButtonShowHide = () => {
       backButton.classList.add('hide');
     }
   }
-}
+};
 
-const pageFunctions = () => {
+var pageFunctions = function pageFunctions() {
   if (document.querySelector('.rellax')) {
-    const rellax = new Rellax('.rellax');
+    var rellax = new Rellax('.rellax');
   }
-  document.querySelectorAll('.nav-li').forEach(function(el) {
-    el.onclick = function() {
-      const siblings = this.parentElement.children;
-      for (let i=0; i<siblings.length; i++) {
+  document.querySelectorAll('.nav-li').forEach(function (el) {
+    el.onclick = function () {
+      var siblings = this.parentElement.children;
+      for (var i = 0; i < siblings.length; i++) {
         siblings[i].classList.remove('active');
       }
       this.classList.add('active');
@@ -85,15 +82,15 @@ const pageFunctions = () => {
   });
 
   // Prevent links to current path from hard reloading
-  const links = document.querySelectorAll('a[href]');
-  const cbk = function(e) {
-   if(e.currentTarget.href === window.location.href) {
-     e.preventDefault();
-     e.stopPropagation();
-   }
+  var links = document.querySelectorAll('a[href]');
+  var cbk = function cbk(e) {
+    if (e.currentTarget.href === window.location.href) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
   };
 
-  for(let i = 0; i < links.length; i++) {
+  for (var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', cbk);
   }
   animateLinks();
@@ -104,11 +101,11 @@ Barba.Pjax.start();
 mask();
 pageFunctions();
 
-Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container) {
   pageFunctions();
 });
 
-Barba.Dispatcher.on('initStateChange', function() {
+Barba.Dispatcher.on('initStateChange', function () {
   if (typeof ga === 'function') {
     ga('send', 'pageview', location.pathname);
   }
