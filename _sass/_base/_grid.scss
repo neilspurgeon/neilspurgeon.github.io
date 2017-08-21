@@ -34,9 +34,7 @@ $reflex-cell-spacing-lg:    ($reflex-grid-spacing * 2);
 
 // Import from node_modules
 // -------------------------
-@import "../node_modules/reflex-grid/scss/reflex/mixins";
-@import "../node_modules/reflex-grid/scss/reflex/grid";
-@import "../node_modules/reflex-grid/scss/reflex/helpers";
+@import "../node_modules/reflex-grid/scss/reflex";
 
 
 // Overides (WARNING!!! this may break in older browsers)
