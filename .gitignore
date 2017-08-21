@@ -4,6 +4,5 @@ _site
 .DS_Store
 node_modules
 /assets/js/bundle.js
-/assets/images/resized
 vendor
 .bundle
