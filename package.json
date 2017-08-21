@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "git checkout master && jekyll build && git branch -D gh-pages && git checkout -b gh-pages && cp -a _site/* ./ && git add . && git commit -m 'deploy build' && git push --set-upstream origin gh-pages --force && git checkout master"
+    "deploy": "git checkout master && jekyll build && git checkout gh-pages && cp -a _site/* ./ && git add . && git commit -m 'deploy build' && git push --force && git checkout master"
   },
   "repository": {
     "type": "git",
