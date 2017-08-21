@@ -9,7 +9,7 @@
 title: Neil Spurgeon - Design & Development
 email: neilspurgeon@gmail.com
 description: Designer and front end web developer with a focus on user interface design, user experience design, front end web development, and user interface development.
-baseurl: "http://localhost:4000/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://neilspurgeon.com" # the base hostname & protocol for your site
 github_username:  neilspurgeon
 
