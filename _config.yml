@@ -26,6 +26,8 @@ collections:
   projects:
     output: true
     permalink: "/:permalink"
+  pages:
+    output: true
 
 exclude:
   - node_modules
