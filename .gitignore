@@ -2,9 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_Store
-/assets/fonts/*
 node_modules
 /assets/js/bundle.js
-/assets/images/resized
 vendor
 .bundle
