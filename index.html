@@ -1,9 +1,72 @@
----
-layout: home
-title: Home
-permalink: /
----
-<div class="grid grid--offset">
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home</title>
+  <meta name="description" content="Designer and front end web developer with a focus on user interface design, user experience design, front end web development, and user interface development.">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://neilspurgeon.com/">
+  <link rel="alternate" type="application/rss+xml" title="Neil Spurgeon - Design & Development" href="http://neilspurgeon.com/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/assets/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#333333">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Google Analytics -->
+  <script>
+  if (document.location.hostname !== 'localhost') {
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-45097231-1', 'auto');
+    ga('send', 'pageview');
+  }
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- End Google Analytics -->
+
+</head>
+
+
+  <body>
+
+  <a id="back-button" class="back-button arrow-link arrow-link--back"  href="http://neilspurgeon.com">
+  All Projects
+</a>
+
+<header id="site-header" class="site-header">
+
+  <nav class="nav">
+    <ul class="nav-ul">
+      <li class="nav-li  active">
+        <a class="nav-link" href="/">Work</a>
+      </li>
+      <li class="nav-li ">
+        <a class="nav-link" href="/about/">About</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <span class="site-byline" href="http://neilspurgeon.com">— Neil Spurgeon</span>
+  <span id="site-byline" class="site-byline site-byline--on-dark" href="http://neilspurgeon.com">— Neil Spurgeon</span>
+
+</header>
+
+<div id="menu-overlay" class="full-screen-overlay"></div>
+
+
+    <div id="barba-wrapper" class="main-wrapper">
+      <div class="barba-container">
+
+        <div class="grid grid--offset">
   <section class="site-intro grid__col-sm-12 grid__col-xlg-11 rellax" data-rellax-speed="-3">
     <h1 class="intro-text">
         I’m Neil, a digital product  designer & frontend developer.
@@ -14,26 +77,140 @@ permalink: /
 
 <div class="grid grid--offset project-card-menu">
 
-    {% for project in site.projects %}
+    
 
       <div class="project-card grid__col-sm-6">
 
-        <a class="project-card-link" href="{{ project.permalink }}">
+        <a class="project-card-link" href="coffeebeanwebsite">
           <div class="hover-zoom ">
-            {% responsive_image_block %}
-              class: 'hover-zoom__image'
-              path: {{ project.card_image }}
-              media_rendition: tile_2col
-            {% endresponsive_image_block %}
+            
+
+
+
+<img  class="hover-zoom__image"  src="assets/images/resized/800/coffeebean-web-card.jpg" alt="" srcset="      /assets/images/resized/480/coffeebean-web-card.jpg 480w,      /assets/images/resized/800/coffeebean-web-card.jpg 800w,  "
+  
+  
+    sizes="(max-width: 2880px) and (min-width: 1601px) 1440px, (max-width: 1600px) and (min-width: 961px) 800px, (max-width: 960px) and (min-width: 768px) 480px, (max-width: 767px) and (min-width: 480px) 800px, (max-width: 479px) 480px"
+  
+>
           </div>
 
-          <h2 class="project-card__title">{{ project.title }}</h2>
-          <p class="project-card__tags">{{ project.tags | join: ", "}}</p>
+          <h2 class="project-card__title">The Coffee Bean &&nbsp;Tea&nbsp;Leaf</h2>
+          <p class="project-card__tags">UX Design, Website Design</p>
 
         </a>
 
       </div>
-    {% endfor %}
+    
+
+      <div class="project-card grid__col-sm-6">
+
+        <a class="project-card-link" href="juniper-ridge">
+          <div class="hover-zoom ">
+            
+
+
+
+<img  class="hover-zoom__image"  src="assets/images/resized/800/jr-feature-card.jpg" alt="" srcset="      /assets/images/resized/480/jr-feature-card.jpg 480w,      /assets/images/resized/800/jr-feature-card.jpg 800w,  "
+  
+  
+    sizes="(max-width: 2880px) and (min-width: 1601px) 1440px, (max-width: 1600px) and (min-width: 961px) 800px, (max-width: 960px) and (min-width: 768px) 480px, (max-width: 767px) and (min-width: 480px) 800px, (max-width: 479px) 480px"
+  
+>
+          </div>
+
+          <h2 class="project-card__title">Juniper Ridge</h2>
+          <p class="project-card__tags">Packaging, Print, Branding</p>
+
+        </a>
+
+      </div>
+    
+
+      <div class="project-card grid__col-sm-6">
+
+        <a class="project-card-link" href="fresh-step">
+          <div class="hover-zoom ">
+            
+
+
+
+<img  class="hover-zoom__image"  src="assets/images/resized/2800/fresh-step-card.jpg" alt="" srcset="      /assets/images/resized/480/fresh-step-card.jpg 480w,      /assets/images/resized/800/fresh-step-card.jpg 800w,      /assets/images/resized/1440/fresh-step-card.jpg 1440w,      /assets/images/resized/2800/fresh-step-card.jpg 2800w,  "
+  
+  
+    sizes="(max-width: 2880px) and (min-width: 1601px) 1440px, (max-width: 1600px) and (min-width: 961px) 800px, (max-width: 960px) and (min-width: 768px) 480px, (max-width: 767px) and (min-width: 480px) 800px, (max-width: 479px) 480px"
+  
+>
+          </div>
+
+          <h2 class="project-card__title">Fresh Step</h2>
+          <p class="project-card__tags">Website Design</p>
+
+        </a>
+
+      </div>
+    
+
+      <div class="project-card grid__col-sm-6">
+
+        <a class="project-card-link" href="ingear">
+          <div class="hover-zoom ">
+            
+
+
+
+<img  class="hover-zoom__image"  src="assets/images/resized/800/ingear-card.jpg" alt="" srcset="      /assets/images/resized/480/ingear-card.jpg 480w,      /assets/images/resized/800/ingear-card.jpg 800w,  "
+  
+  
+    sizes="(max-width: 2880px) and (min-width: 1601px) 1440px, (max-width: 1600px) and (min-width: 961px) 800px, (max-width: 960px) and (min-width: 768px) 480px, (max-width: 767px) and (min-width: 480px) 800px, (max-width: 479px) 480px"
+  
+>
+          </div>
+
+          <h2 class="project-card__title">Ingear Auto</h2>
+          <p class="project-card__tags">Website Design</p>
+
+        </a>
+
+      </div>
+    
 
 </div>
 
+
+        <footer id="site-footer" class="site-footer">
+
+  <div class="grid grid--align-end grid--bleed-bottom">
+    <div class="grid__col-xs-6 grid__col-sm-6 grid__col-md-4">
+      <p class="label label--on-dark">Contact</p>
+      <p class="p--small p--on-dark">
+        <a class="footer-link" href="tel:1-805-748-3201">805 748 3201</a><br/ >
+        <a class="footer-link" href="mailto:hello@neilspurgeon.com">hello@neilspurgeon.com</a><br />
+      </p>
+    </div>
+
+    <div class="grid__col-xs-6 grid__col-sm-6 grid__col-md-4">
+      <p class="label label--on-dark">Elsewhere</p>
+      <p class="p--small p--on-dark">
+        <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/neilspurgeon/">LinkedIn</a><br/ >
+        <a class="footer-link" target="_blank" href="https://github.com/neilspurgeon/">GitHub</a><br/ >
+      </p>
+    </div>
+
+    <div class="grid__col-12">
+      <p class="copyright p--on-dark p--xsmall">©2017 Neil Spurgeon. All Rights Reserved.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+      </div>
+    </div>
+
+    <script src="/js/barba.min.js"></script>
+<script src="/js/rellax.js"></script>
+<script src="/js/app.js"></script>
+
+  </body>
+</html>
