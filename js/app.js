@@ -101,6 +101,7 @@ const pageFunctions = () => {
 };
 
 Barba.Pjax.start();
+Barba.Prefetch.init();
 mask();
 pageFunctions();
 
