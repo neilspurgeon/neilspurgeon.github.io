@@ -1,0 +1,34 @@
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+    display: none;
+  }
+}
+
+.intro-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.intro-loader.hide {
+  animation: fadeOutUp 1s forwards;
+  animation-delay: 2s;
+}
+
+.intro-loader__text {
+  color: #FFF;
+  font-weight: 300;
+  animation: fadeInUp 2s forwards;
+}
