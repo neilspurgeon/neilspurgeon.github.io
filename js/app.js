@@ -4,8 +4,10 @@
 const pageLoader = () => {
   const pageLoader = document.getElementById('page-loader');
 
-  const hideLoader = () => {
+  const load = () => {
     pageLoader.classList.add('hide');
+    const body = document.querySelector('body');
+    body.classList.add('loaded');
   }
 
   if (pageLoader) {
@@ -13,7 +15,7 @@ const pageLoader = () => {
     let hasDelayed = false
 
     window.setTimeout( function() {
-      window.onload = hideLoader();
+      window.onload = load();
     }, 2000)
   }
 }

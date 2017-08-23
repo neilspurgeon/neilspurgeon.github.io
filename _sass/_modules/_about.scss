@@ -12,11 +12,14 @@
 .about-wrapper {
   padding-top: 18vh;
   padding-bottom: 30px;
-  animation: about 1s forwards;
 
   @include breakpoint(sm) {
     padding-bottom: 100px;
   }
+}
+
+.loaded .about-wrapper {
+  animation: about 1s forwards;
 }
 
 .about-title {

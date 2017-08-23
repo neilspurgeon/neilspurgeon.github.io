@@ -11,6 +11,9 @@
 
 .project-card-menu {
   padding-bottom: 100px;
+}
+
+.loaded .project-card-menu {
   animation: projectCardMenu 1.2s forwards;
 }
 
