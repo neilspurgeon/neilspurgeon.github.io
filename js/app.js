@@ -1,6 +1,23 @@
 ---
 ---
 
+const pageLoader = () => {
+  const pageLoader = document.getElementById('page-loader');
+
+  const hideLoader = () => {
+    pageLoader.classList.add('hide');
+  }
+
+  if (pageLoader) {
+    const delay = 2000;
+    let hasDelayed = false
+
+    window.setTimeout( function() {
+      window.onload = hideLoader();
+    }, 2000)
+  }
+}
+
 const setVendorPrefixedCss = (element, cssProperty, cssValue) => {
   element.style["webkit" + cssProperty] = cssValue;
   element.style["moz" + cssProperty] = cssValue;
@@ -96,8 +113,10 @@ const pageFunctions = () => {
   for(let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', cbk);
   }
+
   animateLinks();
   backButtonShowHide();
+  pageLoader();
 };
 
 Barba.Pjax.start();
