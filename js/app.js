@@ -1,4 +1,23 @@
-"use strict";
+'use strict';
+
+var pageLoader = function pageLoader() {
+  var pageLoader = document.getElementById('page-loader');
+
+  var load = function load() {
+    pageLoader.classList.add('hide');
+    var body = document.querySelector('body');
+    body.classList.add('loaded');
+  };
+
+  if (pageLoader) {
+    var delay = 2000;
+    var hasDelayed = false;
+
+    window.setTimeout(function () {
+      window.onload = load();
+    }, 2000);
+  }
+};
 
 var setVendorPrefixedCss = function setVendorPrefixedCss(element, cssProperty, cssValue) {
   element.style["webkit" + cssProperty] = cssValue;
@@ -93,8 +112,10 @@ var pageFunctions = function pageFunctions() {
   for (var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', cbk);
   }
+
   animateLinks();
   backButtonShowHide();
+  pageLoader();
 };
 
 Barba.Pjax.start();
