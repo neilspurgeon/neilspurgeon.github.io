@@ -1,24 +1,27 @@
 ---
 ---
 
+const addClass = (el, className) => {
+  document.querySelector(el).classList.add(className);
+};
+
 const pageLoader = () => {
-  const cssOutDuration = 1000; // time needed for css to complete animation
-  const pageLoader = document.getElementById('page-loader');
+  const loader = document.getElementById('page-loader');
 
-  const load = () => {
-    console.log('load function');
-    document.querySelector('body').classList.add('loaded');
-  }
+  const onLoad = () => {
+    // add loaded class which hides loader
+    addClass('body', 'loaded');
 
-  if (pageLoader) {
-    window.onload = () => {
-      load();
-      window.document.body.setTimeout( () => {
-        pageLoader.remove()
-      }, cssOutDuration + 100) // add 100ms buffer time
-    };
-  }
-}
+    // wait for css animation and then remove loader from dom
+    window.setTimeout(function() {
+      loader.remove();
+    }, 1000); // add 100ms buffer time
+  };
+
+  if (loader) {
+    window.setTimeout(onLoad, 2000);
+  };
+};
 
 const setVendorPrefixedCss = (element, cssProperty, cssValue) => {
   element.style["webkit" + cssProperty] = cssValue;
