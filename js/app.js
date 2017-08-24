@@ -138,3 +138,32 @@ Barba.Dispatcher.on('initStateChange', function() {
     ga('send', 'pageview', location.pathname);
   }
 });
+
+// –––––––––––––––––––––––––––––––––––––––––
+
+var loadTransition = Barba.BaseTransition.extend({
+  start: function() {
+    console.log('start');
+
+    Promise
+      .all([this.newContainerLoading, this.fadeOut()])
+      .then(this.fadeIn.bind(this));
+  },
+
+  fadeOut: function() {
+    console.log('fade out');
+  },
+
+  fadeIn: function() {
+    console.log('fade in');
+    window.onload = function(){
+      console.log('new page loaded');
+    };
+    this.newContainer.style.visibility = 'visible';
+    this.done();
+  }
+});
+
+Barba.Pjax.getTransition = function() {
+  return loadTransition;
+};
