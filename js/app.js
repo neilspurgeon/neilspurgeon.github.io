@@ -2,25 +2,21 @@
 ---
 
 const pageLoader = () => {
+  const cssOutDuration = 1000; // time needed for css to complete animation
   const pageLoader = document.getElementById('page-loader');
 
   const load = () => {
-    const body = document.querySelector('body');
-    body.classList.add('loaded');
+    console.log('load function');
+    document.querySelector('body').classList.add('loaded');
   }
 
   if (pageLoader) {
-    const delay = 2000;
-    const cssAnimationDuration = 1000;
-    let hasDelayed = false
-
-    window.setTimeout( function() {
-      window.onload = load();
-      window.setTimeout(function() {
+    window.onload = () => {
+      load();
+      window.document.body.setTimeout( () => {
         pageLoader.remove()
-      }, cssAnimationDuration + 100) // add 100ms buffer time
-
-    }, delay)
+      }, cssOutDuration + 100) // add 100ms buffer time
+    };
   }
 }
 
