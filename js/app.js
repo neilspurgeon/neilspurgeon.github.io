@@ -5,18 +5,22 @@ const pageLoader = () => {
   const pageLoader = document.getElementById('page-loader');
 
   const load = () => {
-    pageLoader.classList.add('hide');
     const body = document.querySelector('body');
     body.classList.add('loaded');
   }
 
   if (pageLoader) {
     const delay = 2000;
+    const cssAnimationDuration = 1000;
     let hasDelayed = false
 
     window.setTimeout( function() {
       window.onload = load();
-    }, 2000)
+      window.setTimeout(function() {
+        pageLoader.remove()
+      }, cssAnimationDuration + 100) // add 100ms buffer time
+
+    }, delay)
   }
 }
 
