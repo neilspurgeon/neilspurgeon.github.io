@@ -5,21 +5,26 @@ const addClass = (el, className) => {
   document.querySelector(el).classList.add(className);
 };
 
-const pageLoader = () => {
-  const loader = document.getElementById('page-loader');
+const onLoad = () => {
+  window.onload = () => {
 
-  const onLoad = () => {
     // add loaded class which hides loader
     addClass('body', 'loaded');
 
     // wait for css animation and then remove loader from dom
     window.setTimeout(function() {
-      loader.remove();
+      document.getElementById('page-loader').remove();
     }, 1000); // add 100ms buffer time
   };
+}
+
+const pageLoader = () => {
+  const loader = document.getElementById('page-loader');
 
   if (loader) {
-    window.setTimeout(onLoad, 2000);
+    window.setTimeout(function() {
+      onLoad();
+    } , 2000);
   };
 };
 
