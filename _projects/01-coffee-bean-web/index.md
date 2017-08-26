@@ -12,36 +12,48 @@ description: "<p>Founded in 1963, The Coffee Bean & Tea Leaf now serves over 1,0
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: _projects/01-coffee-bean-web/images/coffeebean-web-home.jpg %}
+    {% responsive_image
+      class: preload-img
+      path: _projects/01-coffee-bean-web/images/coffeebean-web-home.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: _projects/01-coffee-bean-web/images/coffeebean-web-shop.jpg %}
+    {% responsive_image
+      class: preload-img
+      path: _projects/01-coffee-bean-web/images/coffeebean-web-shop.jpg %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: _projects/01-coffee-bean-web/images/coffeebean-web-icons.jpg" %}
+    {% responsive_image
+      class: preload-img
+      path: _projects/01-coffee-bean-web/images/coffeebean-web-icons.jpg" %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: _projects/01-coffee-bean-web/images/coffeebean-web-desk-nav.jpg" %}
+    {% responsive_image
+      class: preload-img
+      path: _projects/01-coffee-bean-web/images/coffeebean-web-desk-nav.jpg" %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: _projects/01-coffee-bean-web/images/coffeebean-web-mobile-nav.jpg" %}
+    {% responsive_image
+      class: preload-img
+      path: _projects/01-coffee-bean-web/images/coffeebean-web-mobile-nav.jpg" %}
   </div>
 </div>
 
 <div class="grid grid--offset">
   <div class="grid__col-12">
-    {% responsive_image path: _projects/01-coffee-bean-web/images/coffeebean-web-careers.jpg" %}
+    {% responsive_image
+      class: preload-img
+      path: _projects/01-coffee-bean-web/images/coffeebean-web-careers.jpg" %}
   </div>
 </div>

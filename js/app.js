@@ -1,6 +1,21 @@
 ---
 ---
 
+const preLoadImgs = () => {
+  const imgs = document.querySelectorAll('.preload-img');
+  if (imgs[0]) {
+    console.log(imgs);
+    for (let i=0; i<imgs.length; i++) {
+      let img = imgs[i];
+      img.style.opacity = 0;
+      img.parentElement.height = img.height;
+      img.addEventListener('load', () => {
+        img.style.opacity = 1;
+      });
+    }
+  }
+};
+
 const addClass = (el, className) => {
   document.querySelector(el).classList.add(className);
 };
@@ -126,6 +141,7 @@ const pageFunctions = () => {
   animateLinks();
   backButtonShowHide();
   pageLoader();
+  preLoadImgs();
 };
 
 Barba.Pjax.start();
