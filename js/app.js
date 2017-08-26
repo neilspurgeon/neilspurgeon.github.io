@@ -18,12 +18,30 @@ var onLoad = function onLoad() {
 };
 
 var pageLoader = function pageLoader() {
+
   var loader = document.getElementById('page-loader');
 
   if (loader) {
-    window.setTimeout(function () {
-      onLoad();
-    }, 2000);
+    (function () {
+      var loadStartTime = Date.now();
+
+      window.onload = function () {
+        var loadTime = Date.now() - loadStartTime;
+
+        if (loadTime >= 1000) {
+          // loaded over 2s
+          addClass('body', 'loaded');
+          console.log('over 2s');
+        } else {
+          // loaded under 2s
+          var remainingTime = 2000 - loadTime;
+          console.log('under 2s : ' + remainingTime);
+          window.setTimeout(function () {
+            addClass('body', 'loaded');
+          }, remainingTime);
+        }
+      };
+    })();
   };
 };
 
