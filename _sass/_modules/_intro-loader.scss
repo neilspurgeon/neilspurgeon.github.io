@@ -1,11 +1,9 @@
 @keyframes fadeOutUp {
-  0% {
-    opacity: 1;
+  99% {
+    transform: translate3d(0, -100%, 0);
   }
   100% {
-    opacity: 1;
-    transform: translate3d(0, -100%, 0);
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -22,7 +20,7 @@
   background-color: #000;
 }
 
-.intro-loader.hide {
+.loaded .intro-loader {
   animation: fadeOutUp 1s forwards;
 }
 

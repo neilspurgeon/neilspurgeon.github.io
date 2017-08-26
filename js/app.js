@@ -1,24 +1,32 @@
 ---
 ---
 
-const pageLoader = () => {
-  const pageLoader = document.getElementById('page-loader');
+const addClass = (el, className) => {
+  document.querySelector(el).classList.add(className);
+};
 
-  const load = () => {
-    pageLoader.classList.add('hide');
-    const body = document.querySelector('body');
-    body.classList.add('loaded');
-  }
+const onLoad = () => {
+  window.onload = () => {
 
-  if (pageLoader) {
-    const delay = 2000;
-    let hasDelayed = false
+    // add loaded class which hides loader
+    addClass('body', 'loaded');
 
-    window.setTimeout( function() {
-      window.onload = load();
-    }, 2000)
-  }
+    // wait for css animation and then remove loader from dom
+    window.setTimeout(function() {
+      document.getElementById('page-loader').remove();
+    }, 1000); // add 100ms buffer time
+  };
 }
+
+const pageLoader = () => {
+  const loader = document.getElementById('page-loader');
+
+  if (loader) {
+    window.setTimeout(function() {
+      onLoad();
+    } , 2000);
+  };
+};
 
 const setVendorPrefixedCss = (element, cssProperty, cssValue) => {
   element.style["webkit" + cssProperty] = cssValue;
@@ -135,3 +143,32 @@ Barba.Dispatcher.on('initStateChange', function() {
     ga('send', 'pageview', location.pathname);
   }
 });
+
+// –––––––––––––––––––––––––––––––––––––––––
+
+var loadTransition = Barba.BaseTransition.extend({
+  start: function() {
+    console.log('start');
+
+    Promise
+      .all([this.newContainerLoading, this.fadeOut()])
+      .then(this.fadeIn.bind(this));
+  },
+
+  fadeOut: function() {
+    console.log('fade out');
+  },
+
+  fadeIn: function() {
+    console.log('fade in');
+    window.onload = function(){
+      console.log('new page loaded');
+    };
+    this.newContainer.style.visibility = 'visible';
+    this.done();
+  }
+});
+
+Barba.Pjax.getTransition = function() {
+  return loadTransition;
+};
