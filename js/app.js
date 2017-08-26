@@ -19,12 +19,26 @@ const onLoad = () => {
 }
 
 const pageLoader = () => {
+
   const loader = document.getElementById('page-loader');
 
   if (loader) {
-    window.setTimeout(function() {
-      onLoad();
-    } , 2000);
+    const loadStartTime = Date.now();
+
+    window.onload = () => {
+      const loadTime = Date.now() - loadStartTime;
+
+      if (loadTime >= 1000) {
+        // loaded over 2s
+        addClass('body', 'loaded');
+        console.log('over 2s');
+      } else {
+        // loaded under 2s
+        const remainingTime = 2000 - loadTime;
+        console.log('under 2s : ' + remainingTime);
+        window.setTimeout(function(){ addClass('body', 'loaded')}, remainingTime)
+      }
+    };
   };
 };
 
