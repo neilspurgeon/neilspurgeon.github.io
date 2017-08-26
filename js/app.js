@@ -14,7 +14,6 @@ const pageLoader = () => {
     const body = document.querySelector('body');
     body.style.overflow = 'hidden';
 
-
     window.onload = () => {
       const loadTime = Date.now() - loadStartTime;
 
