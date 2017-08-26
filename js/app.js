@@ -4,19 +4,6 @@ var addClass = function addClass(el, className) {
   document.querySelector(el).classList.add(className);
 };
 
-var onLoad = function onLoad() {
-  window.onload = function () {
-
-    // add loaded class which hides loader
-    addClass('body', 'loaded');
-
-    // wait for css animation and then remove loader from dom
-    window.setTimeout(function () {
-      document.getElementById('page-loader').remove();
-    }, 1000); // add 100ms buffer time
-  };
-};
-
 var pageLoader = function pageLoader() {
 
   var loader = document.getElementById('page-loader');
@@ -31,11 +18,9 @@ var pageLoader = function pageLoader() {
         if (loadTime >= 1000) {
           // loaded over 2s
           addClass('body', 'loaded');
-          console.log('over 2s');
         } else {
           // loaded under 2s
           var remainingTime = 2000 - loadTime;
-          console.log('under 2s : ' + remainingTime);
           window.setTimeout(function () {
             addClass('body', 'loaded');
           }, remainingTime);
@@ -158,30 +143,3 @@ Barba.Dispatcher.on('initStateChange', function () {
     ga('send', 'pageview', location.pathname);
   }
 });
-
-// –––––––––––––––––––––––––––––––––––––––––
-
-var loadTransition = Barba.BaseTransition.extend({
-  start: function start() {
-    console.log('start');
-
-    Promise.all([this.newContainerLoading, this.fadeOut()]).then(this.fadeIn.bind(this));
-  },
-
-  fadeOut: function fadeOut() {
-    console.log('fade out');
-  },
-
-  fadeIn: function fadeIn() {
-    console.log('fade in');
-    window.onload = function () {
-      console.log('new page loaded');
-    };
-    this.newContainer.style.visibility = 'visible';
-    this.done();
-  }
-});
-
-Barba.Pjax.getTransition = function () {
-  return loadTransition;
-};
