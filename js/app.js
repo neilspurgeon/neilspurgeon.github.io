@@ -11,18 +11,27 @@ const pageLoader = () => {
 
   if (loader) {
     const loadStartTime = Date.now();
+    const body = document.querySelector('body');
+    body.style.overflow = 'hidden';
+
 
     window.onload = () => {
       const loadTime = Date.now() - loadStartTime;
 
       if (loadTime >= 1000) {
         // loaded over 2s
+        window.scrollTo(0,0);
         addClass('body', 'loaded');
+        body.style.overflow = 'initial';
       } else {
         // loaded under 2s
         const remainingTime = 2000 - loadTime;
-        window.setTimeout(function(){ addClass('body', 'loaded')}, remainingTime)
-      }
+        window.setTimeout(function(){
+          window.scrollTo(0,0);
+          addClass('body', 'loaded');
+          body.style.overflow = 'initial';
+        }, remainingTime)
+      };
     };
   };
 };
